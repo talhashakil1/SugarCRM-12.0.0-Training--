@@ -1,2 +1,4 @@
 Wed Jul 13 16:39:08 2022 [29445][-none-][ALERT] Could not connect to DB server with options localhost as talha.shakil. port : Access denied for user 'talha.shakil'@'localhost' (using password: YES)
 Wed Jul 13 16:39:08 2022 [29445][-none-][ALERT] Could not connect to DB server with options localhost as talha.shakil. port : Access denied for user 'talha.shakil'@'localhost' (using password: YES)
+Thu Jul 14 16:41:47 2022 [45099][1][FATAL] CSRF: attack vector detected, invalid form token detected
+Thu Jul 14 16:41:47 2022 [45099][1][FATAL] CSRF: auth failure for ModuleBuilder -> modulefield
