@@ -10,5 +10,6 @@ $mod_strings['LBL_HIRING_DATE'] = 'hiring date';
 $mod_strings['LBL_COMPANY'] = 'company';
 $mod_strings['LBL_RELATE_CONTACT'] = 'relate contact';
 $mod_strings['LBL_PROVINCE'] = 'province';
+$mod_strings['LBL_CITY'] = 'city';
 
 ?>
