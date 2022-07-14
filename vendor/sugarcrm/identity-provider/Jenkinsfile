@@ -1,0 +1,134 @@
+#!groovy
+
+import java.util.UUID
+
+// Default IdM image to use throughout the pipeline.
+idmDefaultImage = ''
+
+def podLabel = "IdentityProvider-pipeline-${UUID.randomUUID()}"
+
+// Pod template for actions of development PRs
+podTemplate(
+    label: podLabel,
+    nodeSelector: 'idm.sugarcrm.io/size=m42xl',
+    containers: [
+        // Used to build the container image
+        containerTemplate(
+            name: 'docker',
+            image: 'docker',
+            ttyEnabled: true,
+            command: 'cat'
+        ),
+    ],
+    volumes: [
+        // Required docker socket to be able to build container images. This will use
+        // the docker service available on the k8s node directly.
+        hostPathVolume(hostPath: '/var/run/docker.sock', mountPath: '/var/run/docker.sock')
+    ]
+) {
+    node(podLabel) {
+        ansiColor('xterm') {
+            // Git commit hash. Is used for labeling docker containers.
+            idmRevision = ''
+
+            // Bag of IdM baked images where steps can retrieve from.
+            idmImages = [:]
+            idmDefaultImage = ''
+
+            stage('SCM IdentityProvider') {
+                pullRequestStatus(description: 'SCM IdentityProvider') {
+                    def scmVars = checkout scm
+                    env.GIT_BRANCH = scmVars.GIT_BRANCH
+                    sh "git rev-parse --short HEAD > .git/commit-id"
+                    idmRevision = readFile('.git/commit-id').trim()
+                }
+            }
+
+            if (env.CHANGE_ID) {
+                stage('Commit Message check') {
+                    pullRequestStatus(description: 'Commit Message check') {
+                        echo "Checking PR number in the commit message. It must include corresponding ticket number."
+                        checkCommitTitleForJiraTicketNumber{}
+                    }
+                }
+            }
+
+            stage('Create Images') {
+                pullRequestStatus(description: 'Create Images') {
+                    container(name:'docker') {
+                        parallel(
+                            lib_php71: { createIdmImage('php71') },
+                            lib_php74: { createIdmImage('php74') },
+                        )
+
+                        // set default image as long as it's baked.
+                        idmDefaultImage = idmImages['php71']
+                    }
+                }
+            }
+
+            stage('Code-standards check') {
+                pullRequestStatus(description: 'Code-standards check') {
+                    changedFiles = valueFromSh("git diff --name-only --diff-filter=ACMRTUXB origin/${env.CHANGE_TARGET} HEAD | tr '\n' ' '")
+                    container(name:'docker') {
+                        echo 'Running code-style only for minimal support version of PHP. PHP 7.1'
+                        sh """
+                        docker run --rm -i ${idmDefaultImage} /bin/bash -c \
+                        'vendor/bin/php-cs-fixer fix \
+                        --config=.php_cs.dist --diff --dry-run --verbose --using-cache=no \
+                        --path-mode=intersection ${changedFiles}'
+                        """
+                    }
+                }
+            }
+
+            stage('Unit tests') {
+                pullRequestStatus(description: 'Unit tests') {
+                    container(name:'docker') {
+                        parallel(
+                                php71: { runIdmPhpUnitSuite('php71', 'Unit Tests') },
+                                php74: { runIdmPhpUnitSuite('php74', 'Unit Tests') },
+                        )
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+def publishHtmlReport(name) {
+    publishHTML (target: [
+          allowMissing: false,
+          alwaysLinkToLastBuild: false,
+          keepAll: true,
+          reportDir: "htmlreport/${name}",
+          reportFiles: 'index.html',
+          reportName: "Html Report-${name}"
+        ])
+}
+
+// Creates IdentityProvider image based on given platform (matches Dockerfile extension by platform).
+def createIdmImage(platform) {
+    def image = "registry.sugarcrm.net/identity-provider/idm:${idmRevision}_${platform}"
+    sh "docker build --pull -t ${image} -f Dockerfile.${platform} ."
+    idmImages[platform] = image
+}
+
+// Runs specific PHPUnit tests suite in container based on particular image.
+def runIdmPhpUnitSuite(platform, suite) {
+    sh """
+    docker run --rm -i ${idmImages[platform]} /bin/bash -c "./ci.sh && vendor/bin/phpunit --testsuite '${suite}'"
+    """
+}
+
+// Run bash script and return its result whatever it is.
+def valueFromSh(command) {
+  def filename = "cmd-${UUID.randomUUID()}"
+  sh """
+      ${command} > ${filename}
+  """
+  def value = readFile(filename).trim()
+  sh "rm ${filename}"
+  return value
+}
