@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-15 12:14:21
+// created: 2022-07-15 14:44:13
 $extensionOrderMap = array (
   'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_age_c.php' => 
   array (
@@ -51,8 +51,26 @@ $extensionOrderMap = array (
   ),
   'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_title_line_c.php' => 
   array (
-    'md5' => 'a3683ef28a596dda2a47c98a3a357829',
-    'mtime' => 1657869245,
+    'md5' => 'a31c65fcc045cc406fcec5dec3a47364',
+    'mtime' => 1657869428,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_customer_id_c.php' => 
+  array (
+    'md5' => 'b4a8365eee85e6a66b26b2180be10843',
+    'mtime' => 1657869703,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_gender_c.php' => 
+  array (
+    'md5' => '9d76dc5a8be4a5d4ecde02f378650ff7',
+    'mtime' => 1657869826,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_branch_name_c.php' => 
+  array (
+    'md5' => 'cf5525df8983ef1b314672b7833c1a50',
+    'mtime' => 1657878233,
     'is_override' => false,
   ),
 );

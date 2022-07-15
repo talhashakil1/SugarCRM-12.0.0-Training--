@@ -218,12 +218,12 @@ array (
                 'name' => 'province_c',
                 'label' => 'LBL_PROVINCE',
               ),
-              8 => 'follow_up_datetime',
+              8 => 'car_color_c',
               9 => 
               array (
                 'readonly' => false,
-                'name' => 'age_c',
-                'label' => 'LBL_AGE',
+                'name' => 'gender_c',
+                'label' => 'LBL_GENDER',
               ),
               10 => 'assigned_user_name',
               11 => 'primary_contact_name',

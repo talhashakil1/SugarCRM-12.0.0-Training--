@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-14 12:13:27
+// created: 2022-07-15 12:49:02
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/zh_CN.sugar_parent_type_display.php' => 
   array (
@@ -21,8 +21,8 @@ $extensionOrderMap = array (
   ),
   'custom/Extension/application/Ext/Language/zh_CN.sugar_account_type_dom.php' => 
   array (
-    'md5' => '9a90faa960feee8852af2aa5ad726273',
-    'mtime' => 1657782802,
+    'md5' => '6b9d32ec26b6a304b1b4f3dd32b6f367',
+    'mtime' => 1657871336,
     'is_override' => false,
   ),
 );

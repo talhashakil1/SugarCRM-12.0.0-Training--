@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-15 12:14:25
+// created: 2022-07-15 14:44:13
 $mod_strings = array (
   'LBL_SOURCE_ID' => 'External source ID',
   'LBL_SOURCE_TYPE' => 'External source',
@@ -7,6 +7,9 @@ $mod_strings = array (
   'LBL_SYNC_KEY' => 'Integration Sync ID',
   'LBL_LOCKED_FIELDS_LINK' => 'Fields locked for editing',
   'LBL_LOCKED_FIELDS' => 'Fields locked for editing',
+  'LBL_COMMENTLOG_LINK' => 'Comment Log',
+  'LBL_TAGS_LINK' => 'Tags',
+  'LBL_TAGS' => 'Tags',
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
   'LBL_DATE_MODIFIED' => 'Date Modified',

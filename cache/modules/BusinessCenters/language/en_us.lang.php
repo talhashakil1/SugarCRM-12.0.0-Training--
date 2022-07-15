@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-15 12:14:21
+// created: 2022-07-15 14:44:14
 $mod_strings = array (
   'LBL_SUNDAY_HOURS' => 'Sunday Hours',
   'LBL_SUNDAY_OPEN_TIME' => 'Sunday Open Time',

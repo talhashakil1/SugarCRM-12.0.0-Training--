@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-15 12:14:25
+// created: 2022-07-15 14:44:13
 $mod_strings = array (
   'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
   'LBL_ASSIGNED_TO_NAME' => 'Assigned to',
@@ -7,6 +7,8 @@ $mod_strings = array (
   'LBL_LOCKED_FIELDS_LINK' => 'Fields locked for editing',
   'LBL_LOCKED_FIELDS' => 'Fields locked for editing',
   'LBL_COMMENTLOG_LINK' => 'Comment Log',
+  'LBL_TAGS_LINK' => 'Tags',
+  'LBL_TAGS' => 'Tags',
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Made Favorite',
   'LBL_DATE_MODIFIED' => 'Date Modified',

@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-15 12:14:21
+// created: 2022-07-15 14:44:14
 $mod_strings = array (
   'LBL_ANY_EMAIL' => 'Email:',
   'LBL_EMAIL' => 'Email Address:',
@@ -285,4 +285,7 @@ To create a {{module_name}}:
   'LBL_SOURCE_EXTERNAL' => 'External',
   'LBL_SOURCE_INTERNAL' => 'Internal',
   'LBL_LINKEDIN_PROFILE' => 'linkedin profile',
+  'LBL_GENDER' => 'Gender',
+  'LBL_CAR_OLOR' => 'car olor',
+  'LBL_CAR_COLOR' => 'car color',
 );

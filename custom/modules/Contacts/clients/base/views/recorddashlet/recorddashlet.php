@@ -98,8 +98,8 @@ array (
               7 => 
               array (
                 'readonly' => false,
-                'name' => 'linkedin_profile_c',
-                'label' => 'LBL_LINKEDIN_PROFILE',
+                'name' => 'gender_c',
+                'label' => 'LBL_GENDER',
               ),
               8 => 
               array (

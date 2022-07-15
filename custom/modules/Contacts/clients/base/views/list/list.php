@@ -51,38 +51,46 @@ array (
               ),
               4 => 
               array (
+                'name' => 'gender_c',
+                'label' => 'LBL_GENDER',
+                'enabled' => true,
+                'readonly' => false,
+                'default' => true,
+              ),
+              5 => 
+              array (
                 'name' => 'email',
                 'enabled' => true,
                 'default' => true,
               ),
-              5 => 
+              6 => 
               array (
                 'name' => 'phone_mobile',
                 'enabled' => true,
                 'default' => true,
                 'selected' => false,
               ),
-              6 => 
+              7 => 
               array (
                 'name' => 'phone_work',
                 'enabled' => true,
                 'default' => true,
               ),
-              7 => 
+              8 => 
               array (
                 'name' => 'phone_other',
                 'enabled' => true,
                 'default' => true,
                 'selected' => false,
               ),
-              8 => 
+              9 => 
               array (
                 'name' => 'assistant_phone',
                 'enabled' => true,
                 'default' => true,
                 'selected' => false,
               ),
-              9 => 
+              10 => 
               array (
                 'name' => 'assigned_user_name',
                 'label' => 'LBL_LIST_ASSIGNED_USER',
@@ -90,13 +98,13 @@ array (
                 'enabled' => true,
                 'default' => true,
               ),
-              10 => 
+              11 => 
               array (
                 'name' => 'date_modified',
                 'enabled' => true,
                 'default' => true,
               ),
-              11 => 
+              12 => 
               array (
                 'name' => 'date_entered',
                 'enabled' => true,

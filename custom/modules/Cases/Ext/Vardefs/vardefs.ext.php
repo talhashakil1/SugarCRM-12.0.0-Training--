@@ -148,7 +148,7 @@ $dictionary['Case']['fields']['birth_date'] = array (
 // Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_title_line_c.php
 
 
-$dictionary['Case']['field']['title_line'] = array (
+$dictionary['Case']['fields']['title_line'] = array (
       'name' => 'title line',
       'vname' => 'LBL_TEXT_LINE',
       'type' => 'text',
@@ -165,6 +165,76 @@ $dictionary['Case']['field']['title_line'] = array (
       'dbtype' => 'longtext',
     )
 
+
+
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_customer_id_c.php
+
+
+$dictionary['Case']['fields']['customer_id'] = array (
+      'name' => 'customer id',
+      'type' => 'relate',
+      'dbType' => 'id',
+      'rname' => 'id',
+      'id_name' => 'customer_id',
+      'reportable' => false,
+      'vname' => 'LBL_CUSTOMER_ID',
+      'audited' => true,
+      'massupdate' => false,
+      'comment' => 'The customer id to which the order is associated',
+    )
+
+
+
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_gender_c.php
+
+ // created: 2022-07-15 12:23:46
+$dictionary['Case']['fields']['gender_c']['labelValue']='Gender';
+$dictionary['Case']['fields']['gender_c']['dependency']='';
+$dictionary['Case']['fields']['gender_c']['required_formula']='';
+$dictionary['Case']['fields']['gender_c']['readonly_formula']='';
+$dictionary['Case']['fields']['gender_c']['visibility_grid']='';
+
+ 
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_branch_name_c.php
+
+
+
+$dictionary['Case']['fields']['branch_name'] = array (
+      'labelValue' => 'branch name',
+      'dependency' => '',
+      'required_formula' => '',
+      'readonly_formula' => '',
+      'visibility_grid' => '',
+      'required' => false,
+      'readonly' => false,
+      'name' => 'branch_name',
+      'vname' => 'LBL_BRANCH_NAME',
+      'type' => 'enum',
+      'massupdate' => true,
+      'hidemassupdate' => false,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'enabled',
+      'duplicate_merge_dom_value' => 1,
+      'audited' => false,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'pii' => false,
+      'calculated' => false,
+      'len' => 100,
+      'size' => '20',
+      'options' => 'branch_name_options',
+      'default' => NULL,
+    );
 
 
 ?>

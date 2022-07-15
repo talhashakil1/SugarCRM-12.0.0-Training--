@@ -98,13 +98,11 @@ $app_list_strings['record_type_display_notes']=array (
 <?php
 // Merged from custom/Extension/application/Ext/Language/ca_ES.sugar_account_type_dom.php
 
- // created: 2022-07-14 12:13:22
+ // created: 2022-07-15 12:48:56
 
 $app_list_strings['account_type_dom']=array (
   '' => '',
-  'Punjab' => 'Punjab',
-  'KPK' => 'KPK',
-  'Sindh' => 'Sindh',
-  'Balochistan' => 'Balochistan',
+  'white' => 'white',
+  'blue' => 'blue',
 );
 ?>

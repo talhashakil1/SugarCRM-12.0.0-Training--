@@ -208,8 +208,13 @@ array (
             array (
               0 => 'title',
               1 => 'phone_mobile',
-              2 => 'department',
-              3 => 'do_not_call',
+              2 => 'car_color_c',
+              3 => 
+              array (
+                'readonly' => false,
+                'name' => 'gender_c',
+                'label' => 'LBL_GENDER',
+              ),
               4 => 'account_name',
               5 => 'business_center_name',
               6 => 'market_score',

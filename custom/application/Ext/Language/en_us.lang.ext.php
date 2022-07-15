@@ -84,13 +84,23 @@ $app_list_strings['record_type_display_notes']=array (
 <?php
 // Merged from custom/Extension/application/Ext/Language/en_us.sugar_account_type_dom.php
 
- // created: 2022-07-14 12:13:22
+ // created: 2022-07-15 12:48:56
 
-$app_list_strings['account_type_dom']=array (
+$app_list_strings['car_color_dom']=array (
   '' => '',
-  'Punjab' => 'Punjab',
-  'KPK' => 'KPK',
-  'Sindh' => 'Sindh',
-  'Balochistan' => 'Balochistan',
+  'white' => 'white',
+  'blue' => 'blue',
 );
+?>
+<?php
+// Merged from custom/Extension/application/Ext/Language/en_us.sugar_branch_name.php
+
+ // created: 2022-07-15 12:48:56
+
+$app_list_strings['branch_name_options']=array (
+  '' => '',
+  'Lahore' => 'Lahore',
+  'Islamabad' => 'Islamabad',
+);
+
 ?>

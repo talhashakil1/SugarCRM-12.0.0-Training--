@@ -1,10 +1,8 @@
 <?php
- // created: 2022-07-14 12:13:21
+ // created: 2022-07-15 12:48:56
 
 $app_list_strings['account_type_dom']=array (
   '' => '',
-  'Punjab' => 'Punjab',
-  'KPK' => 'KPK',
-  'Sindh' => 'Sindh',
-  'Balochistan' => 'Balochistan',
+  'white' => 'white',
+  'blue' => 'blue',
 );
