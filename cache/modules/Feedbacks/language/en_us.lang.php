@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-14 12:22:58
+// created: 2022-07-14 18:22:52
 $mod_strings = array (
   'LBL_FEEDBACK_TEXT_PLACEHOLDER' => 'Feedback description',
   'LBL_FEEDBACK_BTN_SUBMIT' => 'Send',

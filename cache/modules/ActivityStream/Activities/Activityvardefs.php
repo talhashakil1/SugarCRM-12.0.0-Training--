@@ -332,7 +332,7 @@
       'relationship' => 'revenuelineitem_activities',
       'source' => 'non-db',
       'vname' => 'LBL_REVENUELINEITEMS',
-      'workflow' => false,
+      'workflow' => true,
     ),
     'quotes' => 
     array (

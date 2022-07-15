@@ -533,6 +533,7 @@
       'type' => 'link',
       'relationship' => 'revenuelineitems_locked_fields',
       'source' => 'non-db',
+      'workflow' => true,
     ),
     'products_locked_fields_link' => 
     array (

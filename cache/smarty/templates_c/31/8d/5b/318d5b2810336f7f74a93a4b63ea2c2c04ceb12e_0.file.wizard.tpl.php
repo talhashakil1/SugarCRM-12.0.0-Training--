@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-07-14 11:40:49
+/* Smarty version 3.1.39, created on 2022-07-14 19:00:35
   from '/var/www/html/SugarEnt-Full-12.0.0/modules/ModuleBuilder/tpls/wizard.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_62cfba71e41123_37869813',
+  'unifunc' => 'content_62d021830535c5_57566034',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/ModuleBuilder/tpls/assistantJavascript.tpl' => 1,
   ),
 ),false)) {
-function content_62cfba71e41123_37869813 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62d021830535c5_57566034 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/SugarEnt-Full-12.0.0/vendor/smarty/smarty/libs/plugins/function.counter.php','function'=>'smarty_function_counter',),1=>array('file'=>'/var/www/html/SugarEnt-Full-12.0.0/include/SugarSmarty/plugins/function.sugar_image.php','function'=>'smarty_function_sugar_image',),));
 ?>
 <div class='wizard' width='100%' >

@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-14 16:01:48
+// created: 2022-07-14 18:22:48
 $mod_strings = array (
   'LBL_IS_ESCALATED' => 'Escalated',
   'LBL_FIRST_RESPONSE_TARGET_DATETIME' => 'First Response Target Time',
@@ -191,4 +191,5 @@ To create a {{module_name}}:
   'LBL_RELATE_CONTACT' => 'relate contact',
   'LBL_PROVINCE' => 'province',
   'LBL_CITY' => 'city',
+  'LBL_PHONE_NUMBER' => 'phone number',
 );

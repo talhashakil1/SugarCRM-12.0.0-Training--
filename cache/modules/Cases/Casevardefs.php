@@ -1674,6 +1674,21 @@
       'id' => '5b2a8b8e-0364-11ed-9bd7-94e23ce7e1fe',
       'custom_module' => 'Cases',
     ),
+    'integer_field_example' => 
+    array (
+      'name' => 'integer_field_example',
+      'label' => 'LBL_INTEGER_FIELD_EXAMPLE',
+      'type' => 'int',
+      'help' => '',
+      'comment' => '',
+      'default_value' => 13,
+      'max_size' => 255,
+      'required' => false,
+      'reportable' => true,
+      'audited' => false,
+      'importable' => 'true',
+      'duplicate_merge' => false,
+    ),
   ),
   'indices' => 
   array (

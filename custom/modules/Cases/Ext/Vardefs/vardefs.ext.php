@@ -93,3 +93,24 @@ $dictionary['Case']['fields']['city_c']['readonly_formula']='';
 
  
 ?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_phone_number_c.php
+
+
+
+$dictionary['Case']['fields']['integer_field_example']=array(
+	'name' => 'integer_field_example',
+	'label' => 'LBL_INTEGER_FIELD_EXAMPLE',
+      'type' => 'int',
+	'help' => '',
+	'comment' => '',
+	'default_value' => 13,
+	'max_size' => 255,
+	'required' => false, // true or false
+	'reportable' => true, // true or false
+	'audited' => false, // true or false
+	'importable' => 'true', // 'true', 'false', 'required'
+	'duplicate_merge' => false, // true or false
+);
+
+?>
