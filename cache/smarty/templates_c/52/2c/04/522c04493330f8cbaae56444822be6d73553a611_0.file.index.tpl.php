@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-07-15 11:58:05
+/* Smarty version 3.1.39, created on 2022-07-15 12:15:06
   from '/var/www/html/SugarEnt-Full-12.0.0/modules/ModuleBuilder/tpls/index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_62d10ffd7eee17_60902183',
+  'unifunc' => 'content_62d113fac3c1c0_77018099',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/ModuleBuilder/tpls/assistantJavascript.tpl' => 1,
   ),
 ),false)) {
-function content_62d10ffd7eee17_60902183 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62d113fac3c1c0_77018099 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/SugarEnt-Full-12.0.0/include/SugarSmarty/plugins/function.sugar_getjspath.php','function'=>'smarty_function_sugar_getjspath',),));
 ?>
 <iframe id="yui-history-iframe" src="index.php?entryPoint=getImage&imageName=sugar-yui-sprites-grey.png" title="index.php?entryPoint=getImage&imageName=sugar-yui-sprites-grey.png"></iframe>

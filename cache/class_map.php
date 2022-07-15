@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-15 11:58:11
+// created: 2022-07-15 12:15:10
 $class_map = array (
   'Smarty_Internal_Compile_Sugar_Csrf_Form_Token' => false,
   'CustomModuleInstaller' => false,
@@ -55,6 +55,14 @@ $class_map = array (
   'Sugarcrm\\Sugarcrm\\custom\\Session\\SessionStorage' => false,
   'CustomAuthenticationController' => false,
   'CustomSugarFieldFullname' => false,
+  'CustomAdministrationViewClassic' => false,
+  'AdministrationViewClassic' => false,
+  'CustomViewClassic' => false,
+  'Sugarcrm\\Sugarcrm\\custom\\Security\\Csrf\\CsrfAuthenticator' => false,
+  'Smarty_Internal_Compile_Sugar_Getjspath' => false,
+  'Smarty_Internal_Compile_Sugar_Getscript' => false,
+  'Smarty_Internal_Compile_Sugar_Getimagepath' => false,
+  'Sugarcrm\\Sugarcrm\\custom\\Security\\Validator\\Constraints\\Language' => false,
   'CustomRestService' => false,
   'CustomSugarOAuth2Storage' => false,
   'CustomSugarOAuth2Server' => false,
@@ -64,11 +72,6 @@ $class_map = array (
   'CustomModuleBuilderViewMain' => false,
   'ModuleBuilderViewMain' => 'modules/ModuleBuilder/views/view.main.php',
   'CustomViewMain' => false,
-  'Sugarcrm\\Sugarcrm\\custom\\Security\\Validator\\Constraints\\Language' => false,
-  'Sugarcrm\\Sugarcrm\\custom\\Security\\Csrf\\CsrfAuthenticator' => false,
-  'Smarty_Internal_Compile_Sugar_Getjspath' => false,
-  'Smarty_Internal_Compile_Sugar_Getscript' => false,
-  'Smarty_Internal_Compile_Sugar_Getimagepath' => false,
   'CustomModuleBuilderViewWizard' => false,
   'Sugarcrm\\Sugarcrm\\custom\\Security\\Validator\\Constraints\\ComponentName' => false,
   'Smarty_Internal_Compile_Counter' => false,

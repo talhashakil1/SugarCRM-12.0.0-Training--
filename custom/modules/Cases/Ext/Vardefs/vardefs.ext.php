@@ -98,6 +98,28 @@ $dictionary['Case']['fields']['city_c']['readonly_formula']='';
 
 
 
+$dictionary['Case']['fields']['zip_code'] = array(
+	'name' => 'zip code',
+	'label' => 'LBL_ZIP_CODE',
+    'type' => 'int',
+	'help' => '',
+	'comment' => '',
+	'default_value' => 13,
+	'max_size' => 255,
+	'required' => false, // true or false
+	'reportable' => true, // true or false
+	'audited' => false, // true or false
+	'importable' => 'true', // 'true', 'false', 'required'
+	'duplicate_merge' => false, // true or false
+);
+
+
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_birth_date.php
+
+
+
 $dictionary['Case']['fields']['birth_date'] = array (
       'name' => 'birth date',
       'vname' => 'LBL_BIRTH_DATE',
@@ -119,6 +141,30 @@ $dictionary['Case']['fields']['birth_date'] = array (
         'searchable' => false,
       ),
     );
+
+
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_title_line_c.php
+
+
+$dictionary['Case']['field']['title_line'] = array (
+      'name' => 'title line',
+      'vname' => 'LBL_TEXT_LINE',
+      'type' => 'text',
+      'comment' => 'Full text of the note',
+      'full_text_search' => 
+      array (
+        'enabled' => true,
+        'searchable' => true,
+        'boost' => 0.66,
+      ),
+      'rows' => 6,
+      'cols' => 80,
+      'duplicate_on_record_copy' => 'always',
+      'dbtype' => 'longtext',
+    )
+
 
 
 ?>
