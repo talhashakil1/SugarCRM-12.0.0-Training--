@@ -94,14 +94,14 @@ $dictionary['Case']['fields']['city_c']['readonly_formula']='';
  
 ?>
 <?php
-// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_phone_number_c.php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_zip_code.php
 
 
 
-$dictionary['Case']['fields']['integer_field_example']=array(
-	'name' => 'integer_field_example',
-	'label' => 'LBL_INTEGER_FIELD_EXAMPLE',
-      'type' => 'int',
+$dictionary['Case']['fields']['zip_code'] = array(
+	'name' => 'zip code',
+	'label' => 'LBL_ZIP_CODE',
+    'type' => 'int',
 	'help' => '',
 	'comment' => '',
 	'default_value' => 13,
@@ -112,5 +112,6 @@ $dictionary['Case']['fields']['integer_field_example']=array(
 	'importable' => 'true', // 'true', 'false', 'required'
 	'duplicate_merge' => false, // true or false
 );
+
 
 ?>

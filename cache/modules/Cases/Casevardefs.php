@@ -1674,10 +1674,10 @@
       'id' => '5b2a8b8e-0364-11ed-9bd7-94e23ce7e1fe',
       'custom_module' => 'Cases',
     ),
-    'integer_field_example' => 
+    'zip_code' => 
     array (
-      'name' => 'integer_field_example',
-      'label' => 'LBL_INTEGER_FIELD_EXAMPLE',
+      'name' => 'zip code',
+      'label' => 'LBL_ZIP_CODE',
       'type' => 'int',
       'help' => '',
       'comment' => '',

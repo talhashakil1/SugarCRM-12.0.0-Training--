@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-07-14 19:00:35
+/* Smarty version 3.1.39, created on 2022-07-15 11:24:32
   from '/var/www/html/SugarEnt-Full-12.0.0/modules/ModuleBuilder/tpls/assistantJavascript.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_62d02183060fb3_57250639',
+  'unifunc' => 'content_62d10820641fc2_69637736',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62d02183060fb3_57250639 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62d10820641fc2_69637736 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
 >
 
