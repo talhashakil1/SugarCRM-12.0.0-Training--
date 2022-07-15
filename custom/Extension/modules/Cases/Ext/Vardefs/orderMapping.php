@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-15 11:23:57
+// created: 2022-07-15 11:57:44
 $extensionOrderMap = array (
   'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_age_c.php' => 
   array (
@@ -39,8 +39,8 @@ $extensionOrderMap = array (
   ),
   'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_zip_code.php' => 
   array (
-    'md5' => '2271f85746391bff290109fd6e7b6f4d',
-    'mtime' => 1657865983,
+    'md5' => '9d31bda7f1822c6a75297b16e6a65793',
+    'mtime' => 1657868247,
     'is_override' => false,
   ),
 );

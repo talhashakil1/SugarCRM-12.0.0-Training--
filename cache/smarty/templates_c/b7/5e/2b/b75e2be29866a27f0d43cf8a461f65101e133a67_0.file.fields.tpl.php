@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-07-15 11:24:36
+/* Smarty version 3.1.39, created on 2022-07-15 11:58:11
   from '/var/www/html/SugarEnt-Full-12.0.0/modules/ModuleBuilder/tpls/MBModule/fields.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_62d108244de592_60595535',
+  'unifunc' => 'content_62d110035b6cb7_17357892',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62d108244de592_60595535 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62d110035b6cb7_17357892 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/SugarEnt-Full-12.0.0/include/SugarSmarty/plugins/function.sugar_translate.php','function'=>'smarty_function_sugar_translate',),));
 ?>
 

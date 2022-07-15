@@ -98,20 +98,27 @@ $dictionary['Case']['fields']['city_c']['readonly_formula']='';
 
 
 
-$dictionary['Case']['fields']['zip_code'] = array(
-	'name' => 'zip code',
-	'label' => 'LBL_ZIP_CODE',
-    'type' => 'int',
-	'help' => '',
-	'comment' => '',
-	'default_value' => 13,
-	'max_size' => 255,
-	'required' => false, // true or false
-	'reportable' => true, // true or false
-	'audited' => false, // true or false
-	'importable' => 'true', // 'true', 'false', 'required'
-	'duplicate_merge' => false, // true or false
-);
+$dictionary['Case']['fields']['birth_date'] = array (
+      'name' => 'birth date',
+      'vname' => 'LBL_BIRTH_DATE',
+      'type' => 'datetime',
+      'group' => 'created_by_name',
+      'comment' => 'Date record created',
+      'enable_range_search' => true,
+      'options' => 'date_range_search_dom',
+      'studio' => 
+      array (
+        'portaleditview' => false,
+      ),
+      'duplicate_on_record_copy' => 'no',
+      'readonly' => true,
+      'massupdate' => false,
+      'full_text_search' => 
+      array (
+        'enabled' => true,
+        'searchable' => false,
+      ),
+    );
 
 
 ?>
