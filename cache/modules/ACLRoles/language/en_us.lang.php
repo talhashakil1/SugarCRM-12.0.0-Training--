@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-18 18:39:13
+// created: 2022-07-18 18:42:05
 $mod_strings = array (
   'LBL_MODULE_NAME' => 'Roles',
   'LBL_MODULE_NAME_SINGULAR' => 'Role',

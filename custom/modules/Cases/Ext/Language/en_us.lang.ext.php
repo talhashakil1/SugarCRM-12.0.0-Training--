@@ -29,3 +29,11 @@ $mod_strings['LBL_CASES_CONTACTS_1_FROM_CONTACTS_TITLE'] = 'Contacts';
 $mod_strings['LBL_CASES_CONTACTS_1_FROM_CASES_TITLE'] = 'Contacts';
 
 ?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Language/en_us.customcases_contacts_2.php
+
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_CASES_CONTACTS_2_FROM_CONTACTS_TITLE'] = 'Contacts';
+$mod_strings['LBL_CASES_CONTACTS_2_FROM_CASES_TITLE'] = 'Contacts';
+
+?>

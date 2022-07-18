@@ -647,14 +647,6 @@
       'relationship' => 'dashboards_locked_fields',
       'source' => 'non-db',
     ),
-    'tags_locked_fields_link' => 
-    array (
-      'name' => 'tags_locked_fields_link',
-      'vname' => 'Tags',
-      'type' => 'link',
-      'relationship' => 'tags_locked_fields',
-      'source' => 'non-db',
-    ),
     'kbdocuments_locked_fields_link' => 
     array (
       'name' => 'kbdocuments_locked_fields_link',

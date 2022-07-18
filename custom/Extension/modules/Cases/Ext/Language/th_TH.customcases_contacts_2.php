@@ -1,0 +1,4 @@
+<?php
+//THIS FILE IS AUTO GENERATED, DO NOT MODIFY
+$mod_strings['LBL_CASES_CONTACTS_2_FROM_CONTACTS_TITLE'] = 'Contacts';
+$mod_strings['LBL_CASES_CONTACTS_2_FROM_CASES_TITLE'] = 'Contacts';

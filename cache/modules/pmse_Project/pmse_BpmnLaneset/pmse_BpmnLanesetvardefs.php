@@ -788,7 +788,4 @@
   ),
   'custom_fields' => false,
   'has_pii_fields' => false,
-  'related_calc_fields' => 
-  array (
-  ),
 );

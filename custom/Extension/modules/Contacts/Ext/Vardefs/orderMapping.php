@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-18 16:02:30
+// created: 2022-07-18 18:41:54
 $extensionOrderMap = array (
   'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_linkedin_profile_c.php' => 
   array (
@@ -23,6 +23,12 @@ $extensionOrderMap = array (
   array (
     'md5' => 'be486eb6af83234c8760bca65ad2414f',
     'mtime' => 1658142150,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Contacts/Ext/Vardefs/cases_contacts_2_Contacts.php' => 
+  array (
+    'md5' => '155b1cd8ef0a4b678a9b1a1bb4e914c2',
+    'mtime' => 1658151714,
     'is_override' => false,
   ),
 );
