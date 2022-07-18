@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-15 14:44:13
+// created: 2022-07-18 18:39:09
 $mod_strings = array (
   'LBL_IS_ESCALATED' => 'Escalated',
   'LBL_FIRST_RESPONSE_TARGET_DATETIME' => 'First Response Target Time',
@@ -192,4 +192,13 @@ To create a {{module_name}}:
   'LBL_PROVINCE' => 'province',
   'LBL_CITY' => 'city',
   'LBL_GENDER' => 'Gender',
+  'LBL_BIRTH_DATE' => 'Birth Date',
+  'LBL_ZIP_CODE' => 'Zip Code',
+  'LBL_TEXT_LINE' => 'Title Line',
+  'LBL_BRANCH_NAME' => 'Branch Name',
+  'LBL_CUSTOMER_ID' => 'Customer ID',
+  'LBL_RELATE_CUSTOMER_ID_ACCOUNT_ID' => 'relate customer id (related Account ID)',
+  'LBL_RELATE_CUSTOMER_ID' => 'relate customer id',
+  'LBL_CASES_CONTACTS_1_FROM_CONTACTS_TITLE' => 'Contacts',
+  'LBL_CASES_CONTACTS_1_FROM_CASES_TITLE' => 'Contacts',
 );

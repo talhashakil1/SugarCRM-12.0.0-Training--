@@ -3,6 +3,6 @@
 
 $app_list_strings['car_color_dom']=array (
   '' => '',
-  'white' => 'white',
-  'blue' => 'blue',
+  'Male' => 'Male',
+  'Female' => 'Female',
 );

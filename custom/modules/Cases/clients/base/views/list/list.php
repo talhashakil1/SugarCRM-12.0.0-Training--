@@ -99,19 +99,26 @@ array (
               ),
               10 => 
               array (
+                'name' => 'birth_date',
+                'label' => 'LBL_BIRTH_DATE',
+                'enabled' => true,
+                'default' => true,
+              ),
+              11 => 
+              array (
                 'name' => 'team_name',
                 'label' => 'LBL_LIST_TEAM',
                 'default' => false,
                 'enabled' => true,
               ),
-              11 => 
+              12 => 
               array (
                 'name' => 'primary_contact_name',
                 'label' => 'LBL_PRIMARY_CONTACT_NAME',
                 'default' => false,
                 'enabled' => true,
               ),
-              12 => 
+              13 => 
               array (
                 'name' => 'request_close',
                 'label' => 'LBL_REQUEST_CLOSE',
@@ -119,7 +126,7 @@ array (
                 'enabled' => true,
                 'readonly' => true,
               ),
-              13 => 
+              14 => 
               array (
                 'name' => 'request_close_date',
                 'label' => 'LBL_REQUEST_CLOSE_DATE',
@@ -127,7 +134,7 @@ array (
                 'enabled' => true,
                 'readonly' => true,
               ),
-              14 => 
+              15 => 
               array (
                 'name' => 'business_center_name',
                 'label' => 'LBL_BUSINESS_CENTER_NAME',
@@ -135,7 +142,7 @@ array (
                 'enabled' => true,
                 'readonly' => true,
               ),
-              15 => 
+              16 => 
               array (
                 'name' => 'service_level',
                 'label' => 'LBL_SERVICE_LEVEL',
@@ -143,14 +150,14 @@ array (
                 'enabled' => true,
                 'readonly' => true,
               ),
-              16 => 
+              17 => 
               array (
                 'name' => 'follow_up_datetime',
                 'label' => 'LBL_FOLLOW_UP',
                 'default' => false,
                 'enabled' => true,
               ),
-              17 => 
+              18 => 
               array (
                 'name' => 'first_response_sla_met',
                 'label' => 'LBL_FIRST_RESPONSE_SLA_MET',
@@ -158,7 +165,7 @@ array (
                 'enabled' => true,
                 'readonly' => true,
               ),
-              18 => 
+              19 => 
               array (
                 'name' => 'is_escalated',
                 'label' => 'LBL_ESCALATED',
@@ -167,6 +174,32 @@ array (
                 'type' => 'badge',
                 'enabled' => true,
                 'default' => false,
+              ),
+              20 => 
+              array (
+                'name' => 'title_line',
+                'label' => 'LBL_TEXT_LINE',
+                'enabled' => true,
+                'default' => false,
+              ),
+              21 => 
+              array (
+                'name' => 'relate_contact_c',
+                'label' => 'LBL_RELATE_CONTACT',
+                'enabled' => true,
+                'readonly' => false,
+                'link' => true,
+                'sortable' => false,
+                'default' => false,
+              ),
+              22 => 
+              array (
+                'name' => 'branch_name',
+                'enabled' => true,
+                'readonly' => false,
+                'link' => true,
+                'sortable' => false,
+                'default' => true,
               ),
             ),
           ),

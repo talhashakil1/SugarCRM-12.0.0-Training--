@@ -48,23 +48,6 @@ $dictionary['Case']['fields']['company_c']['readonly_formula']='';
  
 ?>
 <?php
-// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_relate_contact_c.php
-
- // created: 2022-07-14 12:07:39
-$dictionary['Case']['fields']['relate_contact_c']['labelValue']='relate contact';
-$dictionary['Case']['fields']['relate_contact_c']['full_text_search']=array (
-  'enabled' => '0',
-  'boost' => '1',
-  'searchable' => false,
-);
-$dictionary['Case']['fields']['relate_contact_c']['enforced']='';
-$dictionary['Case']['fields']['relate_contact_c']['dependency']='';
-$dictionary['Case']['fields']['relate_contact_c']['required_formula']='';
-$dictionary['Case']['fields']['relate_contact_c']['readonly_formula']='';
-
- 
-?>
-<?php
 // Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_province_c.php
 
  // created: 2022-07-14 12:13:27
@@ -236,5 +219,41 @@ $dictionary['Case']['fields']['branch_name'] = array (
       'default' => NULL,
     );
 
+
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_account_id_c.php
+
+ // created: 2022-07-15 17:32:12
+
+ 
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_relate_customer_id_c.php
+
+ // created: 2022-07-15 17:32:12
+$dictionary['Case']['fields']['relate_customer_id_c']['labelValue']='relate customer id';
+$dictionary['Case']['fields']['relate_customer_id_c']['dependency']='';
+$dictionary['Case']['fields']['relate_customer_id_c']['required_formula']='';
+$dictionary['Case']['fields']['relate_customer_id_c']['readonly_formula']='';
+
+ 
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/cases_contacts_1_Cases.php
+
+// created: 2022-07-18 16:02:29
+$dictionary["Case"]["fields"]["cases_contacts_1"] = array (
+  'name' => 'cases_contacts_1',
+  'type' => 'link',
+  'relationship' => 'cases_contacts_1',
+  'source' => 'non-db',
+  'module' => 'Contacts',
+  'bean_name' => 'Contact',
+  'vname' => 'LBL_CASES_CONTACTS_1_FROM_CASES_TITLE',
+  'id_name' => 'cases_contacts_1cases_ida',
+  'link-type' => 'many',
+  'side' => 'left',
+);
 
 ?>

@@ -102,6 +102,8 @@ array (
                 'name' => 'tag',
                 'span' => 12,
               ),
+              16 => 'gender_c',
+              17 => 'branch_name',
             ),
           ),
           2 => 

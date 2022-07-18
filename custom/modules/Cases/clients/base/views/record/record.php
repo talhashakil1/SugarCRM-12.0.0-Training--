@@ -218,7 +218,13 @@ array (
                 'name' => 'province_c',
                 'label' => 'LBL_PROVINCE',
               ),
-              8 => 'car_color_c',
+              8 => 
+              array (
+                'readonly' => false,
+                'name' => 'relate_customer_id_c',
+                'studio' => 'visible',
+                'label' => 'LBL_RELATE_CUSTOMER_ID',
+              ),
               9 => 
               array (
                 'readonly' => false,
@@ -270,6 +276,12 @@ array (
               array (
                 'name' => 'tag',
                 'span' => 12,
+              ),
+              16 =>
+              array (
+                'name' => 'branch_name',
+                "label" => 'LBL_BRANCH_NAME',
+                'readonly' => false,
               ),
             ),
           ),

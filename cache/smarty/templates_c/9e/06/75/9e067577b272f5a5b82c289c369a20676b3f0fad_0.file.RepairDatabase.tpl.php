@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-07-15 14:44:15
+/* Smarty version 3.1.39, created on 2022-07-18 18:39:11
   from '/var/www/html/SugarEnt-Full-12.0.0/modules/Administration/templates/RepairDatabase.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_62d136ef747a88_75054377',
+  'unifunc' => 'content_62d5627f5b7329_21894305',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62d136ef747a88_75054377 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62d5627f5b7329_21894305 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/SugarEnt-Full-12.0.0/include/SugarSmarty/plugins/function.sugar_csrf_form_token.php','function'=>'smarty_function_sugar_csrf_form_token',),));
 ?>
 
