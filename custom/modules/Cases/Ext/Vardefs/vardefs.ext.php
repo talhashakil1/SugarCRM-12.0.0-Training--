@@ -94,14 +94,81 @@ $dictionary['Case']['fields']['city_c']['readonly_formula']='';
  
 ?>
 <?php
-// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_phone_number_c.php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_birth_date.php
 
 
 
-$dictionary['Case']['fields']['integer_field_example']=array(
-	'name' => 'integer_field_example',
-	'label' => 'LBL_INTEGER_FIELD_EXAMPLE',
-      'type' => 'int',
+$dictionary['Case']['fields']['birth_date'] = array (
+      'name' => 'birth_date',
+      'vname' => 'LBL_BIRTH_DATE',
+      'type' => 'datetime',
+      'group' => 'created_by_name',
+      'comment' => 'Date record created',
+      'enable_range_search' => true,
+      'options' => 'date_range_search_dom',
+      'studio' => 
+      array (
+        'portaleditview' => false,
+      ),
+      'duplicate_on_record_copy' => 'no',
+      'readonly' => true,
+      'massupdate' => false,
+      'full_text_search' => 
+      array (
+        'enabled' => true,
+        'searchable' => false,
+      ),
+    );
+
+
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_branch_name_c.php
+
+
+
+$dictionary['Case']['fields']['branch_name'] = array (
+      'labelValue' => 'branch name',
+      'dependency' => '',
+      'required_formula' => '',
+      'readonly_formula' => '',
+      'visibility_grid' => '',
+      'required' => false,
+      'readonly' => false,
+      'name' => 'branch_name',
+      'vname' => 'LBL_BRANCH_NAME',
+      'type' => 'enum',
+      'massupdate' => true,
+      'hidemassupdate' => false,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'enabled',
+      'duplicate_merge_dom_value' => 1,
+      'audited' => false,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'pii' => false,
+      'calculated' => false,
+      'len' => 100,
+      'size' => '20',
+      'options' => 'branch_name_options',
+      'default' => NULL,
+    );
+
+
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_zip_code.php
+
+
+
+$dictionary['Case']['fields']['zip_code'] = array(
+	'name' => 'zip_code',
+	'label' => 'LBL_ZIP_CODE',
+    'type' => 'int',
 	'help' => '',
 	'comment' => '',
 	'default_value' => 13,
@@ -112,5 +179,50 @@ $dictionary['Case']['fields']['integer_field_example']=array(
 	'importable' => 'true', // 'true', 'false', 'required'
 	'duplicate_merge' => false, // true or false
 );
+
+
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_title_line_c.php
+
+
+$dictionary['Case']['fields']['title_line'] = array (
+      'name' => 'title_line',
+      'vname' => 'LBL_TEXT_LINE',
+      'type' => 'text',
+      'comment' => 'Full text of the note',
+      'full_text_search' => 
+      array (
+        'enabled' => true,
+        'searchable' => true,
+        'boost' => 0.66,
+      ),
+      'rows' => 6,
+      'cols' => 80,
+      'duplicate_on_record_copy' => 'always',
+      'dbtype' => 'longtext',
+    )
+
+
+
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_customer_id_c.php
+
+
+$dictionary['Case']['fields']['customer_id'] = array (
+      'name' => 'customer_id',
+      'type' => 'relate',
+      'dbType' => 'id',
+      'rname' => 'id',
+      'id_name' => 'customer_id',
+      'reportable' => false,
+      'vname' => 'LBL_CUSTOMER_ID',
+      'audited' => true,
+      'massupdate' => false,
+      'comment' => 'The customer id to which the order is associated',
+    )
+
+
 
 ?>
