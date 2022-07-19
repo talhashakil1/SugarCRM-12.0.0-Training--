@@ -2,23 +2,6 @@
 // WARNING: The contents of this file are auto-generated.
 ?>
 <?php
-// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_age_c.php
-
- // created: 2022-07-14 11:42:24
-$dictionary['Case']['fields']['age_c']['labelValue']='Age';
-$dictionary['Case']['fields']['age_c']['full_text_search']=array (
-  'enabled' => '0',
-  'boost' => '1',
-  'searchable' => false,
-);
-$dictionary['Case']['fields']['age_c']['enforced']='';
-$dictionary['Case']['fields']['age_c']['dependency']='';
-$dictionary['Case']['fields']['age_c']['required_formula']='';
-$dictionary['Case']['fields']['age_c']['readonly_formula']='';
-
- 
-?>
-<?php
 // Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_hiring_date_c.php
 
  // created: 2022-07-14 11:49:05
@@ -92,35 +75,6 @@ $dictionary['Case']['fields']['city_c']['required_formula']='';
 $dictionary['Case']['fields']['city_c']['readonly_formula']='';
 
  
-?>
-<?php
-// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_birth_date.php
-
-
-
-$dictionary['Case']['fields']['birth_date'] = array (
-      'name' => 'birth_date',
-      'vname' => 'LBL_BIRTH_DATE',
-      'type' => 'datetime',
-      'group' => 'created_by_name',
-      'comment' => 'Date record created',
-      'enable_range_search' => true,
-      'options' => 'date_range_search_dom',
-      'studio' => 
-      array (
-        'portaleditview' => false,
-      ),
-      'duplicate_on_record_copy' => 'no',
-      'readonly' => true,
-      'massupdate' => false,
-      'full_text_search' => 
-      array (
-        'enabled' => true,
-        'searchable' => false,
-      ),
-    );
-
-
 ?>
 <?php
 // Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_branch_name_c.php
@@ -225,4 +179,118 @@ $dictionary['Case']['fields']['customer_id'] = array (
 
 
 
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_case_reason_c.php
+
+ // created: 2022-07-19 18:28:14
+$dictionary['Case']['fields']['case_reason_c']['labelValue']='case reason';
+$dictionary['Case']['fields']['case_reason_c']['dependency']='';
+$dictionary['Case']['fields']['case_reason_c']['required_formula']='';
+$dictionary['Case']['fields']['case_reason_c']['readonly_formula']='';
+$dictionary['Case']['fields']['case_reason_c']['visibility_grid']='';
+
+ 
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_case_reason_detail_c.php
+
+ // created: 2022-07-19 18:32:26
+$dictionary['Case']['fields']['case_reason_detail_c']['labelValue']='case reason detail';
+$dictionary['Case']['fields']['case_reason_detail_c']['required_formula']='';
+$dictionary['Case']['fields']['case_reason_detail_c']['readonly_formula']='';
+$dictionary['Case']['fields']['case_reason_detail_c']['visibility_grid']=array (
+  'trigger' => 'case_reason_c',
+  'values' => 
+  array (
+    'Software' => 
+    array (
+      0 => '',
+      1 => 'Installation',
+      2 => 'Bug',
+      3 => 'Error',
+    ),
+    'Feature' => 
+    array (
+      0 => '',
+      1 => 'Functionality',
+      2 => 'Enhancement',
+    ),
+    'Usability' => 
+    array (
+      0 => '',
+      1 => 'Enhancement',
+    ),
+    'License' => 
+    array (
+      0 => '',
+      1 => 'Invalid License',
+      2 => 'Renew License',
+    ),
+    'Other' => 
+    array (
+    ),
+  ),
+);
+
+ 
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_birth_date.php
+
+ // created: 2022-07-19 18:42:47
+$dictionary['Case']['fields']['birth_date']['name']='birth_date';
+$dictionary['Case']['fields']['birth_date']['vname']='LBL_BIRTH_DATE';
+$dictionary['Case']['fields']['birth_date']['type']='datetime';
+$dictionary['Case']['fields']['birth_date']['group']='created_by_name';
+$dictionary['Case']['fields']['birth_date']['comment']='Date record created';
+$dictionary['Case']['fields']['birth_date']['enable_range_search']='1';
+$dictionary['Case']['fields']['birth_date']['options']='date_range_search_dom';
+$dictionary['Case']['fields']['birth_date']['studio']=array (
+  'portaleditview' => false,
+);
+$dictionary['Case']['fields']['birth_date']['duplicate_on_record_copy']='no';
+$dictionary['Case']['fields']['birth_date']['readonly']=false;
+$dictionary['Case']['fields']['birth_date']['massupdate']=false;
+$dictionary['Case']['fields']['birth_date']['audited']=false;
+$dictionary['Case']['fields']['birth_date']['hidemassupdate']=false;
+$dictionary['Case']['fields']['birth_date']['comments']='Date record created';
+$dictionary['Case']['fields']['birth_date']['duplicate_merge']='enabled';
+$dictionary['Case']['fields']['birth_date']['duplicate_merge_dom_value']='1';
+$dictionary['Case']['fields']['birth_date']['merge_filter']='disabled';
+$dictionary['Case']['fields']['birth_date']['calculated']=false;
+
+ 
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_my_birth_date_c.php
+
+ // created: 2022-07-19 18:46:33
+$dictionary['Case']['fields']['my_birth_date_c']['labelValue']='My Birth Date';
+$dictionary['Case']['fields']['my_birth_date_c']['enforced']='';
+$dictionary['Case']['fields']['my_birth_date_c']['dependency']='';
+$dictionary['Case']['fields']['my_birth_date_c']['required_formula']='';
+$dictionary['Case']['fields']['my_birth_date_c']['readonly_formula']='';
+
+ 
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_age_c.php
+
+ // created: 2022-07-19 18:48:38
+$dictionary['Case']['fields']['age_c']['duplicate_merge_dom_value']=0;
+$dictionary['Case']['fields']['age_c']['labelValue']='Age';
+$dictionary['Case']['fields']['age_c']['full_text_search']=array (
+  'enabled' => '0',
+  'boost' => '1',
+  'searchable' => false,
+);
+$dictionary['Case']['fields']['age_c']['calculated']='1';
+$dictionary['Case']['fields']['age_c']['formula']='floor(divide(abs(daysUntil($my_birth_date_c)),365))';
+$dictionary['Case']['fields']['age_c']['enforced']='1';
+$dictionary['Case']['fields']['age_c']['dependency']='';
+$dictionary['Case']['fields']['age_c']['required_formula']='';
+$dictionary['Case']['fields']['age_c']['readonly_formula']='';
+
+ 
 ?>

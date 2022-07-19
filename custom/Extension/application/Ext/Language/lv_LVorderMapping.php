@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-14 12:13:27
+// created: 2022-07-19 18:28:14
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/lv_LV.sugar_record_type_display.php' => 
   array (
@@ -21,8 +21,14 @@ $extensionOrderMap = array (
   ),
   'custom/Extension/application/Ext/Language/lv_LV.sugar_account_type_dom.php' => 
   array (
-    'md5' => 'd2523cdee8e8220a9057203dfa29230e',
-    'mtime' => 1657782801,
+    'md5' => 'cd98f9f9f004e88949a59cda2783dd6c',
+    'mtime' => 1658237062,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/lv_LV.sugar_case_reason_c_list.php' => 
+  array (
+    'md5' => '97983b848d14cf722f3894be48eb60bd',
+    'mtime' => 1658237290,
     'is_override' => false,
   ),
 );

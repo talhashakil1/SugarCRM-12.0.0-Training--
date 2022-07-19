@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-14 11:49:05
+// created: 2022-07-19 18:48:38
 $searchFields['Cases'] = array (
   'name' => 
   array (
@@ -110,5 +110,27 @@ $searchFields['Cases'] = array (
     'query_type' => 'default',
     'enable_range_search' => true,
     'is_date_field' => true,
+  ),
+  'range_birth_date' => 
+  array (
+    'query_type' => 'default',
+    'enable_range_search' => true,
+    'is_date_field' => true,
+  ),
+  'start_range_birth_date' => 
+  array (
+    'query_type' => 'default',
+    'enable_range_search' => true,
+    'is_date_field' => true,
+  ),
+  'end_range_birth_date' => 
+  array (
+    'query_type' => 'default',
+    'enable_range_search' => true,
+    'is_date_field' => true,
+  ),
+  'birth_date' => 
+  array (
+    'query_type' => 'default',
   ),
 );

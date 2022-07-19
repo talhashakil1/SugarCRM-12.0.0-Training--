@@ -209,21 +209,36 @@ array (
               1 => 'priority',
               2 => 'account_name',
               3 => 'business_center_name',
-              4 => 'portal_viewable',
-              5 => 'type',
-              6 => 'source',
-              7 => 
+              4 => 
               array (
                 'readonly' => false,
                 'name' => 'province_c',
                 'label' => 'LBL_PROVINCE',
               ),
-              8 => 'follow_up_datetime',
-              9 => 
+              5 => 'type',
+              6 => 
+              array (
+                'readonly' => false,
+                'name' => 'my_birth_date_c',
+                'label' => 'LBL_MY_BIRTH_DATE',
+              ),
+              7 => 
               array (
                 'readonly' => false,
                 'name' => 'age_c',
                 'label' => 'LBL_AGE',
+              ),
+              8 => 
+              array (
+                'readonly' => false,
+                'name' => 'case_reason_c',
+                'label' => 'LBL_CASE_REASON',
+              ),
+              9 => 
+              array (
+                'readonly' => false,
+                'name' => 'case_reason_detail_c',
+                'label' => 'LBL_CASE_REASON_DETAIL',
               ),
               10 => 'assigned_user_name',
               11 => 'primary_contact_name',

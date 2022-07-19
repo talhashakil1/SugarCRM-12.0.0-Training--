@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-19 16:33:01
+// created: 2022-07-19 19:48:00
 $mod_strings = array (
   'LBL_SYNC_KEY' => 'Integration Sync ID',
   'LBL_LOCKED_FIELDS_LINK' => 'Fields locked for editing',
@@ -170,4 +170,5 @@ To quit, type \'quit\'.  To shutdown the service \'shutdown\'.
   'LBL_SUGARJOBPROCESSTIMEAWARESCHEDULES' => 'Process Time-Aware Schedules',
   'LBL_SUGARJOBDATAARCHIVER' => 'Run Active Data Archives/Deletions',
   'LBL_PMSEENGINECRON' => 'SugarBPM Scheduler',
+  'LBL_ACCOUNT_CREATION_TIME_JOB' => 'Account Creation Time Job',
 );

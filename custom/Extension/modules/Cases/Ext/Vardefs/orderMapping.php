@@ -1,12 +1,6 @@
 <?php
-// created: 2022-07-19 15:06:33
+// created: 2022-07-19 18:48:38
 $extensionOrderMap = array (
-  'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_age_c.php' => 
-  array (
-    'md5' => '374bd422f410e865fb3d8a97be218467',
-    'mtime' => 1657780944,
-    'is_override' => false,
-  ),
   'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_hiring_date_c.php' => 
   array (
     'md5' => 'c0666975cd196c27d531c040b3c0ab6b',
@@ -37,12 +31,6 @@ $extensionOrderMap = array (
     'mtime' => 1657796507,
     'is_override' => false,
   ),
-  'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_birth_date.php' => 
-  array (
-    'md5' => '85240f02d998a158ccfb061f62978f69',
-    'mtime' => 1658223569,
-    'is_override' => false,
-  ),
   'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_branch_name_c.php' => 
   array (
     'md5' => 'cf5525df8983ef1b314672b7833c1a50',
@@ -65,6 +53,36 @@ $extensionOrderMap = array (
   array (
     'md5' => '0ba019c9a8e15d9180a97d34b965eea5',
     'mtime' => 1658223611,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_case_reason_c.php' => 
+  array (
+    'md5' => 'edbf40ca4327621c9f7a70021865c410',
+    'mtime' => 1658237294,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_case_reason_detail_c.php' => 
+  array (
+    'md5' => '04cce59f3ff73352c361ef38df176d8f',
+    'mtime' => 1658237546,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_birth_date.php' => 
+  array (
+    'md5' => 'fe25142a85a44ab8fdecb11618f0a5fe',
+    'mtime' => 1658238167,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_my_birth_date_c.php' => 
+  array (
+    'md5' => '2d5227846f48eeb4bc2e5fb9d142b3d0',
+    'mtime' => 1658238393,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_age_c.php' => 
+  array (
+    'md5' => 'f45b104133bd70b589e53470d9cfcd55',
+    'mtime' => 1658238518,
     'is_override' => false,
   ),
 );
