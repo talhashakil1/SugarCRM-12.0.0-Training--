@@ -48,6 +48,18 @@ $hook_array['after_relationship_delete'][] = [
 
 ?>
 <?php
+// Merged from custom/Extension/modules/Accounts/Ext/LogicHooks/after_retrieve.php
+
+
+$hook_array['after_retrieve'][] = Array(
+	1,
+	'after_retrieve_example',
+	'custom/modules/Accounts/after_retrieve_class',
+	'after_retrieve_class',
+	'after_retrieve_method',
+);
+?>
+<?php
 // Merged from custom/Extension/modules/Accounts/Ext/LogicHooks/before_save.php
 
 
@@ -57,5 +69,5 @@ $hook_array['before_save'][] = Array(
   'custom/modules/Accounts/before_save_class.php',  //location of class
   'before_save_class',      //in which class the method is
   'before_save_method'      //method to call
-)
+);
 ?>

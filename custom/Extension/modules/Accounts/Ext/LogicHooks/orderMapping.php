@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-19 15:45:10
+// created: 2022-07-19 16:23:28
 $extensionOrderMap = array (
   'modules/Accounts/Ext/LogicHooks/hint_hook.php' => 
   array (
@@ -7,10 +7,16 @@ $extensionOrderMap = array (
     'mtime' => 1649221076,
     'is_override' => false,
   ),
+  'custom/Extension/modules/Accounts/Ext/LogicHooks/after_retrieve.php' => 
+  array (
+    'md5' => 'd1c75f3d8967328d0912fdb8122065da',
+    'mtime' => 1658229312,
+    'is_override' => false,
+  ),
   'custom/Extension/modules/Accounts/Ext/LogicHooks/before_save.php' => 
   array (
-    'md5' => 'f462228940c9eb08a05ba52b2496f296',
-    'mtime' => 1658227501,
+    'md5' => 'd9371615546517bf793635ad332eec06',
+    'mtime' => 1658229753,
     'is_override' => false,
   ),
 );
