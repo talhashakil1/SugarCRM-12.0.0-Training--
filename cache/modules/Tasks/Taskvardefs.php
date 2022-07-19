@@ -1077,6 +1077,16 @@
       'reportable' => false,
       'side' => 'left',
     ),
+    'talha_mediatracking_activities_tasks' => 
+    array (
+      'name' => 'talha_mediatracking_activities_tasks',
+      'type' => 'link',
+      'relationship' => 'talha_mediatracking_activities_tasks',
+      'source' => 'non-db',
+      'module' => 'Talha_MediaTracking',
+      'bean_name' => false,
+      'vname' => 'LBL_TALHA_MEDIATRACKING_ACTIVITIES_TASKS_FROM_TALHA_MEDIATRACKING_TITLE',
+    ),
   ),
   'relationships' => 
   array (

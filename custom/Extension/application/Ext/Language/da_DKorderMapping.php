@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-15 12:49:02
+// created: 2022-07-19 13:03:28
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/da_DK.sugar_moduleList.php' => 
   array (
@@ -29,6 +29,18 @@ $extensionOrderMap = array (
   array (
     'md5' => '6b9d32ec26b6a304b1b4f3dd32b6f367',
     'mtime' => 1657871336,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/da_DK.MediaTracking.php' => 
+  array (
+    'md5' => 'e3ae0a3f3d71fe9b242e9a102fcd65aa',
+    'mtime' => 1658216981,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/da_DK.PackageTwo.php' => 
+  array (
+    'md5' => '11d8d3288f7ccb58fa7039ee46bd4143',
+    'mtime' => 1658217808,
     'is_override' => false,
   ),
 );

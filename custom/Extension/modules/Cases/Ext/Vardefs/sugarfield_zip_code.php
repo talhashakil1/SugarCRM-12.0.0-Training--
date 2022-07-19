@@ -2,7 +2,7 @@
 
 
 $dictionary['Case']['fields']['zip_code'] = array(
-	'name' => 'zip code',
+	'name' => 'zip_code',
 	'label' => 'LBL_ZIP_CODE',
     'type' => 'int',
 	'help' => '',

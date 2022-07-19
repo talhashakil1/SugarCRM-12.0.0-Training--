@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-18 18:42:02
+// created: 2022-07-19 13:14:50
 $mod_strings = array (
   'LBL_AWS_COMPREHEND_DATA' => 'AWS Comprehend Data',
   'LBL_SENTIMENT' => 'Sentiment',
@@ -64,4 +64,5 @@ $mod_strings = array (
   'LBL_ACTIVITY_FINISHED' => 'ended',
   'LBL_ACTIVITY_IN_PROGRESS' => 'in progress',
   'LBL_MESSAGES_FOCUS_DRAWER_DASHBOARD' => 'Messages Focus Drawer',
+  'LBL_TALHA_MEDIATRACKING_ACTIVITIES_MESSAGES_FROM_TALHA_MEDIATRACKING_TITLE' => 'Media Trackings',
 );

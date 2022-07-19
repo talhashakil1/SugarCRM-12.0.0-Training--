@@ -2702,6 +2702,17 @@
       'vname' => 'LBL_CASES_CONTACTS_2_FROM_CASES_TITLE',
       'id_name' => 'cases_contacts_2cases_ida',
     ),
+    'talha_mediatracking_contacts' => 
+    array (
+      'name' => 'talha_mediatracking_contacts',
+      'type' => 'link',
+      'relationship' => 'talha_mediatracking_contacts',
+      'source' => 'non-db',
+      'module' => 'Talha_MediaTracking',
+      'bean_name' => false,
+      'vname' => 'LBL_TALHA_MEDIATRACKING_CONTACTS_FROM_TALHA_MEDIATRACKING_TITLE',
+      'id_name' => 'talha_mediatracking_contactstalha_mediatracking_ida',
+    ),
   ),
   'indices' => 
   array (

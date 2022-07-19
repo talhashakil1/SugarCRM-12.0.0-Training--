@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-18 18:39:11
+// created: 2022-07-19 13:14:50
 $unified_search_modules = array (
   'Accounts' => 
   array (
@@ -353,6 +353,22 @@ $unified_search_modules = array (
     ),
     'default' => true,
   ),
+  'Talha_MediaTracking' => 
+  array (
+    'fields' => 
+    array (
+      'name' => 
+      array (
+        'query_type' => 'default',
+      ),
+      'talha_mediatracking_number' => 
+      array (
+        'query_type' => 'default',
+        'operator' => 'in',
+      ),
+    ),
+    'default' => false,
+  ),
   'Tasks' => 
   array (
     'fields' => 
@@ -370,6 +386,22 @@ $unified_search_modules = array (
           1 => 'contacts.last_name',
         ),
         'force_unifiedsearch' => true,
+      ),
+    ),
+    'default' => false,
+  ),
+  'abcde_MyCustomModule' => 
+  array (
+    'fields' => 
+    array (
+      'name' => 
+      array (
+        'query_type' => 'default',
+      ),
+      'abcde_mycustommodule_number' => 
+      array (
+        'query_type' => 'default',
+        'operator' => 'in',
       ),
     ),
     'default' => false,

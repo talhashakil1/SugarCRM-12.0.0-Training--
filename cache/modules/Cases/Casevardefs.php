@@ -1636,73 +1636,6 @@
       'id' => '5b2a8b8e-0364-11ed-9bd7-94e23ce7e1fe',
       'custom_module' => 'Cases',
     ),
-    'zip_code' => 
-    array (
-      'name' => 'zip code',
-      'label' => 'LBL_ZIP_CODE',
-      'type' => 'int',
-      'help' => '',
-      'comment' => '',
-      'default_value' => 13,
-      'max_size' => 255,
-      'required' => false,
-      'reportable' => true,
-      'audited' => false,
-      'importable' => 'true',
-      'duplicate_merge' => false,
-    ),
-    'birth_date' => 
-    array (
-      'name' => 'birth date',
-      'vname' => 'LBL_BIRTH_DATE',
-      'type' => 'datetime',
-      'group' => 'created_by_name',
-      'comment' => 'Date record created',
-      'enable_range_search' => true,
-      'options' => 'date_range_search_dom',
-      'studio' => 
-      array (
-        'portaleditview' => false,
-      ),
-      'duplicate_on_record_copy' => 'no',
-      'readonly' => true,
-      'massupdate' => false,
-      'full_text_search' => 
-      array (
-        'enabled' => true,
-        'searchable' => false,
-      ),
-    ),
-    'title_line' => 
-    array (
-      'name' => 'title line',
-      'vname' => 'LBL_TEXT_LINE',
-      'type' => 'text',
-      'comment' => 'Full text of the note',
-      'full_text_search' => 
-      array (
-        'enabled' => true,
-        'searchable' => true,
-        'boost' => 0.66,
-      ),
-      'rows' => 6,
-      'cols' => 80,
-      'duplicate_on_record_copy' => 'always',
-      'dbtype' => 'longtext',
-    ),
-    'customer_id' => 
-    array (
-      'name' => 'customer id',
-      'type' => 'relate',
-      'dbType' => 'id',
-      'rname' => 'id',
-      'id_name' => 'customer_id',
-      'reportable' => false,
-      'vname' => 'LBL_CUSTOMER_ID',
-      'audited' => true,
-      'massupdate' => false,
-      'comment' => 'The customer id to which the order is associated',
-    ),
     'gender_c' => 
     array (
       'labelValue' => 'Gender',
@@ -1828,6 +1761,73 @@
       'bean_name' => 'Contact',
       'vname' => 'LBL_CASES_CONTACTS_2_FROM_CONTACTS_TITLE',
       'id_name' => 'cases_contacts_2contacts_idb',
+    ),
+    'zip_code' => 
+    array (
+      'name' => 'zip_code',
+      'label' => 'LBL_ZIP_CODE',
+      'type' => 'int',
+      'help' => '',
+      'comment' => '',
+      'default_value' => 13,
+      'max_size' => 255,
+      'required' => false,
+      'reportable' => true,
+      'audited' => false,
+      'importable' => 'true',
+      'duplicate_merge' => false,
+    ),
+    'birth_date' => 
+    array (
+      'name' => 'birth_date',
+      'vname' => 'LBL_BIRTH_DATE',
+      'type' => 'datetime',
+      'group' => 'created_by_name',
+      'comment' => 'Date record created',
+      'enable_range_search' => true,
+      'options' => 'date_range_search_dom',
+      'studio' => 
+      array (
+        'portaleditview' => false,
+      ),
+      'duplicate_on_record_copy' => 'no',
+      'readonly' => true,
+      'massupdate' => false,
+      'full_text_search' => 
+      array (
+        'enabled' => true,
+        'searchable' => false,
+      ),
+    ),
+    'title_line' => 
+    array (
+      'name' => 'title_line',
+      'vname' => 'LBL_TEXT_LINE',
+      'type' => 'text',
+      'comment' => 'Full text of the note',
+      'full_text_search' => 
+      array (
+        'enabled' => true,
+        'searchable' => true,
+        'boost' => 0.66,
+      ),
+      'rows' => 6,
+      'cols' => 80,
+      'duplicate_on_record_copy' => 'always',
+      'dbtype' => 'longtext',
+    ),
+    'customer_id' => 
+    array (
+      'name' => 'customer_id',
+      'type' => 'relate',
+      'dbType' => 'id',
+      'rname' => 'id',
+      'id_name' => 'customer_id',
+      'reportable' => false,
+      'vname' => 'LBL_CUSTOMER_ID',
+      'audited' => true,
+      'massupdate' => false,
+      'comment' => 'The customer id to which the order is associated',
     ),
     'account_id_c' => 
     array (

@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-15 12:49:02
+// created: 2022-07-19 13:03:28
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/ru_RU.sugar_record_type_display.php' => 
   array (
@@ -29,6 +29,18 @@ $extensionOrderMap = array (
   array (
     'md5' => '6b9d32ec26b6a304b1b4f3dd32b6f367',
     'mtime' => 1657871336,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/ru_RU.MediaTracking.php' => 
+  array (
+    'md5' => '4d132cd04d2c235c0a2ed2d5a05ac49d',
+    'mtime' => 1658216981,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/ru_RU.PackageTwo.php' => 
+  array (
+    'md5' => 'a2f6621bfca82387f10a818f62bf95fe',
+    'mtime' => 1658217808,
     'is_override' => false,
   ),
 );

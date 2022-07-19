@@ -706,6 +706,22 @@
       'relationship' => 'clouddrivepaths_tags',
       'source' => 'non-db',
     ),
+    'talha_mediatracking_link' => 
+    array (
+      'name' => 'talha_mediatracking_link',
+      'vname' => 'Talha_MediaTracking',
+      'type' => 'link',
+      'relationship' => 'talha_mediatracking_tags',
+      'source' => 'non-db',
+    ),
+    'abcde_mycustommodule_link' => 
+    array (
+      'name' => 'abcde_mycustommodule_link',
+      'vname' => 'abcde_MyCustomModule',
+      'type' => 'link',
+      'relationship' => 'abcde_mycustommodule_tags',
+      'source' => 'non-db',
+    ),
     'following' => 
     array (
       'massupdate' => false,

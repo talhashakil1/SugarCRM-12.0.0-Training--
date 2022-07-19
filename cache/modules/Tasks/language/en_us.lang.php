@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-18 18:42:02
+// created: 2022-07-19 13:14:50
 $mod_strings = array (
   'LBL_TEAM' => 'Teams',
   'LBL_TEAMS' => 'Teams',
@@ -124,4 +124,5 @@ To create a {{module_name}}:
  - Fields marked "Required" must be completed prior to saving.
  - Click "Show More" to expose additional fields if necessary.
 2. Click "Save" to finalize the new record and return to the previous page.',
+  'LBL_TALHA_MEDIATRACKING_ACTIVITIES_TASKS_FROM_TALHA_MEDIATRACKING_TITLE' => 'Media Trackings',
 );

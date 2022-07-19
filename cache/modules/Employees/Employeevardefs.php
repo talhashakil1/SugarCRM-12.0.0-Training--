@@ -1674,10 +1674,10 @@
     'SugarACLStatic' => true,
   ),
   'custom_fields' => false,
-  'full_text_search' => true,
-  'hidden_to_role_assignment' => true,
   'has_pii_fields' => false,
   'related_calc_fields' => 
   array (
   ),
+  'full_text_search' => true,
+  'hidden_to_role_assignment' => true,
 );

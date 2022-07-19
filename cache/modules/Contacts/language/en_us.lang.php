@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-18 18:41:55
+// created: 2022-07-19 13:14:49
 $mod_strings = array (
   'LBL_ANY_EMAIL' => 'Email:',
   'LBL_EMAIL' => 'Email Address:',
@@ -292,4 +292,6 @@ To create a {{module_name}}:
   'LBL_CASES_CONTACTS_1_FROM_CONTACTS_TITLE' => 'Cases',
   'LBL_CASES_CONTACTS_2_FROM_CASES_TITLE' => 'Cases',
   'LBL_CASES_CONTACTS_2_FROM_CONTACTS_TITLE' => 'Cases',
+  'LBL_TALHA_MEDIATRACKING_CONTACTS_FROM_TALHA_MEDIATRACKING_TITLE' => 'Media Trackings and Contacts Relationship',
+  'LBL_TALHA_MEDIATRACKING_CONTACTS_FROM_CONTACTS_TITLE' => 'Media Trackings and Contacts Relationship',
 );

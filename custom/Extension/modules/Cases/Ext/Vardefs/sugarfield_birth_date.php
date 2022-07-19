@@ -2,7 +2,7 @@
 
 
 $dictionary['Case']['fields']['birth_date'] = array (
-      'name' => 'birth date',
+      'name' => 'birth_date',
       'vname' => 'LBL_BIRTH_DATE',
       'type' => 'datetime',
       'group' => 'created_by_name',

@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-18 18:42:02
+// created: 2022-07-19 13:14:50
 $mod_strings = array (
   'LBL_TEAM' => 'Teams',
   'LBL_TEAMS' => 'Teams',
@@ -430,4 +430,5 @@ You may apply a predefined template using the Template button or include one of 
   'LBL_SHORTCUT_EMAIL_SEND' => 'Send email',
   'LBL_MAILBOX' => 'Inbound Account',
   'LBL_ERR_NO_OUTBOUND_ACCOUNTS_AVAILABLE' => 'Please configure an outbound email account via <a href="#OutboundEmail">Email Settings</a> in order to send emails.',
+  'LBL_TALHA_MEDIATRACKING_ACTIVITIES_EMAILS_FROM_TALHA_MEDIATRACKING_TITLE' => 'Media Trackings',
 );

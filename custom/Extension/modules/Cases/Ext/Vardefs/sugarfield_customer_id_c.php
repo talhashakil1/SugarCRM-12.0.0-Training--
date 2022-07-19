@@ -1,7 +1,7 @@
 <?php
 
 $dictionary['Case']['fields']['customer_id'] = array (
-      'name' => 'customer id',
+      'name' => 'customer_id',
       'type' => 'relate',
       'dbType' => 'id',
       'rname' => 'id',

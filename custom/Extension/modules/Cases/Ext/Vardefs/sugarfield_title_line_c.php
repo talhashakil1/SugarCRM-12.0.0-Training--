@@ -1,7 +1,7 @@
 <?php
 
 $dictionary['Case']['fields']['title_line'] = array (
-      'name' => 'title line',
+      'name' => 'title_line',
       'vname' => 'LBL_TEXT_LINE',
       'type' => 'text',
       'comment' => 'Full text of the note',

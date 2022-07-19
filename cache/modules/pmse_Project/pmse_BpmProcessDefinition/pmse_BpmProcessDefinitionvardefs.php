@@ -647,6 +647,14 @@
       'relationship' => 'dashboards_locked_fields',
       'source' => 'non-db',
     ),
+    'tags_locked_fields_link' => 
+    array (
+      'name' => 'tags_locked_fields_link',
+      'vname' => 'Tags',
+      'type' => 'link',
+      'relationship' => 'tags_locked_fields',
+      'source' => 'non-db',
+    ),
     'kbdocuments_locked_fields_link' => 
     array (
       'name' => 'kbdocuments_locked_fields_link',
@@ -709,6 +717,22 @@
       'vname' => 'DocumentTemplates',
       'type' => 'link',
       'relationship' => 'documenttemplates_locked_fields',
+      'source' => 'non-db',
+    ),
+    'talha_mediatracking_locked_fields_link' => 
+    array (
+      'name' => 'talha_mediatracking_locked_fields_link',
+      'vname' => 'Talha_MediaTracking',
+      'type' => 'link',
+      'relationship' => 'talha_mediatracking_locked_fields',
+      'source' => 'non-db',
+    ),
+    'abcde_mycustommodule_locked_fields_link' => 
+    array (
+      'name' => 'abcde_mycustommodule_locked_fields_link',
+      'vname' => 'abcde_MyCustomModule',
+      'type' => 'link',
+      'relationship' => 'abcde_mycustommodule_locked_fields',
       'source' => 'non-db',
     ),
     'following' => 

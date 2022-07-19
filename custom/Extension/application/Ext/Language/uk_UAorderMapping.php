@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-15 12:49:02
+// created: 2022-07-19 13:03:28
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/uk_UA.sugar_parent_type_display.php' => 
   array (
@@ -29,6 +29,18 @@ $extensionOrderMap = array (
   array (
     'md5' => '6b9d32ec26b6a304b1b4f3dd32b6f367',
     'mtime' => 1657871336,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/uk_UA.MediaTracking.php' => 
+  array (
+    'md5' => '042eec1ba9bdc79c84c34dea33122a12',
+    'mtime' => 1658216981,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/uk_UA.PackageTwo.php' => 
+  array (
+    'md5' => '3df28d4e441b61a435b61432c687efe7',
+    'mtime' => 1658217808,
     'is_override' => false,
   ),
 );

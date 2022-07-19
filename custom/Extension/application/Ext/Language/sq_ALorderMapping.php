@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-15 12:49:02
+// created: 2022-07-19 13:03:28
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/sq_AL.sugar_moduleList.php' => 
   array (
@@ -29,6 +29,18 @@ $extensionOrderMap = array (
   array (
     'md5' => '6b9d32ec26b6a304b1b4f3dd32b6f367',
     'mtime' => 1657871336,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/sq_AL.MediaTracking.php' => 
+  array (
+    'md5' => '11f059432c6ff2b898d78609fc437aff',
+    'mtime' => 1658216981,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/sq_AL.PackageTwo.php' => 
+  array (
+    'md5' => 'aba5917a4095af3eb0ce20bc7833a868',
+    'mtime' => 1658217808,
     'is_override' => false,
   ),
 );

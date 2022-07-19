@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-18 18:42:02
+// created: 2022-07-19 13:14:50
 $mod_strings = array (
   'LBL_TEAM' => 'Teams',
   'LBL_TEAMS' => 'Teams',
@@ -204,4 +204,5 @@ To create a {{calls_singular_module}}:
     - Click "Select an Attendee" to add an existing user, contact, or lead to the {{calls_singular_module}}.
     - Click the plus icon to the right of "Select an Attendee" to create a {{calls_singular_module}} attendee as a new Sugar record.
 3. Click "Save" to finalize the new record and return to the previous page.',
+  'LBL_TALHA_MEDIATRACKING_ACTIVITIES_CALLS_FROM_TALHA_MEDIATRACKING_TITLE' => 'Media Trackings',
 );
