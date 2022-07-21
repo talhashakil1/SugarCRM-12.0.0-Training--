@@ -110,3 +110,48 @@ $app_list_strings['case_reason_c_list']=array (
   'Other' => 'Other',
 );
 ?>
+<?php
+// Merged from custom/Extension/application/Ext/Language/en_us.sugar_vehicle_option_list.php
+
+
+$app_list_strings['vehicle_option_list'] = array(
+	'' => '',
+	'Car' => 'Car',
+	'Bus' => 'Bus',
+	'Motorcycle' => 'Motorcycle',
+);
+?>
+<?php
+// Merged from custom/Extension/application/Ext/Language/en_us.sugar_vehicle_details_option_list.php
+
+
+$app_list_strings['vehicle_details_option_list'] = array(
+	'' => '',
+	'BMW' => 'BMW',
+	'Honda' => 'Honda',
+	'Jaguar' => 'Jaguar',
+	'Volvo' => 'Volvo',
+	'Volkswagen' => 'Volkswagen',
+	'Ford' => 'Ford',
+	'United' => 'United',
+	'Metro' => 'Metro',
+);
+?>
+<?php
+// Merged from custom/Extension/application/Ext/Language/en_us.FinalPackage.php
+
+/*
+ * Your installation or use of this SugarCRM file is subject to the applicable
+ * terms available at
+ * http://support.sugarcrm.com/Resources/Master_Subscription_Agreements/.
+ * If you do not agree to all of the applicable terms or do not have the
+ * authority to bind the entity as an authorized representative, then do not
+ * install or use this SugarCRM file.
+ *
+ * Copyright (C) SugarCRM Inc. All rights reserved.
+ */
+
+$app_list_strings['moduleList']['abc_Testing'] = 'Testing';
+$app_list_strings['moduleListSingular']['abc_Testing'] = 'Testings';
+
+?>

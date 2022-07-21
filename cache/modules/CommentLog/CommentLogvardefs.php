@@ -738,6 +738,14 @@
       'relationship' => 'clouddrivepaths_commentlog',
       'source' => 'non-db',
     ),
+    'abc_testing_link' => 
+    array (
+      'name' => 'abc_testing_link',
+      'vname' => 'abc_Testing',
+      'type' => 'link',
+      'relationship' => 'abc_testing_commentlog',
+      'source' => 'non-db',
+    ),
     'following' => 
     array (
       'massupdate' => false,

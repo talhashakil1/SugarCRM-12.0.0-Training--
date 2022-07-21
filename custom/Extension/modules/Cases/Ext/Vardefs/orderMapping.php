@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-19 18:48:38
+// created: 2022-07-20 16:26:17
 $extensionOrderMap = array (
   'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_hiring_date_c.php' => 
   array (
@@ -83,6 +83,24 @@ $extensionOrderMap = array (
   array (
     'md5' => 'f45b104133bd70b589e53470d9cfcd55',
     'mtime' => 1658238518,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_apply_for_license_c.php' => 
+  array (
+    'md5' => 'dfe05b9f9cc08f581c877b5c4d9323e8',
+    'mtime' => 1658300181,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_vehicle.php' => 
+  array (
+    'md5' => '86ab597316c771e16d6dd49555b879a2',
+    'mtime' => 1658314614,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_vehicle_details.php' => 
+  array (
+    'md5' => 'd248878d54417ce1fc112d1d4f95f040',
+    'mtime' => 1658316357,
     'is_override' => false,
   ),
 );

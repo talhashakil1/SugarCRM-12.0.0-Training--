@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-13 16:42:12
+// created: 2022-07-20 14:46:01
 $extensionOrderMap = array (
   'custom/Extension/modules/Opportunities/Ext/Vardefs/sugarfield_worst_case.php' => 
   array (
@@ -83,6 +83,12 @@ $extensionOrderMap = array (
   array (
     'md5' => 'fe0d87b5f2d3de58dc76887e453bd630',
     'mtime' => 1657712532,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Opportunities/Ext/Vardefs/denorm_account_name.php' => 
+  array (
+    'md5' => '6f8af80702d49ee3a9751cd8586e0cb8',
+    'mtime' => 1658310361,
     'is_override' => false,
   ),
 );

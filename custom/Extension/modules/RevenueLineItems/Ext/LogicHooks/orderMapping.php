@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-13 16:42:09
+// created: 2022-07-20 14:49:02
 $extensionOrderMap = array (
   'modules/RevenueLineItems/Ext/LogicHooks/ResaveRLIForAccounts.php' => 
   array (
@@ -35,6 +35,12 @@ $extensionOrderMap = array (
   array (
     'md5' => '9d6451efa9a406d12690e1bbcdadb090',
     'mtime' => 1649221076,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/RevenueLineItems/Ext/LogicHooks/denorm_field_hook.php' => 
+  array (
+    'md5' => 'fec67ccbfe263c6c56732c1ff550748a',
+    'mtime' => 1658310542,
     'is_override' => false,
   ),
 );

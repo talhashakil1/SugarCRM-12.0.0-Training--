@@ -706,6 +706,14 @@
       'relationship' => 'clouddrivepaths_tags',
       'source' => 'non-db',
     ),
+    'abc_testing_link' => 
+    array (
+      'name' => 'abc_testing_link',
+      'vname' => 'abc_Testing',
+      'type' => 'link',
+      'relationship' => 'abc_testing_tags',
+      'source' => 'non-db',
+    ),
     'following' => 
     array (
       'massupdate' => false,

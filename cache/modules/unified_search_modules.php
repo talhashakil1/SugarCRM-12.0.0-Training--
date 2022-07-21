@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-19 19:48:01
+// created: 2022-07-21 19:33:25
 $unified_search_modules = array (
   'Accounts' => 
   array (
@@ -370,6 +370,17 @@ $unified_search_modules = array (
           1 => 'contacts.last_name',
         ),
         'force_unifiedsearch' => true,
+      ),
+    ),
+    'default' => false,
+  ),
+  'abc_Testing' => 
+  array (
+    'fields' => 
+    array (
+      'name' => 
+      array (
+        'query_type' => 'default',
       ),
     ),
     'default' => false,

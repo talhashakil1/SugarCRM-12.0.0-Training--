@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-19 19:48:03
+// created: 2022-07-21 19:33:27
 $mod_strings = array (
   'LBL_BUNDLE_NOTE_POSITION' => 'Product Bundle Position',
   'LBL_PRODUCT_BUNDLE_NOTES_QUOTE_DATA_LIST' => 'Product Bundle Notes Quote Data List',

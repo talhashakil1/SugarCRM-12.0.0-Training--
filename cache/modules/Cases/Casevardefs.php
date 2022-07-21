@@ -1871,15 +1871,19 @@
       'id' => '1e554466-0340-11ed-b5f9-94e23ce7e1fe',
       'custom_module' => 'Cases',
     ),
-    'account_id_c' => 
+    'apply_for_license_c' => 
     array (
+      'labelValue' => 'Apply For License',
+      'enforced' => '',
+      'dependency' => 'greaterThan($age_c,25)',
+      'readonly_formula' => '',
       'required' => false,
       'readonly' => false,
       'source' => 'custom_fields',
-      'name' => 'account_id_c',
-      'vname' => 'LBL_RELATE_CUSTOMER_ID_ACCOUNT_ID',
-      'type' => 'id',
-      'massupdate' => false,
+      'name' => 'apply_for_license_c',
+      'vname' => 'LBL_APPLY_FOR_LICENSE',
+      'type' => 'bool',
+      'massupdate' => true,
       'hidemassupdate' => false,
       'no_default' => false,
       'comments' => '',
@@ -1888,15 +1892,61 @@
       'duplicate_merge' => 'enabled',
       'duplicate_merge_dom_value' => 1,
       'audited' => false,
-      'reportable' => false,
+      'reportable' => true,
       'unified_search' => false,
       'merge_filter' => 'disabled',
       'pii' => false,
+      'default' => false,
       'calculated' => false,
-      'len' => 36,
       'size' => '20',
-      'id' => '26b65ef6-043a-11ed-bcc1-94e23ce7e1fe',
+      'id' => '100827d0-07f9-11ed-9a82-024252287491',
       'custom_module' => 'Cases',
+    ),
+    'vehicle' => 
+    array (
+      'name' => 'vehicle',
+      'label' => 'LBL_VEHICLE',
+      'type' => 'enum',
+      'options' => 'vehicle_option_list',
+      'required' => false,
+      'readonly' => false,
+    ),
+    'vehicle_details' => 
+    array (
+      'name' => 'vehicle_details',
+      'label' => 'LBL_VEHICLE_DETAILS',
+      'type' => 'enum',
+      'options' => 'vehicle_details_option_list',
+      'visibility_grid' => 
+      array (
+        'trigger' => 'vehicle',
+        'values' => 
+        array (
+          'Car' => 
+          array (
+            0 => '',
+            1 => 'BMW',
+            2 => 'Honda',
+            3 => 'Jaguar',
+          ),
+          'Bus' => 
+          array (
+            0 => '',
+            1 => 'Volvo',
+            2 => 'Volkswagen',
+            3 => 'Ford',
+          ),
+          'Motorcycle' => 
+          array (
+            0 => '',
+            1 => 'Honda',
+            2 => 'United',
+            3 => 'Metro',
+          ),
+        ),
+      ),
+      'required' => false,
+      'readonly' => false,
     ),
     'gender_c' => 
     array (
@@ -1926,6 +1976,33 @@
       'default' => NULL,
       'dependency' => NULL,
       'id' => '1063f6d4-040f-11ed-b455-94e23ce7e1fe',
+      'custom_module' => 'Cases',
+    ),
+    'account_id_c' => 
+    array (
+      'required' => false,
+      'readonly' => false,
+      'source' => 'custom_fields',
+      'name' => 'account_id_c',
+      'vname' => 'LBL_RELATE_CUSTOMER_ID_ACCOUNT_ID',
+      'type' => 'id',
+      'massupdate' => false,
+      'hidemassupdate' => false,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'enabled',
+      'duplicate_merge_dom_value' => 1,
+      'audited' => false,
+      'reportable' => false,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'pii' => false,
+      'calculated' => false,
+      'len' => 36,
+      'size' => '20',
+      'id' => '26b65ef6-043a-11ed-bcc1-94e23ce7e1fe',
       'custom_module' => 'Cases',
     ),
     'relate_customer_id_c' => 

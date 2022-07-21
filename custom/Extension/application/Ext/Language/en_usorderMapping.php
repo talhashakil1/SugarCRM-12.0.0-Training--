@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-19 18:28:10
+// created: 2022-07-21 18:28:33
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/en_us.sugar_record_type_display.php' => 
   array (
@@ -29,6 +29,24 @@ $extensionOrderMap = array (
   array (
     'md5' => '97983b848d14cf722f3894be48eb60bd',
     'mtime' => 1658237290,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/en_us.sugar_vehicle_option_list.php' => 
+  array (
+    'md5' => '5b5c45bf8a1c355daf2d75c835e51d84',
+    'mtime' => 1658303287,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/en_us.sugar_vehicle_details_option_list.php' => 
+  array (
+    'md5' => '3e03cd9f3eafe394c5cd70757359b243',
+    'mtime' => 1658316321,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/en_us.FinalPackage.php' => 
+  array (
+    'md5' => '65e8584cde04099a019b2027bc5ed984',
+    'mtime' => 1658410113,
     'is_override' => false,
   ),
 );

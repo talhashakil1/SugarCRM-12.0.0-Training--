@@ -1346,6 +1346,8 @@
       'module' => 'Accounts',
       'source' => 'non-db',
       'massupdate' => false,
+      'is_denormalized' => true,
+      'denormalized_field_name' => 'denorm_account_name',
     ),
     'projects' => 
     array (
@@ -2360,6 +2362,29 @@
       'relationship' => 'revenuelineitems_currencies',
       'source' => 'non-db',
       'vname' => 'LBL_CURRENCIES',
+    ),
+    'denorm_account_name' => 
+    array (
+      'name' => 'denorm_account_name',
+      'type' => 'varchar',
+      'dbType' => 'varchar',
+      'vname' => 'LBL_ACCOUNT_NAME',
+      'len' => 255,
+      'comment' => 'Name of the Company',
+      'unified_search' => true,
+      'full_text_search' => 
+      array (
+        'enabled' => true,
+        'searchable' => true,
+        'boost' => 1.91,
+      ),
+      'audited' => true,
+      'required' => false,
+      'importable' => 'required',
+      'duplicate_on_record_copy' => 'always',
+      'merge_filter' => 'selected',
+      'denorm_from_module' => 'Accounts',
+      'studio' => false,
     ),
   ),
   'indices' => 

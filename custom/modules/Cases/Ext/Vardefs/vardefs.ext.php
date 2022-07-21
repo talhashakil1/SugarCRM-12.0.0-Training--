@@ -294,3 +294,63 @@ $dictionary['Case']['fields']['age_c']['readonly_formula']='';
 
  
 ?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_apply_for_license_c.php
+
+ // created: 2022-07-20 11:56:21
+$dictionary['Case']['fields']['apply_for_license_c']['labelValue']='Apply For License';
+$dictionary['Case']['fields']['apply_for_license_c']['enforced']='';
+$dictionary['Case']['fields']['apply_for_license_c']['dependency']='greaterThan($age_c,25)';
+$dictionary['Case']['fields']['apply_for_license_c']['readonly_formula']='';
+
+ 
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_vehicle.php
+
+
+$dictionary['Case']['fields']['vehicle'] = array (
+	'name' => 'vehicle',
+	'label' => 'LBL_VEHICLE',
+	'type' => 'enum',
+	'options' => 'vehicle_option_list',
+	'required' => false,
+	'readonly' => false,
+);
+?>
+<?php
+// Merged from custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_vehicle_details.php
+
+
+$dictionary['Case']['fields']['vehicle_details'] = array(
+	'name' => 'vehicle_details',
+	'label' => 'LBL_VEHICLE_DETAILS',
+	'type' => 'enum',
+	'options' => 'vehicle_details_option_list',
+	'visibility_grid' => array(
+		'trigger' => 'vehicle',
+		'values' => array(
+			'Car' => array(
+				0 => '',
+				1 => 'BMW',
+				2 => 'Honda',
+				3 => 'Jaguar',
+			),
+			'Bus' => array(
+				0 => '',
+				1 => 'Volvo',
+				2 => 'Volkswagen',
+				3 => 'Ford',
+			),
+			'Motorcycle' => array(
+				0 => '',
+				1 => 'Honda',
+				2 => 'United',
+				3 => 'Metro',
+			),
+		),
+	),
+	'required' => false,
+	'readonly' => false,
+);
+?>

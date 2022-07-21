@@ -719,6 +719,14 @@
       'relationship' => 'documenttemplates_locked_fields',
       'source' => 'non-db',
     ),
+    'abc_testing_locked_fields_link' => 
+    array (
+      'name' => 'abc_testing_locked_fields_link',
+      'vname' => 'abc_Testing',
+      'type' => 'link',
+      'relationship' => 'abc_testing_locked_fields',
+      'source' => 'non-db',
+    ),
     'following' => 
     array (
       'massupdate' => false,

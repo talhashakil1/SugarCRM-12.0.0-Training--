@@ -25165,6 +25165,365 @@
     'rhs_key' => 'currency_id',
     'relationship_type' => 'one-to-many',
   ),
+  'abc_testing_modified_user' => 
+  array (
+    'name' => 'abc_testing_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'abc_Testing',
+    'rhs_table' => 'abc_testing',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'abc_testing_created_by' => 
+  array (
+    'name' => 'abc_testing_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'abc_Testing',
+    'rhs_table' => 'abc_testing',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'abc_testing_activities' => 
+  array (
+    'name' => 'abc_testing_activities',
+    'lhs_module' => 'abc_Testing',
+    'lhs_table' => 'abc_testing',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'abc_Testing',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'abc_testing_following' => 
+  array (
+    'name' => 'abc_testing_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'abc_Testing',
+    'rhs_table' => 'abc_testing',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'abc_Testing',
+    'user_field' => 'created_by',
+  ),
+  'abc_testing_favorite' => 
+  array (
+    'name' => 'abc_testing_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'abc_Testing',
+    'rhs_table' => 'abc_testing',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'abc_Testing',
+    'user_field' => 'created_by',
+  ),
+  'abc_testing_tags' => 
+  array (
+    'name' => 'abc_testing_tags',
+    'lhs_module' => 'abc_Testing',
+    'lhs_table' => 'abc_testing',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'abc_Testing',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'abc_testing_commentlog' => 
+  array (
+    'name' => 'abc_testing_commentlog',
+    'lhs_module' => 'abc_Testing',
+    'lhs_table' => 'abc_testing',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'abc_Testing',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'abc_testing_locked_fields' => 
+  array (
+    'name' => 'abc_testing_locked_fields',
+    'lhs_module' => 'abc_Testing',
+    'lhs_table' => 'abc_testing',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'abc_Testing',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'abc_testing_team_count_relationship' => 
+  array (
+    'name' => 'abc_testing_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'abc_Testing',
+    'rhs_table' => 'abc_testing',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'abc_testing_teams' => 
+  array (
+    'name' => 'abc_testing_teams',
+    'lhs_module' => 'abc_Testing',
+    'lhs_table' => 'abc_testing',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'abc_testing_team' => 
+  array (
+    'name' => 'abc_testing_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'abc_Testing',
+    'rhs_table' => 'abc_testing',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'abc_testing_assigned_user' => 
+  array (
+    'name' => 'abc_testing_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'abc_Testing',
+    'rhs_table' => 'abc_testing',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
   'aclrolesets_modified_user' => 
   array (
     'name' => 'aclrolesets_modified_user',

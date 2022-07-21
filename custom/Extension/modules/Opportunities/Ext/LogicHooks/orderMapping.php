@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-13 16:42:09
+// created: 2022-07-20 14:46:01
 $extensionOrderMap = array (
   'modules/Opportunities/Ext/LogicHooks/OpportunitySalesStatus.php' => 
   array (
@@ -53,6 +53,12 @@ $extensionOrderMap = array (
   array (
     'md5' => '38db1da780d6b18f38b7cb5472758c17',
     'mtime' => 1649221076,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Opportunities/Ext/LogicHooks/denorm_field_hook.php' => 
+  array (
+    'md5' => 'fec67ccbfe263c6c56732c1ff550748a',
+    'mtime' => 1658310361,
     'is_override' => false,
   ),
 );

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-07-19 19:48:10
+/* Smarty version 3.1.39, created on 2022-07-21 19:33:42
   from '/var/www/html/SugarEnt-Full-12.0.0/themes/RacerX/tpls/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_62d6c42a03ddd8_53310530',
+  'unifunc' => 'content_62d963c6587426_25966686',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:themes/RacerX/tpls/_head.tpl' => 1,
   ),
 ),false)) {
-function content_62d6c42a03ddd8_53310530 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62d963c6587426_25966686 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:themes/RacerX/tpls/_head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('theme_template'=>true), 0, false);
 ?>
 <body class="yui-skin-sam sugar-<?php echo $_smarty_tpl->tpl_vars['appearance']->value;?>

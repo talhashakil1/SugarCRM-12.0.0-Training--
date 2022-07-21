@@ -1,6 +1,6 @@
 <?php
 /***CONFIGURATOR***/
-$sugar_config['js_lang_version'] = 35;
+$sugar_config['js_lang_version'] = 44;
 $sugar_config['email_xss']['applet'] = 'applet';
 $sugar_config['email_xss']['base'] = 'base';
 $sugar_config['email_xss']['embed'] = 'embed';

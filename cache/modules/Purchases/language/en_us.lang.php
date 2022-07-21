@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-19 19:48:00
+// created: 2022-07-21 19:33:24
 $mod_strings = array (
   'LBL_CURRENCY' => 'Currency',
   'LBL_CURRENCIES' => 'Currencies',

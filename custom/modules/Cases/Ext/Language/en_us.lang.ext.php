@@ -15,5 +15,8 @@ $mod_strings['LBL_CASE_REASON'] = 'case reason';
 $mod_strings['LBL_CASE_REASON_DETAIL'] = 'case reason detail';
 $mod_strings['LBL_BIRTH_DATE'] = 'Birth Date';
 $mod_strings['LBL_MY_BIRTH_DATE'] = 'My Birth Date';
+$mod_strings['LBL_APPLY_FOR_LICENSE'] = 'Apply For License';
+$mod_strings['LBL_VEHICLE'] = 'Vehicle';
+$mod_strings['LBL_VEHICLE_DETAILS'] = 'Vehicle Details';
 
 ?>

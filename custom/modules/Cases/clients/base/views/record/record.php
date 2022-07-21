@@ -208,25 +208,30 @@ array (
               ),
               1 => 'priority',
               2 => 'account_name',
-              3 => 'business_center_name',
+              3 => 'type',
               4 => 
-              array (
-                'readonly' => false,
-                'name' => 'province_c',
-                'label' => 'LBL_PROVINCE',
-              ),
-              5 => 'type',
-              6 => 
               array (
                 'readonly' => false,
                 'name' => 'my_birth_date_c',
                 'label' => 'LBL_MY_BIRTH_DATE',
               ),
-              7 => 
+              5 => 
               array (
                 'readonly' => false,
                 'name' => 'age_c',
                 'label' => 'LBL_AGE',
+              ),
+              6 => 
+              array (
+                'readonly' => false,
+                'name' => 'apply_for_license_c',
+                'label' => 'LBL_APPLY_FOR_LICENSE',
+              ),
+              7 => 
+              array (
+                'readonly' => false,
+                'name' => 'province_c',
+                'label' => 'LBL_PROVINCE',
               ),
               8 => 
               array (
@@ -244,14 +249,16 @@ array (
               11 => 'primary_contact_name',
               12 => 
               array (
-                'name' => 'description',
-                'nl2br' => true,
+                'name' => 'vehicle',
+                'label' => 'LBL_VEHICLE',
+                'readonly' => false,
                 'span' => 12,
               ),
               13 => 
               array (
-                'name' => 'commentlog',
-                'label' => 'LBL_COMMENTLOG',
+                'name' => 'vehicle_details',
+                'label' => 'LBL_VEHICLE_DETAILS',
+                'readonly' => false,
                 'span' => 12,
               ),
               14 => 
