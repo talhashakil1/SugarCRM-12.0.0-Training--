@@ -1816,6 +1816,34 @@
         ),
       ),
     ),
+    'vehicle_number_c' => 
+    array (
+      'required' => true,
+      'readonly' => false,
+      'source' => 'custom_fields',
+      'name' => 'vehicle_number_c',
+      'vname' => 'LBL_VEHICLE_NUMBER',
+      'type' => 'text',
+      'massupdate' => false,
+      'hidemassupdate' => false,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'true',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => 0,
+      'audited' => false,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'pii' => false,
+      'calculated' => false,
+      'len' => 255,
+      'size' => '20',
+      'studio' => 'visible',
+      'id' => '45e9bc4e-09be-11ed-b7ec-0242f7109d24',
+      'custom_module' => 'Accounts',
+    ),
   ),
   'indices' => 
   array (
@@ -2400,7 +2428,7 @@
     'escalatable' => 'escalatable',
   ),
   'favorites' => true,
-  'custom_fields' => false,
+  'custom_fields' => true,
   'has_pii_fields' => true,
   'related_calc_fields' => 
   array (

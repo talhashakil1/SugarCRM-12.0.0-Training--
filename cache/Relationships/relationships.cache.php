@@ -25524,33 +25524,33 @@
     'rhs_key' => 'assigned_user_id',
     'relationship_type' => 'one-to-many',
   ),
-  'aclrolesets_modified_user' => 
+  'archiveruns_modified_user' => 
   array (
-    'name' => 'aclrolesets_modified_user',
+    'name' => 'archiveruns_modified_user',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'ACLRoleSets',
-    'rhs_table' => 'acl_role_sets',
+    'rhs_module' => 'ArchiveRuns',
+    'rhs_table' => 'archive_runs',
     'rhs_key' => 'modified_user_id',
     'relationship_type' => 'one-to-many',
   ),
-  'aclrolesets_created_by' => 
+  'archiveruns_created_by' => 
   array (
-    'name' => 'aclrolesets_created_by',
+    'name' => 'archiveruns_created_by',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'ACLRoleSets',
-    'rhs_table' => 'acl_role_sets',
+    'rhs_module' => 'ArchiveRuns',
+    'rhs_table' => 'archive_runs',
     'rhs_key' => 'created_by',
     'relationship_type' => 'one-to-many',
   ),
-  'aclroleset_activities' => 
+  'archiveruns_activities' => 
   array (
-    'name' => 'aclroleset_activities',
-    'lhs_module' => 'ACLRoleSets',
-    'lhs_table' => 'acl_role_sets',
+    'name' => 'archiveruns_activities',
+    'lhs_module' => 'ArchiveRuns',
+    'lhs_table' => 'archive_runs',
     'lhs_key' => 'id',
     'rhs_module' => 'Activities',
     'rhs_table' => 'activities',
@@ -25561,7 +25561,7 @@
     'join_key_lhs' => 'parent_id',
     'join_key_rhs' => 'activity_id',
     'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ACLRoleSets',
+    'relationship_role_column_value' => 'ArchiveRuns',
     'fields' => 
     array (
       'id' => 
@@ -25608,45 +25608,45 @@
       ),
     ),
   ),
-  'aclrolesets_following' => 
+  'archiveruns_following' => 
   array (
-    'name' => 'aclrolesets_following',
+    'name' => 'archiveruns_following',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'ACLRoleSets',
-    'rhs_table' => 'acl_role_sets',
+    'rhs_module' => 'ArchiveRuns',
+    'rhs_table' => 'archive_runs',
     'rhs_key' => 'id',
     'relationship_type' => 'user-based',
     'join_table' => 'subscriptions',
     'join_key_lhs' => 'created_by',
     'join_key_rhs' => 'parent_id',
     'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ACLRoleSets',
+    'relationship_role_column_value' => 'ArchiveRuns',
     'user_field' => 'created_by',
   ),
-  'aclrolesets_favorite' => 
+  'archiveruns_favorite' => 
   array (
-    'name' => 'aclrolesets_favorite',
+    'name' => 'archiveruns_favorite',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'ACLRoleSets',
-    'rhs_table' => 'acl_role_sets',
+    'rhs_module' => 'ArchiveRuns',
+    'rhs_table' => 'archive_runs',
     'rhs_key' => 'id',
     'relationship_type' => 'user-based',
     'join_table' => 'sugarfavorites',
     'join_key_lhs' => 'modified_user_id',
     'join_key_rhs' => 'record_id',
     'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ACLRoleSets',
+    'relationship_role_column_value' => 'ArchiveRuns',
     'user_field' => 'created_by',
   ),
-  'aclrolesets_tags' => 
+  'archiveruns_tags' => 
   array (
-    'name' => 'aclrolesets_tags',
-    'lhs_module' => 'ACLRoleSets',
-    'lhs_table' => 'acl_role_sets',
+    'name' => 'archiveruns_tags',
+    'lhs_module' => 'ArchiveRuns',
+    'lhs_table' => 'archive_runs',
     'lhs_key' => 'id',
     'rhs_module' => 'Tags',
     'rhs_table' => 'tags',
@@ -25656,7 +25656,7 @@
     'join_key_lhs' => 'bean_id',
     'join_key_rhs' => 'tag_id',
     'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ACLRoleSets',
+    'relationship_role_column_value' => 'ArchiveRuns',
     'dynamic_subpanel' => true,
     'fields' => 
     array (
@@ -25697,11 +25697,11 @@
       ),
     ),
   ),
-  'aclrolesets_commentlog' => 
+  'archiveruns_commentlog' => 
   array (
-    'name' => 'aclrolesets_commentlog',
-    'lhs_module' => 'ACLRoleSets',
-    'lhs_table' => 'acl_role_sets',
+    'name' => 'archiveruns_commentlog',
+    'lhs_module' => 'ArchiveRuns',
+    'lhs_table' => 'archive_runs',
     'lhs_key' => 'id',
     'rhs_module' => 'CommentLog',
     'rhs_table' => 'commentlog',
@@ -25711,7 +25711,7 @@
     'join_key_lhs' => 'record_id',
     'join_key_rhs' => 'commentlog_id',
     'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ACLRoleSets',
+    'relationship_role_column_value' => 'ArchiveRuns',
     'fields' => 
     array (
       'id' => 
@@ -25748,11 +25748,11 @@
       ),
     ),
   ),
-  'aclrolesets_locked_fields' => 
+  'archiveruns_locked_fields' => 
   array (
-    'name' => 'aclrolesets_locked_fields',
-    'lhs_module' => 'ACLRoleSets',
-    'lhs_table' => 'acl_role_sets',
+    'name' => 'archiveruns_locked_fields',
+    'lhs_module' => 'ArchiveRuns',
+    'lhs_table' => 'archive_runs',
     'lhs_key' => 'id',
     'rhs_module' => 'pmse_BpmProcessDefinition',
     'rhs_table' => 'pmse_bpm_process_definition',
@@ -25762,521 +25762,7 @@
     'join_key_lhs' => 'bean_id',
     'join_key_rhs' => 'pd_id',
     'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ACLRoleSets',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'project_tasks_messages' => 
-  array (
-    'name' => 'project_tasks_messages',
-    'lhs_module' => 'ProjectTask',
-    'lhs_table' => 'project_task',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Messages',
-    'rhs_table' => 'messages',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ProjectTask',
-  ),
-  'project_tasks_notes' => 
-  array (
-    'name' => 'project_tasks_notes',
-    'lhs_module' => 'ProjectTask',
-    'lhs_table' => 'project_task',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Notes',
-    'rhs_table' => 'notes',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ProjectTask',
-  ),
-  'project_tasks_tasks' => 
-  array (
-    'name' => 'project_tasks_tasks',
-    'lhs_module' => 'ProjectTask',
-    'lhs_table' => 'project_task',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tasks',
-    'rhs_table' => 'tasks',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ProjectTask',
-  ),
-  'project_tasks_meetings' => 
-  array (
-    'name' => 'project_tasks_meetings',
-    'lhs_module' => 'ProjectTask',
-    'lhs_table' => 'project_task',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Meetings',
-    'rhs_table' => 'meetings',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ProjectTask',
-  ),
-  'project_tasks_calls' => 
-  array (
-    'name' => 'project_tasks_calls',
-    'lhs_module' => 'ProjectTask',
-    'lhs_table' => 'project_task',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Calls',
-    'rhs_table' => 'calls',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ProjectTask',
-  ),
-  'project_tasks_emails' => 
-  array (
-    'name' => 'project_tasks_emails',
-    'lhs_module' => 'ProjectTask',
-    'lhs_table' => 'project_task',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Emails',
-    'rhs_table' => 'emails',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ProjectTask',
-  ),
-  'project_tasks_assigned_user' => 
-  array (
-    'name' => 'project_tasks_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProjectTask',
-    'rhs_table' => 'project_task',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'project_tasks_modified_user' => 
-  array (
-    'name' => 'project_tasks_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProjectTask',
-    'rhs_table' => 'project_task',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'project_tasks_created_by' => 
-  array (
-    'name' => 'project_tasks_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProjectTask',
-    'rhs_table' => 'project_task',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'projecttask_team_count_relationship' => 
-  array (
-    'name' => 'projecttask_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProjectTask',
-    'rhs_table' => 'project_task',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'projecttask_teams' => 
-  array (
-    'name' => 'projecttask_teams',
-    'lhs_module' => 'ProjectTask',
-    'lhs_table' => 'project_task',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'projecttask_team' => 
-  array (
-    'name' => 'projecttask_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProjectTask',
-    'rhs_table' => 'project_task',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'email_template_email_marketings' => 
-  array (
-    'name' => 'email_template_email_marketings',
-    'lhs_module' => 'EmailTemplates',
-    'lhs_table' => 'email_templates',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EmailMarketing',
-    'rhs_table' => 'email_marketing',
-    'rhs_key' => 'template_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'campaignlog_contact' => 
-  array (
-    'name' => 'campaignlog_contact',
-    'lhs_module' => 'CampaignLog',
-    'lhs_table' => 'campaign_log',
-    'lhs_key' => 'related_id',
-    'rhs_module' => 'Contacts',
-    'rhs_table' => 'contacts',
-    'rhs_key' => 'id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'campaignlog_lead' => 
-  array (
-    'name' => 'campaignlog_lead',
-    'lhs_module' => 'CampaignLog',
-    'lhs_table' => 'campaign_log',
-    'lhs_key' => 'related_id',
-    'rhs_module' => 'Leads',
-    'rhs_table' => 'leads',
-    'rhs_key' => 'id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'campaignlog_created_opportunities' => 
-  array (
-    'name' => 'campaignlog_created_opportunities',
-    'lhs_module' => 'CampaignLog',
-    'lhs_table' => 'campaign_log',
-    'lhs_key' => 'related_id',
-    'rhs_module' => 'Opportunities',
-    'rhs_table' => 'opportunities',
-    'rhs_key' => 'id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'campaignlog_targeted_users' => 
-  array (
-    'name' => 'campaignlog_targeted_users',
-    'lhs_module' => 'CampaignLog',
-    'lhs_table' => 'campaign_log',
-    'lhs_key' => 'target_id',
-    'rhs_module' => 'Users',
-    'rhs_table' => 'users',
-    'rhs_key' => 'id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'campaignlog_sent_emails' => 
-  array (
-    'name' => 'campaignlog_sent_emails',
-    'lhs_module' => 'CampaignLog',
-    'lhs_table' => 'campaign_log',
-    'lhs_key' => 'related_id',
-    'rhs_module' => 'Emails',
-    'rhs_table' => 'emails',
-    'rhs_key' => 'id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'campaign_campaigntrakers' => 
-  array (
-    'name' => 'campaign_campaigntrakers',
-    'lhs_module' => 'Campaigns',
-    'lhs_table' => 'campaigns',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CampaignTrackers',
-    'rhs_table' => 'campaign_trkrs',
-    'rhs_key' => 'campaign_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'schedulers_modified_user' => 
-  array (
-    'name' => 'schedulers_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Schedulers',
-    'rhs_table' => 'schedulers',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'schedulers_created_by' => 
-  array (
-    'name' => 'schedulers_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Schedulers',
-    'rhs_table' => 'schedulers',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'scheduler_activities' => 
-  array (
-    'name' => 'scheduler_activities',
-    'lhs_module' => 'Schedulers',
-    'lhs_table' => 'schedulers',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Schedulers',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'schedulers_created_by_rel' => 
-  array (
-    'name' => 'schedulers_created_by_rel',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Schedulers',
-    'rhs_table' => 'schedulers',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-one',
-  ),
-  'schedulers_modified_user_id_rel' => 
-  array (
-    'name' => 'schedulers_modified_user_id_rel',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Schedulers',
-    'rhs_table' => 'schedulers',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'schedulers_jobs_rel' => 
-  array (
-    'name' => 'schedulers_jobs_rel',
-    'lhs_module' => 'Schedulers',
-    'lhs_table' => 'schedulers',
-    'lhs_key' => 'id',
-    'rhs_module' => 'SchedulersJobs',
-    'rhs_table' => 'job_queue',
-    'rhs_key' => 'scheduler_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'schedulers_following' => 
-  array (
-    'name' => 'schedulers_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Schedulers',
-    'rhs_table' => 'schedulers',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Schedulers',
-    'user_field' => 'created_by',
-  ),
-  'schedulers_favorite' => 
-  array (
-    'name' => 'schedulers_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Schedulers',
-    'rhs_table' => 'schedulers',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'Schedulers',
-    'user_field' => 'created_by',
-  ),
-  'schedulers_commentlog' => 
-  array (
-    'name' => 'schedulers_commentlog',
-    'lhs_module' => 'Schedulers',
-    'lhs_table' => 'schedulers',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'Schedulers',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'schedulers_locked_fields' => 
-  array (
-    'name' => 'schedulers_locked_fields',
-    'lhs_module' => 'Schedulers',
-    'lhs_table' => 'schedulers',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Schedulers',
+    'relationship_role_column_value' => 'ArchiveRuns',
     'fields' => 
     array (
       'id' => 
@@ -26373,68 +25859,22 @@
     'rhs_key' => 'assigned_user_id',
     'relationship_type' => 'one-to-many',
   ),
-  'emailtemplates_assigned_user' => 
+  'customqueries_team_count_relationship' => 
   array (
-    'name' => 'emailtemplates_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EmailTemplates',
-    'rhs_table' => 'email_templates',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'emailtemplates_modified_user' => 
-  array (
-    'name' => 'emailtemplates_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EmailTemplates',
-    'rhs_table' => 'email_templates',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'emailtemplates_created_by' => 
-  array (
-    'name' => 'emailtemplates_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EmailTemplates',
-    'rhs_table' => 'email_templates',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'emailtemplates_attachments' => 
-  array (
-    'name' => 'emailtemplates_attachments',
-    'lhs_module' => 'EmailTemplates',
-    'lhs_table' => 'email_templates',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Notes',
-    'rhs_table' => 'notes',
-    'rhs_key' => 'email_id',
-    'relationship_type' => 'one-to-many',
-    'relationship_role_column' => 'email_type',
-    'relationship_role_column_value' => 'EmailTemplates',
-  ),
-  'emailtemplates_team_count_relationship' => 
-  array (
-    'name' => 'emailtemplates_team_count_relationship',
+    'name' => 'customqueries_team_count_relationship',
     'lhs_module' => 'Teams',
     'lhs_table' => 'team_sets',
     'lhs_key' => 'id',
-    'rhs_module' => 'EmailTemplates',
-    'rhs_table' => 'email_templates',
+    'rhs_module' => 'CustomQueries',
+    'rhs_table' => 'custom_queries',
     'rhs_key' => 'team_set_id',
     'relationship_type' => 'one-to-many',
   ),
-  'emailtemplates_teams' => 
+  'customqueries_teams' => 
   array (
-    'name' => 'emailtemplates_teams',
-    'lhs_module' => 'EmailTemplates',
-    'lhs_table' => 'email_templates',
+    'name' => 'customqueries_teams',
+    'lhs_module' => 'CustomQueries',
+    'lhs_table' => 'custom_queries',
     'lhs_key' => 'team_set_id',
     'rhs_module' => 'Teams',
     'rhs_table' => 'teams',
@@ -26478,22 +25918,657 @@
       ),
     ),
   ),
-  'emailtemplates_team' => 
+  'customqueries_team' => 
   array (
-    'name' => 'emailtemplates_team',
+    'name' => 'customqueries_team',
     'lhs_module' => 'Teams',
     'lhs_table' => 'teams',
     'lhs_key' => 'id',
-    'rhs_module' => 'EmailTemplates',
-    'rhs_table' => 'email_templates',
+    'rhs_module' => 'CustomQueries',
+    'rhs_table' => 'custom_queries',
     'rhs_key' => 'team_id',
     'relationship_type' => 'one-to-many',
   ),
-  'emailtemplates_tags' => 
+  'embeddedfiles_modified_user' => 
   array (
-    'name' => 'emailtemplates_tags',
-    'lhs_module' => 'EmailTemplates',
-    'lhs_table' => 'email_templates',
+    'name' => 'embeddedfiles_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EmbeddedFiles',
+    'rhs_table' => 'embedded_files',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'embeddedfiles_created_by' => 
+  array (
+    'name' => 'embeddedfiles_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EmbeddedFiles',
+    'rhs_table' => 'embedded_files',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'embeddedfile_activities' => 
+  array (
+    'name' => 'embeddedfile_activities',
+    'lhs_module' => 'EmbeddedFiles',
+    'lhs_table' => 'embedded_files',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'EmbeddedFiles',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'embeddedfiles_following' => 
+  array (
+    'name' => 'embeddedfiles_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EmbeddedFiles',
+    'rhs_table' => 'embedded_files',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'EmbeddedFiles',
+    'user_field' => 'created_by',
+  ),
+  'embeddedfiles_favorite' => 
+  array (
+    'name' => 'embeddedfiles_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EmbeddedFiles',
+    'rhs_table' => 'embedded_files',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'EmbeddedFiles',
+    'user_field' => 'created_by',
+  ),
+  'embeddedfiles_locked_fields' => 
+  array (
+    'name' => 'embeddedfiles_locked_fields',
+    'lhs_module' => 'EmbeddedFiles',
+    'lhs_table' => 'embedded_files',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'EmbeddedFiles',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'dashboards_modified_user' => 
+  array (
+    'name' => 'dashboards_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Dashboards',
+    'rhs_table' => 'dashboards',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'dashboards_created_by' => 
+  array (
+    'name' => 'dashboards_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Dashboards',
+    'rhs_table' => 'dashboards',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'dashboard_activities' => 
+  array (
+    'name' => 'dashboard_activities',
+    'lhs_module' => 'Dashboards',
+    'lhs_table' => 'dashboards',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Dashboards',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'dashboards_team_count_relationship' => 
+  array (
+    'name' => 'dashboards_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Dashboards',
+    'rhs_table' => 'dashboards',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'dashboards_teams' => 
+  array (
+    'name' => 'dashboards_teams',
+    'lhs_module' => 'Dashboards',
+    'lhs_table' => 'dashboards',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'dashboards_team' => 
+  array (
+    'name' => 'dashboards_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Dashboards',
+    'rhs_table' => 'dashboards',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'dashboards_following' => 
+  array (
+    'name' => 'dashboards_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Dashboards',
+    'rhs_table' => 'dashboards',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Dashboards',
+    'user_field' => 'created_by',
+  ),
+  'dashboards_favorite' => 
+  array (
+    'name' => 'dashboards_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Dashboards',
+    'rhs_table' => 'dashboards',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'Dashboards',
+    'user_field' => 'created_by',
+  ),
+  'dashboards_locked_fields' => 
+  array (
+    'name' => 'dashboards_locked_fields',
+    'lhs_module' => 'Dashboards',
+    'lhs_table' => 'dashboards',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Dashboards',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'dashboards_assigned_user' => 
+  array (
+    'name' => 'dashboards_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Dashboards',
+    'rhs_table' => 'dashboards',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'product_bundle_taxrate' => 
+  array (
+    'name' => 'product_bundle_taxrate',
+    'rhs_module' => 'ProductBundles',
+    'rhs_table' => 'product_bundles',
+    'rhs_key' => 'taxrate_id',
+    'lhs_module' => 'TaxRates',
+    'lhs_table' => 'taxrates',
+    'lhs_key' => 'id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'productbundles_team_count_relationship' => 
+  array (
+    'name' => 'productbundles_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProductBundles',
+    'rhs_table' => 'product_bundles',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'productbundles_teams' => 
+  array (
+    'name' => 'productbundles_teams',
+    'lhs_module' => 'ProductBundles',
+    'lhs_table' => 'product_bundles',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'productbundles_team' => 
+  array (
+    'name' => 'productbundles_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProductBundles',
+    'rhs_table' => 'product_bundles',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'productbundles_currencies' => 
+  array (
+    'name' => 'productbundles_currencies',
+    'lhs_module' => 'Currencies',
+    'lhs_table' => 'currencies',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProductBundles',
+    'rhs_table' => 'product_bundles',
+    'rhs_key' => 'currency_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'manufacturers_modified_user' => 
+  array (
+    'name' => 'manufacturers_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Manufacturers',
+    'rhs_table' => 'manufacturers',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'manufacturers_created_by' => 
+  array (
+    'name' => 'manufacturers_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Manufacturers',
+    'rhs_table' => 'manufacturers',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'manufacturer_activities' => 
+  array (
+    'name' => 'manufacturer_activities',
+    'lhs_module' => 'Manufacturers',
+    'lhs_table' => 'manufacturers',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Manufacturers',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'manufacturers_following' => 
+  array (
+    'name' => 'manufacturers_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Manufacturers',
+    'rhs_table' => 'manufacturers',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Manufacturers',
+    'user_field' => 'created_by',
+  ),
+  'manufacturers_favorite' => 
+  array (
+    'name' => 'manufacturers_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Manufacturers',
+    'rhs_table' => 'manufacturers',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'Manufacturers',
+    'user_field' => 'created_by',
+  ),
+  'manufacturers_tags' => 
+  array (
+    'name' => 'manufacturers_tags',
+    'lhs_module' => 'Manufacturers',
+    'lhs_table' => 'manufacturers',
     'lhs_key' => 'id',
     'rhs_module' => 'Tags',
     'rhs_table' => 'tags',
@@ -26503,7 +26578,7 @@
     'join_key_lhs' => 'bean_id',
     'join_key_rhs' => 'tag_id',
     'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'EmailTemplates',
+    'relationship_role_column_value' => 'Manufacturers',
     'dynamic_subpanel' => true,
     'fields' => 
     array (
@@ -26516,6 +26591,949 @@
       'tag_id' => 
       array (
         'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'manufacturers_commentlog' => 
+  array (
+    'name' => 'manufacturers_commentlog',
+    'lhs_module' => 'Manufacturers',
+    'lhs_table' => 'manufacturers',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'Manufacturers',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'manufacturers_locked_fields' => 
+  array (
+    'name' => 'manufacturers_locked_fields',
+    'lhs_module' => 'Manufacturers',
+    'lhs_table' => 'manufacturers',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Manufacturers',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'quotas_modified_user' => 
+  array (
+    'name' => 'quotas_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Quotas',
+    'rhs_table' => 'quotas',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'quotas_created_by' => 
+  array (
+    'name' => 'quotas_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Quotas',
+    'rhs_table' => 'quotas',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'quota_activities' => 
+  array (
+    'name' => 'quota_activities',
+    'lhs_module' => 'Quotas',
+    'lhs_table' => 'quotas',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Quotas',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'quotas_following' => 
+  array (
+    'name' => 'quotas_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Quotas',
+    'rhs_table' => 'quotas',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Quotas',
+    'user_field' => 'created_by',
+  ),
+  'quotas_favorite' => 
+  array (
+    'name' => 'quotas_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Quotas',
+    'rhs_table' => 'quotas',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'Quotas',
+    'user_field' => 'created_by',
+  ),
+  'quotas_commentlog' => 
+  array (
+    'name' => 'quotas_commentlog',
+    'lhs_module' => 'Quotas',
+    'lhs_table' => 'quotas',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'Quotas',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'quotas_locked_fields' => 
+  array (
+    'name' => 'quotas_locked_fields',
+    'lhs_module' => 'Quotas',
+    'lhs_table' => 'quotas',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Quotas',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'quotas_assigned_user' => 
+  array (
+    'name' => 'quotas_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Quotas',
+    'rhs_table' => 'quotas',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'quotas_currencies' => 
+  array (
+    'name' => 'quotas_currencies',
+    'lhs_module' => 'Currencies',
+    'lhs_table' => 'currencies',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Quotas',
+    'rhs_table' => 'quotas',
+    'rhs_key' => 'currency_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'datasets_team_count_relationship' => 
+  array (
+    'name' => 'datasets_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'DataSets',
+    'rhs_table' => 'data_sets',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'datasets_teams' => 
+  array (
+    'name' => 'datasets_teams',
+    'lhs_module' => 'DataSets',
+    'lhs_table' => 'data_sets',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'datasets_team' => 
+  array (
+    'name' => 'datasets_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'DataSets',
+    'rhs_table' => 'data_sets',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'eapm_modified_user' => 
+  array (
+    'name' => 'eapm_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EAPM',
+    'rhs_table' => 'eapm',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'eapm_created_by' => 
+  array (
+    'name' => 'eapm_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EAPM',
+    'rhs_table' => 'eapm',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'eapm_activities' => 
+  array (
+    'name' => 'eapm_activities',
+    'lhs_module' => 'EAPM',
+    'lhs_table' => 'eapm',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'EAPM',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'eapm_following' => 
+  array (
+    'name' => 'eapm_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EAPM',
+    'rhs_table' => 'eapm',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'EAPM',
+    'user_field' => 'created_by',
+  ),
+  'eapm_favorite' => 
+  array (
+    'name' => 'eapm_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EAPM',
+    'rhs_table' => 'eapm',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'EAPM',
+    'user_field' => 'created_by',
+  ),
+  'eapm_commentlog' => 
+  array (
+    'name' => 'eapm_commentlog',
+    'lhs_module' => 'EAPM',
+    'lhs_table' => 'eapm',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'EAPM',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'eapm_locked_fields' => 
+  array (
+    'name' => 'eapm_locked_fields',
+    'lhs_module' => 'EAPM',
+    'lhs_table' => 'eapm',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'EAPM',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'eapm_assigned_user' => 
+  array (
+    'name' => 'eapm_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EAPM',
+    'rhs_table' => 'eapm',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'taxrates_modified_user' => 
+  array (
+    'name' => 'taxrates_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'TaxRates',
+    'rhs_table' => 'taxrates',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'taxrates_created_by' => 
+  array (
+    'name' => 'taxrates_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'TaxRates',
+    'rhs_table' => 'taxrates',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'taxrate_activities' => 
+  array (
+    'name' => 'taxrate_activities',
+    'lhs_module' => 'TaxRates',
+    'lhs_table' => 'taxrates',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'TaxRates',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'taxrate_quotes' => 
+  array (
+    'name' => 'taxrate_quotes',
+    'lhs_module' => 'TaxRates',
+    'lhs_table' => 'taxrates',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Quotes',
+    'rhs_table' => 'quotes',
+    'rhs_key' => 'taxrate_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'taxrates_following' => 
+  array (
+    'name' => 'taxrates_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'TaxRates',
+    'rhs_table' => 'taxrates',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'TaxRates',
+    'user_field' => 'created_by',
+  ),
+  'taxrates_favorite' => 
+  array (
+    'name' => 'taxrates_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'TaxRates',
+    'rhs_table' => 'taxrates',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'TaxRates',
+    'user_field' => 'created_by',
+  ),
+  'taxrates_tags' => 
+  array (
+    'name' => 'taxrates_tags',
+    'lhs_module' => 'TaxRates',
+    'lhs_table' => 'taxrates',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'TaxRates',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'taxrates_commentlog' => 
+  array (
+    'name' => 'taxrates_commentlog',
+    'lhs_module' => 'TaxRates',
+    'lhs_table' => 'taxrates',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'TaxRates',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'taxrates_locked_fields' => 
+  array (
+    'name' => 'taxrates_locked_fields',
+    'lhs_module' => 'TaxRates',
+    'lhs_table' => 'taxrates',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'TaxRates',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
         'type' => 'id',
         'required' => true,
       ),
@@ -26822,6 +27840,1243 @@
       ),
     ),
   ),
+  'teamnotices_team_count_relationship' => 
+  array (
+    'name' => 'teamnotices_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'TeamNotices',
+    'rhs_table' => 'team_notices',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'teamnotices_teams' => 
+  array (
+    'name' => 'teamnotices_teams',
+    'lhs_module' => 'TeamNotices',
+    'lhs_table' => 'team_notices',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'teamnotices_team' => 
+  array (
+    'name' => 'teamnotices_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'TeamNotices',
+    'rhs_table' => 'team_notices',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'hintnotificationtargets_modified_user' => 
+  array (
+    'name' => 'hintnotificationtargets_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintNotificationTargets',
+    'rhs_table' => 'hint_notification_targets',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'hintnotificationtargets_created_by' => 
+  array (
+    'name' => 'hintnotificationtargets_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintNotificationTargets',
+    'rhs_table' => 'hint_notification_targets',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'hintnotificationtarget_activities' => 
+  array (
+    'name' => 'hintnotificationtarget_activities',
+    'lhs_module' => 'HintNotificationTargets',
+    'lhs_table' => 'hint_notification_targets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'HintNotificationTargets',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintnotificationtargets_following' => 
+  array (
+    'name' => 'hintnotificationtargets_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintNotificationTargets',
+    'rhs_table' => 'hint_notification_targets',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'HintNotificationTargets',
+    'user_field' => 'created_by',
+  ),
+  'hintnotificationtargets_favorite' => 
+  array (
+    'name' => 'hintnotificationtargets_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintNotificationTargets',
+    'rhs_table' => 'hint_notification_targets',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'HintNotificationTargets',
+    'user_field' => 'created_by',
+  ),
+  'hintnotificationtargets_tags' => 
+  array (
+    'name' => 'hintnotificationtargets_tags',
+    'lhs_module' => 'HintNotificationTargets',
+    'lhs_table' => 'hint_notification_targets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'HintNotificationTargets',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintnotificationtargets_commentlog' => 
+  array (
+    'name' => 'hintnotificationtargets_commentlog',
+    'lhs_module' => 'HintNotificationTargets',
+    'lhs_table' => 'hint_notification_targets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'HintNotificationTargets',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintnotificationtargets_locked_fields' => 
+  array (
+    'name' => 'hintnotificationtargets_locked_fields',
+    'lhs_module' => 'HintNotificationTargets',
+    'lhs_table' => 'hint_notification_targets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'HintNotificationTargets',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintnotificationtargets_assigned_user' => 
+  array (
+    'name' => 'hintnotificationtargets_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintNotificationTargets',
+    'rhs_table' => 'hint_notification_targets',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'documentmerges_modified_user' => 
+  array (
+    'name' => 'documentmerges_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'DocumentMerges',
+    'rhs_table' => 'document_merges',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'documentmerges_created_by' => 
+  array (
+    'name' => 'documentmerges_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'DocumentMerges',
+    'rhs_table' => 'document_merges',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'documentmerge_activities' => 
+  array (
+    'name' => 'documentmerge_activities',
+    'lhs_module' => 'DocumentMerges',
+    'lhs_table' => 'document_merges',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'DocumentMerges',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'documentmerges_following' => 
+  array (
+    'name' => 'documentmerges_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'DocumentMerges',
+    'rhs_table' => 'document_merges',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'DocumentMerges',
+    'user_field' => 'created_by',
+  ),
+  'documentmerges_favorite' => 
+  array (
+    'name' => 'documentmerges_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'DocumentMerges',
+    'rhs_table' => 'document_merges',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'DocumentMerges',
+    'user_field' => 'created_by',
+  ),
+  'documentmerges_tags' => 
+  array (
+    'name' => 'documentmerges_tags',
+    'lhs_module' => 'DocumentMerges',
+    'lhs_table' => 'document_merges',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'DocumentMerges',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'documentmerges_commentlog' => 
+  array (
+    'name' => 'documentmerges_commentlog',
+    'lhs_module' => 'DocumentMerges',
+    'lhs_table' => 'document_merges',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'DocumentMerges',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'documentmerges_locked_fields' => 
+  array (
+    'name' => 'documentmerges_locked_fields',
+    'lhs_module' => 'DocumentMerges',
+    'lhs_table' => 'document_merges',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'DocumentMerges',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'documentmerges_assigned_user' => 
+  array (
+    'name' => 'documentmerges_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'DocumentMerges',
+    'rhs_table' => 'document_merges',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'documentmerges_team_count_relationship' => 
+  array (
+    'name' => 'documentmerges_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'DocumentMerges',
+    'rhs_table' => 'document_merges',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'documentmerges_teams' => 
+  array (
+    'name' => 'documentmerges_teams',
+    'lhs_module' => 'DocumentMerges',
+    'lhs_table' => 'document_merges',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'documentmerges_team' => 
+  array (
+    'name' => 'documentmerges_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'DocumentMerges',
+    'rhs_table' => 'document_merges',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'mobiledevices_modified_user' => 
+  array (
+    'name' => 'mobiledevices_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'MobileDevices',
+    'rhs_table' => 'mobile_devices',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'mobiledevices_created_by' => 
+  array (
+    'name' => 'mobiledevices_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'MobileDevices',
+    'rhs_table' => 'mobile_devices',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'mobiledevice_activities' => 
+  array (
+    'name' => 'mobiledevice_activities',
+    'lhs_module' => 'MobileDevices',
+    'lhs_table' => 'mobile_devices',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'MobileDevices',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'mobiledevices_following' => 
+  array (
+    'name' => 'mobiledevices_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'MobileDevices',
+    'rhs_table' => 'mobile_devices',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'MobileDevices',
+    'user_field' => 'created_by',
+  ),
+  'mobiledevices_favorite' => 
+  array (
+    'name' => 'mobiledevices_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'MobileDevices',
+    'rhs_table' => 'mobile_devices',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'MobileDevices',
+    'user_field' => 'created_by',
+  ),
+  'mobiledevices_locked_fields' => 
+  array (
+    'name' => 'mobiledevices_locked_fields',
+    'lhs_module' => 'MobileDevices',
+    'lhs_table' => 'mobile_devices',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'MobileDevices',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'mobiledevices_assigned_user' => 
+  array (
+    'name' => 'mobiledevices_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'MobileDevices',
+    'rhs_table' => 'mobile_devices',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'past_triggers' => 
+  array (
+    'name' => 'past_triggers',
+    'lhs_module' => 'WorkFlowTriggerShells',
+    'lhs_table' => 'workflow_triggershells',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Expressions',
+    'rhs_table' => 'expressions',
+    'rhs_key' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'past_trigger',
+    'relationship_type' => 'one-to-many',
+  ),
+  'future_triggers' => 
+  array (
+    'name' => 'future_triggers',
+    'lhs_module' => 'WorkFlowTriggerShells',
+    'lhs_table' => 'workflow_triggershells',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Expressions',
+    'rhs_table' => 'expressions',
+    'rhs_key' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'future_trigger',
+    'relationship_type' => 'one-to-many',
+  ),
+  'trigger_expressions' => 
+  array (
+    'name' => 'trigger_expressions',
+    'lhs_module' => 'WorkFlowTriggerShells',
+    'lhs_table' => 'workflow_triggershells',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Expressions',
+    'rhs_table' => 'expressions',
+    'rhs_key' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'expression',
+    'relationship_type' => 'one-to-many',
+  ),
+  'kbcontenttemplates_modified_user' => 
+  array (
+    'name' => 'kbcontenttemplates_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBContentTemplates',
+    'rhs_table' => 'kbcontent_templates',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'kbcontenttemplates_created_by' => 
+  array (
+    'name' => 'kbcontenttemplates_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBContentTemplates',
+    'rhs_table' => 'kbcontent_templates',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'kbcontenttemplate_activities' => 
+  array (
+    'name' => 'kbcontenttemplate_activities',
+    'lhs_module' => 'KBContentTemplates',
+    'lhs_table' => 'kbcontent_templates',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'KBContentTemplates',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'kbcontenttemplates_following' => 
+  array (
+    'name' => 'kbcontenttemplates_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBContentTemplates',
+    'rhs_table' => 'kbcontent_templates',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'KBContentTemplates',
+    'user_field' => 'created_by',
+  ),
+  'kbcontenttemplates_favorite' => 
+  array (
+    'name' => 'kbcontenttemplates_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBContentTemplates',
+    'rhs_table' => 'kbcontent_templates',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'KBContentTemplates',
+    'user_field' => 'created_by',
+  ),
+  'kbcontenttemplates_locked_fields' => 
+  array (
+    'name' => 'kbcontenttemplates_locked_fields',
+    'lhs_module' => 'KBContentTemplates',
+    'lhs_table' => 'kbcontent_templates',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'KBContentTemplates',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'kbcontenttemplates_team_count_relationship' => 
+  array (
+    'name' => 'kbcontenttemplates_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBContentTemplates',
+    'rhs_table' => 'kbcontent_templates',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'kbcontenttemplates_teams' => 
+  array (
+    'name' => 'kbcontenttemplates_teams',
+    'lhs_module' => 'KBContentTemplates',
+    'lhs_table' => 'kbcontent_templates',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'kbcontenttemplates_team' => 
+  array (
+    'name' => 'kbcontenttemplates_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBContentTemplates',
+    'rhs_table' => 'kbcontent_templates',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'campaignlog_contact' => 
+  array (
+    'name' => 'campaignlog_contact',
+    'lhs_module' => 'CampaignLog',
+    'lhs_table' => 'campaign_log',
+    'lhs_key' => 'related_id',
+    'rhs_module' => 'Contacts',
+    'rhs_table' => 'contacts',
+    'rhs_key' => 'id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'campaignlog_lead' => 
+  array (
+    'name' => 'campaignlog_lead',
+    'lhs_module' => 'CampaignLog',
+    'lhs_table' => 'campaign_log',
+    'lhs_key' => 'related_id',
+    'rhs_module' => 'Leads',
+    'rhs_table' => 'leads',
+    'rhs_key' => 'id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'campaignlog_created_opportunities' => 
+  array (
+    'name' => 'campaignlog_created_opportunities',
+    'lhs_module' => 'CampaignLog',
+    'lhs_table' => 'campaign_log',
+    'lhs_key' => 'related_id',
+    'rhs_module' => 'Opportunities',
+    'rhs_table' => 'opportunities',
+    'rhs_key' => 'id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'campaignlog_targeted_users' => 
+  array (
+    'name' => 'campaignlog_targeted_users',
+    'lhs_module' => 'CampaignLog',
+    'lhs_table' => 'campaign_log',
+    'lhs_key' => 'target_id',
+    'rhs_module' => 'Users',
+    'rhs_table' => 'users',
+    'rhs_key' => 'id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'campaignlog_sent_emails' => 
+  array (
+    'name' => 'campaignlog_sent_emails',
+    'lhs_module' => 'CampaignLog',
+    'lhs_table' => 'campaign_log',
+    'lhs_key' => 'related_id',
+    'rhs_module' => 'Emails',
+    'rhs_table' => 'emails',
+    'rhs_key' => 'id',
+    'relationship_type' => 'one-to-many',
+  ),
   'tracker_monitor_id' => 
   array (
     'name' => 'tracker_monitor_id',
@@ -26833,16 +29088,2504 @@
     'rhs_key' => 'monitor_id',
     'relationship_type' => 'one-to-one',
   ),
-  'tracker_user_id' => 
+  'sugarfavorites_modified_user' => 
   array (
-    'name' => 'tracker_user_id',
+    'name' => 'sugarfavorites_modified_user',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'TrackerSessions',
-    'rhs_table' => 'tracker',
-    'rhs_key' => 'user_id',
+    'rhs_module' => 'SugarFavorites',
+    'rhs_table' => 'sugarfavorites',
+    'rhs_key' => 'modified_user_id',
     'relationship_type' => 'one-to-many',
+  ),
+  'sugarfavorites_created_by' => 
+  array (
+    'name' => 'sugarfavorites_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'SugarFavorites',
+    'rhs_table' => 'sugarfavorites',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'sugarfavorites_activities' => 
+  array (
+    'name' => 'sugarfavorites_activities',
+    'lhs_module' => 'SugarFavorites',
+    'lhs_table' => 'sugarfavorites',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'SugarFavorites',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'sugarfavorites_following' => 
+  array (
+    'name' => 'sugarfavorites_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'SugarFavorites',
+    'rhs_table' => 'sugarfavorites',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'SugarFavorites',
+    'user_field' => 'created_by',
+  ),
+  'sugarfavorites_favorite' => 
+  array (
+    'name' => 'sugarfavorites_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'SugarFavorites',
+    'rhs_table' => 'sugarfavorites',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'SugarFavorites',
+    'user_field' => 'created_by',
+  ),
+  'sugarfavorites_commentlog' => 
+  array (
+    'name' => 'sugarfavorites_commentlog',
+    'lhs_module' => 'SugarFavorites',
+    'lhs_table' => 'sugarfavorites',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'SugarFavorites',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'sugarfavorites_locked_fields' => 
+  array (
+    'name' => 'sugarfavorites_locked_fields',
+    'lhs_module' => 'SugarFavorites',
+    'lhs_table' => 'sugarfavorites',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'SugarFavorites',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'sugarfavorites_assigned_user' => 
+  array (
+    'name' => 'sugarfavorites_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'SugarFavorites',
+    'rhs_table' => 'sugarfavorites',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'filters_modified_user' => 
+  array (
+    'name' => 'filters_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Filters',
+    'rhs_table' => 'filters',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'filters_created_by' => 
+  array (
+    'name' => 'filters_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Filters',
+    'rhs_table' => 'filters',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'filters_activities' => 
+  array (
+    'name' => 'filters_activities',
+    'lhs_module' => 'Filters',
+    'lhs_table' => 'filters',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Filters',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'filters_following' => 
+  array (
+    'name' => 'filters_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Filters',
+    'rhs_table' => 'filters',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Filters',
+    'user_field' => 'created_by',
+  ),
+  'filters_favorite' => 
+  array (
+    'name' => 'filters_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Filters',
+    'rhs_table' => 'filters',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'Filters',
+    'user_field' => 'created_by',
+  ),
+  'filters_locked_fields' => 
+  array (
+    'name' => 'filters_locked_fields',
+    'lhs_module' => 'Filters',
+    'lhs_table' => 'filters',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Filters',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'filters_team_count_relationship' => 
+  array (
+    'name' => 'filters_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Filters',
+    'rhs_table' => 'filters',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'filters_teams' => 
+  array (
+    'name' => 'filters_teams',
+    'lhs_module' => 'Filters',
+    'lhs_table' => 'filters',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'filters_team' => 
+  array (
+    'name' => 'filters_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Filters',
+    'rhs_table' => 'filters',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'filters_assigned_user' => 
+  array (
+    'name' => 'filters_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Filters',
+    'rhs_table' => 'filters',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'dataarchiver_modified_user' => 
+  array (
+    'name' => 'dataarchiver_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'DataArchiver',
+    'rhs_table' => 'data_archivers',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'dataarchiver_created_by' => 
+  array (
+    'name' => 'dataarchiver_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'DataArchiver',
+    'rhs_table' => 'data_archivers',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'dataarchiver_activities' => 
+  array (
+    'name' => 'dataarchiver_activities',
+    'lhs_module' => 'DataArchiver',
+    'lhs_table' => 'data_archivers',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'DataArchiver',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'archiver_runs' => 
+  array (
+    'name' => 'archiver_runs',
+    'lhs_module' => 'DataArchiver',
+    'lhs_table' => 'data_archivers',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ArchiveRuns',
+    'rhs_table' => 'archive_runs',
+    'rhs_key' => 'archiver_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'dataarchiver_following' => 
+  array (
+    'name' => 'dataarchiver_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'DataArchiver',
+    'rhs_table' => 'data_archivers',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'DataArchiver',
+    'user_field' => 'created_by',
+  ),
+  'dataarchiver_favorite' => 
+  array (
+    'name' => 'dataarchiver_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'DataArchiver',
+    'rhs_table' => 'data_archivers',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'DataArchiver',
+    'user_field' => 'created_by',
+  ),
+  'dataarchiver_tags' => 
+  array (
+    'name' => 'dataarchiver_tags',
+    'lhs_module' => 'DataArchiver',
+    'lhs_table' => 'data_archivers',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'DataArchiver',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'dataarchiver_commentlog' => 
+  array (
+    'name' => 'dataarchiver_commentlog',
+    'lhs_module' => 'DataArchiver',
+    'lhs_table' => 'data_archivers',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'DataArchiver',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'dataarchiver_locked_fields' => 
+  array (
+    'name' => 'dataarchiver_locked_fields',
+    'lhs_module' => 'DataArchiver',
+    'lhs_table' => 'data_archivers',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'DataArchiver',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'actions' => 
+  array (
+    'name' => 'actions',
+    'lhs_module' => 'WorkFlowActionShells',
+    'lhs_table' => 'workflow_actionshells',
+    'lhs_key' => 'id',
+    'rhs_module' => 'WorkFlowActions',
+    'rhs_table' => 'workflow_actions',
+    'rhs_key' => 'parent_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'action_bridge' => 
+  array (
+    'name' => 'action_bridge',
+    'lhs_module' => 'WorkFlowActionShells',
+    'lhs_table' => 'workflow_actionshells',
+    'lhs_key' => 'id',
+    'rhs_module' => 'WorkFlow',
+    'rhs_table' => 'workflow',
+    'rhs_key' => 'parent_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'rel1_action_fil' => 
+  array (
+    'name' => 'rel1_action_fil',
+    'lhs_module' => 'WorkFlowActionShells',
+    'lhs_table' => 'workflow_actionshells',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Expressions',
+    'rhs_table' => 'expressions',
+    'rhs_key' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'rel1_action_fil',
+    'relationship_type' => 'one-to-many',
+  ),
+  'project_tasks_messages' => 
+  array (
+    'name' => 'project_tasks_messages',
+    'lhs_module' => 'ProjectTask',
+    'lhs_table' => 'project_task',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Messages',
+    'rhs_table' => 'messages',
+    'rhs_key' => 'parent_id',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ProjectTask',
+  ),
+  'project_tasks_notes' => 
+  array (
+    'name' => 'project_tasks_notes',
+    'lhs_module' => 'ProjectTask',
+    'lhs_table' => 'project_task',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Notes',
+    'rhs_table' => 'notes',
+    'rhs_key' => 'parent_id',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ProjectTask',
+  ),
+  'project_tasks_tasks' => 
+  array (
+    'name' => 'project_tasks_tasks',
+    'lhs_module' => 'ProjectTask',
+    'lhs_table' => 'project_task',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tasks',
+    'rhs_table' => 'tasks',
+    'rhs_key' => 'parent_id',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ProjectTask',
+  ),
+  'project_tasks_meetings' => 
+  array (
+    'name' => 'project_tasks_meetings',
+    'lhs_module' => 'ProjectTask',
+    'lhs_table' => 'project_task',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Meetings',
+    'rhs_table' => 'meetings',
+    'rhs_key' => 'parent_id',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ProjectTask',
+  ),
+  'project_tasks_calls' => 
+  array (
+    'name' => 'project_tasks_calls',
+    'lhs_module' => 'ProjectTask',
+    'lhs_table' => 'project_task',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Calls',
+    'rhs_table' => 'calls',
+    'rhs_key' => 'parent_id',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ProjectTask',
+  ),
+  'project_tasks_emails' => 
+  array (
+    'name' => 'project_tasks_emails',
+    'lhs_module' => 'ProjectTask',
+    'lhs_table' => 'project_task',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Emails',
+    'rhs_table' => 'emails',
+    'rhs_key' => 'parent_id',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ProjectTask',
+  ),
+  'project_tasks_assigned_user' => 
+  array (
+    'name' => 'project_tasks_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProjectTask',
+    'rhs_table' => 'project_task',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'project_tasks_modified_user' => 
+  array (
+    'name' => 'project_tasks_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProjectTask',
+    'rhs_table' => 'project_task',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'project_tasks_created_by' => 
+  array (
+    'name' => 'project_tasks_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProjectTask',
+    'rhs_table' => 'project_task',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'projecttask_team_count_relationship' => 
+  array (
+    'name' => 'projecttask_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProjectTask',
+    'rhs_table' => 'project_task',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'projecttask_teams' => 
+  array (
+    'name' => 'projecttask_teams',
+    'lhs_module' => 'ProjectTask',
+    'lhs_table' => 'project_task',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'projecttask_team' => 
+  array (
+    'name' => 'projecttask_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProjectTask',
+    'rhs_table' => 'project_task',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'notifications_modified_user' => 
+  array (
+    'name' => 'notifications_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Notifications',
+    'rhs_table' => 'notifications',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'notifications_created_by' => 
+  array (
+    'name' => 'notifications_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Notifications',
+    'rhs_table' => 'notifications',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'notifications_activities' => 
+  array (
+    'name' => 'notifications_activities',
+    'lhs_module' => 'Notifications',
+    'lhs_table' => 'notifications',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Notifications',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'notifications_following' => 
+  array (
+    'name' => 'notifications_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Notifications',
+    'rhs_table' => 'notifications',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Notifications',
+    'user_field' => 'created_by',
+  ),
+  'notifications_favorite' => 
+  array (
+    'name' => 'notifications_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Notifications',
+    'rhs_table' => 'notifications',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'Notifications',
+    'user_field' => 'created_by',
+  ),
+  'notifications_locked_fields' => 
+  array (
+    'name' => 'notifications_locked_fields',
+    'lhs_module' => 'Notifications',
+    'lhs_table' => 'notifications',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Notifications',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'notifications_assigned_user' => 
+  array (
+    'name' => 'notifications_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Notifications',
+    'rhs_table' => 'notifications',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'oauthkeys_modified_user' => 
+  array (
+    'name' => 'oauthkeys_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'OAuthKeys',
+    'rhs_table' => 'oauth_consumer',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'oauthkeys_created_by' => 
+  array (
+    'name' => 'oauthkeys_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'OAuthKeys',
+    'rhs_table' => 'oauth_consumer',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'oauthkey_activities' => 
+  array (
+    'name' => 'oauthkey_activities',
+    'lhs_module' => 'OAuthKeys',
+    'lhs_table' => 'oauth_consumer',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'OAuthKeys',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'oauthkeys_following' => 
+  array (
+    'name' => 'oauthkeys_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'OAuthKeys',
+    'rhs_table' => 'oauth_consumer',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'OAuthKeys',
+    'user_field' => 'created_by',
+  ),
+  'oauthkeys_favorite' => 
+  array (
+    'name' => 'oauthkeys_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'OAuthKeys',
+    'rhs_table' => 'oauth_consumer',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'OAuthKeys',
+    'user_field' => 'created_by',
+  ),
+  'oauthkeys_commentlog' => 
+  array (
+    'name' => 'oauthkeys_commentlog',
+    'lhs_module' => 'OAuthKeys',
+    'lhs_table' => 'oauth_consumer',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'OAuthKeys',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'oauthkeys_locked_fields' => 
+  array (
+    'name' => 'oauthkeys_locked_fields',
+    'lhs_module' => 'OAuthKeys',
+    'lhs_table' => 'oauth_consumer',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'OAuthKeys',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'oauthkeys_assigned_user' => 
+  array (
+    'name' => 'oauthkeys_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'OAuthKeys',
+    'rhs_table' => 'oauth_consumer',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'producttypes_modified_user' => 
+  array (
+    'name' => 'producttypes_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProductTypes',
+    'rhs_table' => 'product_types',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'producttypes_created_by' => 
+  array (
+    'name' => 'producttypes_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProductTypes',
+    'rhs_table' => 'product_types',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'producttype_activities' => 
+  array (
+    'name' => 'producttype_activities',
+    'lhs_module' => 'ProductTypes',
+    'lhs_table' => 'product_types',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ProductTypes',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'producttypes_following' => 
+  array (
+    'name' => 'producttypes_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProductTypes',
+    'rhs_table' => 'product_types',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ProductTypes',
+    'user_field' => 'created_by',
+  ),
+  'producttypes_favorite' => 
+  array (
+    'name' => 'producttypes_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProductTypes',
+    'rhs_table' => 'product_types',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ProductTypes',
+    'user_field' => 'created_by',
+  ),
+  'producttypes_tags' => 
+  array (
+    'name' => 'producttypes_tags',
+    'lhs_module' => 'ProductTypes',
+    'lhs_table' => 'product_types',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'ProductTypes',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'producttypes_commentlog' => 
+  array (
+    'name' => 'producttypes_commentlog',
+    'lhs_module' => 'ProductTypes',
+    'lhs_table' => 'product_types',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ProductTypes',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'producttypes_locked_fields' => 
+  array (
+    'name' => 'producttypes_locked_fields',
+    'lhs_module' => 'ProductTypes',
+    'lhs_table' => 'product_types',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'ProductTypes',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'contracttypes_modified_user' => 
+  array (
+    'name' => 'contracttypes_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ContractTypes',
+    'rhs_table' => 'contract_types',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'contracttypes_created_by' => 
+  array (
+    'name' => 'contracttypes_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ContractTypes',
+    'rhs_table' => 'contract_types',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'contracttype_activities' => 
+  array (
+    'name' => 'contracttype_activities',
+    'lhs_module' => 'ContractTypes',
+    'lhs_table' => 'contract_types',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ContractTypes',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'contracttypes_following' => 
+  array (
+    'name' => 'contracttypes_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ContractTypes',
+    'rhs_table' => 'contract_types',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ContractTypes',
+    'user_field' => 'created_by',
+  ),
+  'contracttypes_favorite' => 
+  array (
+    'name' => 'contracttypes_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ContractTypes',
+    'rhs_table' => 'contract_types',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ContractTypes',
+    'user_field' => 'created_by',
+  ),
+  'contracttypes_tags' => 
+  array (
+    'name' => 'contracttypes_tags',
+    'lhs_module' => 'ContractTypes',
+    'lhs_table' => 'contract_types',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'ContractTypes',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'contracttypes_commentlog' => 
+  array (
+    'name' => 'contracttypes_commentlog',
+    'lhs_module' => 'ContractTypes',
+    'lhs_table' => 'contract_types',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ContractTypes',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'contracttypes_locked_fields' => 
+  array (
+    'name' => 'contracttypes_locked_fields',
+    'lhs_module' => 'ContractTypes',
+    'lhs_table' => 'contract_types',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'ContractTypes',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'visualpipeline_modified_user' => 
+  array (
+    'name' => 'visualpipeline_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'VisualPipeline',
+    'rhs_table' => 'visual_pipeline',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'visualpipeline_created_by' => 
+  array (
+    'name' => 'visualpipeline_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'VisualPipeline',
+    'rhs_table' => 'visual_pipeline',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'visualpipeline_activities' => 
+  array (
+    'name' => 'visualpipeline_activities',
+    'lhs_module' => 'VisualPipeline',
+    'lhs_table' => 'visual_pipeline',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'VisualPipeline',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'visualpipeline_following' => 
+  array (
+    'name' => 'visualpipeline_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'VisualPipeline',
+    'rhs_table' => 'visual_pipeline',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'VisualPipeline',
+    'user_field' => 'created_by',
+  ),
+  'visualpipeline_favorite' => 
+  array (
+    'name' => 'visualpipeline_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'VisualPipeline',
+    'rhs_table' => 'visual_pipeline',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'VisualPipeline',
+    'user_field' => 'created_by',
+  ),
+  'visualpipeline_tags' => 
+  array (
+    'name' => 'visualpipeline_tags',
+    'lhs_module' => 'VisualPipeline',
+    'lhs_table' => 'visual_pipeline',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'VisualPipeline',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'visualpipeline_commentlog' => 
+  array (
+    'name' => 'visualpipeline_commentlog',
+    'lhs_module' => 'VisualPipeline',
+    'lhs_table' => 'visual_pipeline',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'VisualPipeline',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'visualpipeline_locked_fields' => 
+  array (
+    'name' => 'visualpipeline_locked_fields',
+    'lhs_module' => 'VisualPipeline',
+    'lhs_table' => 'visual_pipeline',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'VisualPipeline',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'schedulers_modified_user' => 
+  array (
+    'name' => 'schedulers_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Schedulers',
+    'rhs_table' => 'schedulers',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'schedulers_created_by' => 
+  array (
+    'name' => 'schedulers_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Schedulers',
+    'rhs_table' => 'schedulers',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'scheduler_activities' => 
+  array (
+    'name' => 'scheduler_activities',
+    'lhs_module' => 'Schedulers',
+    'lhs_table' => 'schedulers',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Schedulers',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'schedulers_created_by_rel' => 
+  array (
+    'name' => 'schedulers_created_by_rel',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Schedulers',
+    'rhs_table' => 'schedulers',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-one',
+  ),
+  'schedulers_modified_user_id_rel' => 
+  array (
+    'name' => 'schedulers_modified_user_id_rel',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Schedulers',
+    'rhs_table' => 'schedulers',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'schedulers_jobs_rel' => 
+  array (
+    'name' => 'schedulers_jobs_rel',
+    'lhs_module' => 'Schedulers',
+    'lhs_table' => 'schedulers',
+    'lhs_key' => 'id',
+    'rhs_module' => 'SchedulersJobs',
+    'rhs_table' => 'job_queue',
+    'rhs_key' => 'scheduler_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'schedulers_following' => 
+  array (
+    'name' => 'schedulers_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Schedulers',
+    'rhs_table' => 'schedulers',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Schedulers',
+    'user_field' => 'created_by',
+  ),
+  'schedulers_favorite' => 
+  array (
+    'name' => 'schedulers_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Schedulers',
+    'rhs_table' => 'schedulers',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'Schedulers',
+    'user_field' => 'created_by',
+  ),
+  'schedulers_commentlog' => 
+  array (
+    'name' => 'schedulers_commentlog',
+    'lhs_module' => 'Schedulers',
+    'lhs_table' => 'schedulers',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'Schedulers',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'schedulers_locked_fields' => 
+  array (
+    'name' => 'schedulers_locked_fields',
+    'lhs_module' => 'Schedulers',
+    'lhs_table' => 'schedulers',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Schedulers',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
   ),
   'revisions_created_by' => 
   array (
@@ -26864,6 +31607,4741 @@
     'rhs_module' => 'DocumentRevisions',
     'rhs_table' => 'document_revisions',
     'rhs_key' => 'document_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'consumer_tokens' => 
+  array (
+    'name' => 'consumer_tokens',
+    'lhs_module' => 'OAuthKeys',
+    'lhs_table' => 'oauth_consumer',
+    'lhs_key' => 'id',
+    'rhs_module' => 'OAuthTokens',
+    'rhs_table' => 'oauth_tokens',
+    'rhs_key' => 'consumer',
+    'relationship_type' => 'one-to-many',
+  ),
+  'oauthtokens_assigned_user' => 
+  array (
+    'name' => 'oauthtokens_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'OAuthTokens',
+    'rhs_table' => 'oauth_tokens',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'contacts_oauthtokens' => 
+  array (
+    'name' => 'contacts_oauthtokens',
+    'lhs_module' => 'Contacts',
+    'lhs_table' => 'contacts',
+    'lhs_key' => 'id',
+    'rhs_module' => 'OAuthTokens',
+    'rhs_table' => 'oauth_tokens',
+    'rhs_key' => 'contact_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'expressions' => 
+  array (
+    'name' => 'expressions',
+    'lhs_module' => 'WorkFlowAlerts',
+    'lhs_table' => 'workflow_alerts',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Expressions',
+    'rhs_table' => 'expressions',
+    'rhs_key' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'filter',
+    'relationship_type' => 'one-to-many',
+  ),
+  'rel1_alert_fil' => 
+  array (
+    'name' => 'rel1_alert_fil',
+    'lhs_module' => 'WorkFlowAlerts',
+    'lhs_table' => 'workflow_alerts',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Expressions',
+    'rhs_table' => 'expressions',
+    'rhs_key' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'rel1_alert_fil',
+    'relationship_type' => 'one-to-many',
+  ),
+  'rel2_alert_fil' => 
+  array (
+    'name' => 'rel2_alert_fil',
+    'lhs_module' => 'WorkFlowAlerts',
+    'lhs_table' => 'workflow_alerts',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Expressions',
+    'rhs_table' => 'expressions',
+    'rhs_key' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'rel2_alert_fil',
+    'relationship_type' => 'one-to-many',
+  ),
+  'member_expressions' => 
+  array (
+    'name' => 'member_expressions',
+    'lhs_module' => 'Expressions',
+    'lhs_table' => 'expressions',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Expressions',
+    'rhs_table' => 'expressions',
+    'rhs_key' => 'parent_exp_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'pdfmanager_modified_user' => 
+  array (
+    'name' => 'pdfmanager_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'PdfManager',
+    'rhs_table' => 'pdfmanager',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'pdfmanager_created_by' => 
+  array (
+    'name' => 'pdfmanager_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'PdfManager',
+    'rhs_table' => 'pdfmanager',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'pdfmanager_activities' => 
+  array (
+    'name' => 'pdfmanager_activities',
+    'lhs_module' => 'PdfManager',
+    'lhs_table' => 'pdfmanager',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'PdfManager',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'pdfmanager_following' => 
+  array (
+    'name' => 'pdfmanager_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'PdfManager',
+    'rhs_table' => 'pdfmanager',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'PdfManager',
+    'user_field' => 'created_by',
+  ),
+  'pdfmanager_favorite' => 
+  array (
+    'name' => 'pdfmanager_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'PdfManager',
+    'rhs_table' => 'pdfmanager',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'PdfManager',
+    'user_field' => 'created_by',
+  ),
+  'pdfmanager_commentlog' => 
+  array (
+    'name' => 'pdfmanager_commentlog',
+    'lhs_module' => 'PdfManager',
+    'lhs_table' => 'pdfmanager',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'PdfManager',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'pdfmanager_locked_fields' => 
+  array (
+    'name' => 'pdfmanager_locked_fields',
+    'lhs_module' => 'PdfManager',
+    'lhs_table' => 'pdfmanager',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'PdfManager',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'pdfmanager_team_count_relationship' => 
+  array (
+    'name' => 'pdfmanager_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'PdfManager',
+    'rhs_table' => 'pdfmanager',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'pdfmanager_teams' => 
+  array (
+    'name' => 'pdfmanager_teams',
+    'lhs_module' => 'PdfManager',
+    'lhs_table' => 'pdfmanager',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'pdfmanager_team' => 
+  array (
+    'name' => 'pdfmanager_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'PdfManager',
+    'rhs_table' => 'pdfmanager',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'pdfmanager_assigned_user' => 
+  array (
+    'name' => 'pdfmanager_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'PdfManager',
+    'rhs_table' => 'pdfmanager',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'inbound_email_created_by' => 
+  array (
+    'name' => 'inbound_email_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'InboundEmail',
+    'rhs_table' => 'inbound_email',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-one',
+  ),
+  'inbound_email_modified_user_id' => 
+  array (
+    'name' => 'inbound_email_modified_user_id',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'InboundEmail',
+    'rhs_table' => 'inbound_email',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-one',
+  ),
+  'inbound_email_emails' => 
+  array (
+    'name' => 'inbound_email_emails',
+    'lhs_module' => 'InboundEmail',
+    'lhs_table' => 'inbound_email',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Emails',
+    'rhs_table' => 'emails',
+    'rhs_key' => 'mailbox_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'inboundemail_team_count_relationship' => 
+  array (
+    'name' => 'inboundemail_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'InboundEmail',
+    'rhs_table' => 'inbound_email',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'inboundemail_teams' => 
+  array (
+    'name' => 'inboundemail_teams',
+    'lhs_module' => 'InboundEmail',
+    'lhs_table' => 'inbound_email',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'inboundemail_team' => 
+  array (
+    'name' => 'inboundemail_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'InboundEmail',
+    'rhs_table' => 'inbound_email',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'employees_created_by' => 
+  array (
+    'name' => 'employees_created_by',
+    'lhs_module' => 'Employees',
+    'lhs_table' => 'users',
+    'lhs_key' => 'created_by',
+    'rhs_module' => 'Users',
+    'rhs_table' => 'users',
+    'rhs_key' => 'id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'saved_search_assigned_user' => 
+  array (
+    'name' => 'saved_search_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'SavedSearch',
+    'rhs_table' => 'saved_search',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'savedsearch_team_count_relationship' => 
+  array (
+    'name' => 'savedsearch_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'SavedSearch',
+    'rhs_table' => 'saved_search',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'savedsearch_teams' => 
+  array (
+    'name' => 'savedsearch_teams',
+    'lhs_module' => 'SavedSearch',
+    'lhs_table' => 'saved_search',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'savedsearch_team' => 
+  array (
+    'name' => 'savedsearch_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'SavedSearch',
+    'rhs_table' => 'saved_search',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'emailtemplates_assigned_user' => 
+  array (
+    'name' => 'emailtemplates_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EmailTemplates',
+    'rhs_table' => 'email_templates',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'emailtemplates_modified_user' => 
+  array (
+    'name' => 'emailtemplates_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EmailTemplates',
+    'rhs_table' => 'email_templates',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'emailtemplates_created_by' => 
+  array (
+    'name' => 'emailtemplates_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EmailTemplates',
+    'rhs_table' => 'email_templates',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'emailtemplates_attachments' => 
+  array (
+    'name' => 'emailtemplates_attachments',
+    'lhs_module' => 'EmailTemplates',
+    'lhs_table' => 'email_templates',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Notes',
+    'rhs_table' => 'notes',
+    'rhs_key' => 'email_id',
+    'relationship_type' => 'one-to-many',
+    'relationship_role_column' => 'email_type',
+    'relationship_role_column_value' => 'EmailTemplates',
+  ),
+  'emailtemplates_team_count_relationship' => 
+  array (
+    'name' => 'emailtemplates_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EmailTemplates',
+    'rhs_table' => 'email_templates',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'emailtemplates_teams' => 
+  array (
+    'name' => 'emailtemplates_teams',
+    'lhs_module' => 'EmailTemplates',
+    'lhs_table' => 'email_templates',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'emailtemplates_team' => 
+  array (
+    'name' => 'emailtemplates_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EmailTemplates',
+    'rhs_table' => 'email_templates',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'emailtemplates_tags' => 
+  array (
+    'name' => 'emailtemplates_tags',
+    'lhs_module' => 'EmailTemplates',
+    'lhs_table' => 'email_templates',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'EmailTemplates',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'campaign_campaigntrakers' => 
+  array (
+    'name' => 'campaign_campaigntrakers',
+    'lhs_module' => 'Campaigns',
+    'lhs_table' => 'campaigns',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CampaignTrackers',
+    'rhs_table' => 'campaign_trkrs',
+    'rhs_key' => 'campaign_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'alert_components' => 
+  array (
+    'name' => 'alert_components',
+    'lhs_module' => 'WorkFlowAlertShells',
+    'lhs_table' => 'workflow_alertshells',
+    'lhs_key' => 'id',
+    'rhs_module' => 'WorkFlowAlerts',
+    'rhs_table' => 'workflow_alerts',
+    'rhs_key' => 'parent_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'hintaccountsets_modified_user' => 
+  array (
+    'name' => 'hintaccountsets_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintAccountsets',
+    'rhs_table' => 'hint_accountsets',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'hintaccountsets_created_by' => 
+  array (
+    'name' => 'hintaccountsets_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintAccountsets',
+    'rhs_table' => 'hint_accountsets',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'hintaccountset_activities' => 
+  array (
+    'name' => 'hintaccountset_activities',
+    'lhs_module' => 'HintAccountsets',
+    'lhs_table' => 'hint_accountsets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'HintAccountsets',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintaccountsets_following' => 
+  array (
+    'name' => 'hintaccountsets_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintAccountsets',
+    'rhs_table' => 'hint_accountsets',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'HintAccountsets',
+    'user_field' => 'created_by',
+  ),
+  'hintaccountsets_favorite' => 
+  array (
+    'name' => 'hintaccountsets_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintAccountsets',
+    'rhs_table' => 'hint_accountsets',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'HintAccountsets',
+    'user_field' => 'created_by',
+  ),
+  'hintaccountsets_tags' => 
+  array (
+    'name' => 'hintaccountsets_tags',
+    'lhs_module' => 'HintAccountsets',
+    'lhs_table' => 'hint_accountsets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'HintAccountsets',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintaccountsets_commentlog' => 
+  array (
+    'name' => 'hintaccountsets_commentlog',
+    'lhs_module' => 'HintAccountsets',
+    'lhs_table' => 'hint_accountsets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'HintAccountsets',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintaccountsets_locked_fields' => 
+  array (
+    'name' => 'hintaccountsets_locked_fields',
+    'lhs_module' => 'HintAccountsets',
+    'lhs_table' => 'hint_accountsets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'HintAccountsets',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintaccountsets_assigned_user' => 
+  array (
+    'name' => 'hintaccountsets_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintAccountsets',
+    'rhs_table' => 'hint_accountsets',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'workflow_triggers' => 
+  array (
+    'name' => 'workflow_triggers',
+    'lhs_module' => 'WorkFlow',
+    'lhs_table' => 'workflow',
+    'lhs_key' => 'id',
+    'rhs_module' => 'WorkFlowTriggerShells',
+    'rhs_table' => 'workflow_triggershells',
+    'rhs_key' => 'parent_id',
+    'relationship_role_column' => 'frame_type',
+    'relationship_role_column_value' => 'Primary',
+    'relationship_type' => 'one-to-many',
+  ),
+  'workflow_trigger_filters' => 
+  array (
+    'name' => 'workflow_trigger_filters',
+    'lhs_module' => 'WorkFlow',
+    'lhs_table' => 'workflow',
+    'lhs_key' => 'id',
+    'rhs_module' => 'WorkFlowTriggerShells',
+    'rhs_table' => 'workflow_triggershells',
+    'rhs_key' => 'parent_id',
+    'relationship_role_column' => 'frame_type',
+    'relationship_role_column_value' => 'Secondary',
+    'relationship_type' => 'one-to-many',
+  ),
+  'workflow_alerts' => 
+  array (
+    'name' => 'workflow_alerts',
+    'lhs_module' => 'WorkFlow',
+    'lhs_table' => 'workflow',
+    'lhs_key' => 'id',
+    'rhs_module' => 'WorkFlowAlertShells',
+    'rhs_table' => 'workflow_alertshells',
+    'rhs_key' => 'parent_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'workflow_actions' => 
+  array (
+    'name' => 'workflow_actions',
+    'lhs_module' => 'WorkFlow',
+    'lhs_table' => 'workflow',
+    'lhs_key' => 'id',
+    'rhs_module' => 'WorkFlowActionShells',
+    'rhs_table' => 'workflow_actionshells',
+    'rhs_key' => 'parent_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'email_template_email_marketings' => 
+  array (
+    'name' => 'email_template_email_marketings',
+    'lhs_module' => 'EmailTemplates',
+    'lhs_table' => 'email_templates',
+    'lhs_key' => 'id',
+    'rhs_module' => 'EmailMarketing',
+    'rhs_table' => 'email_marketing',
+    'rhs_key' => 'template_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'activities_modified_user' => 
+  array (
+    'name' => 'activities_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'activities_created_by' => 
+  array (
+    'name' => 'activities_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'activity_activities' => 
+  array (
+    'name' => 'activity_activities',
+    'lhs_module' => 'Activities',
+    'lhs_table' => 'activities',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Activities',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'comments' => 
+  array (
+    'name' => 'comments',
+    'lhs_module' => 'Activities',
+    'lhs_table' => 'activities',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Comments',
+    'rhs_table' => 'comments',
+    'rhs_key' => 'parent_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'activities_following' => 
+  array (
+    'name' => 'activities_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'Activities',
+    'user_field' => 'created_by',
+  ),
+  'activities_favorite' => 
+  array (
+    'name' => 'activities_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'Activities',
+    'user_field' => 'created_by',
+  ),
+  'activities_locked_fields' => 
+  array (
+    'name' => 'activities_locked_fields',
+    'lhs_module' => 'Activities',
+    'lhs_table' => 'activities',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Activities',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'productcategories_modified_user' => 
+  array (
+    'name' => 'productcategories_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProductCategories',
+    'rhs_table' => 'product_categories',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'productcategories_created_by' => 
+  array (
+    'name' => 'productcategories_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProductCategories',
+    'rhs_table' => 'product_categories',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'productcategory_activities' => 
+  array (
+    'name' => 'productcategory_activities',
+    'lhs_module' => 'ProductCategories',
+    'lhs_table' => 'product_categories',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ProductCategories',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'member_categories' => 
+  array (
+    'name' => 'member_categories',
+    'lhs_module' => 'ProductCategories',
+    'lhs_table' => 'product_categories',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProductCategories',
+    'rhs_table' => 'product_categories',
+    'rhs_key' => 'parent_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'productcategories_following' => 
+  array (
+    'name' => 'productcategories_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProductCategories',
+    'rhs_table' => 'product_categories',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ProductCategories',
+    'user_field' => 'created_by',
+  ),
+  'productcategories_favorite' => 
+  array (
+    'name' => 'productcategories_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProductCategories',
+    'rhs_table' => 'product_categories',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ProductCategories',
+    'user_field' => 'created_by',
+  ),
+  'productcategories_locked_fields' => 
+  array (
+    'name' => 'productcategories_locked_fields',
+    'lhs_module' => 'ProductCategories',
+    'lhs_table' => 'product_categories',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'ProductCategories',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'productcategories_assigned_user' => 
+  array (
+    'name' => 'productcategories_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProductCategories',
+    'rhs_table' => 'product_categories',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastworksheets_modified_user' => 
+  array (
+    'name' => 'forecastworksheets_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastWorksheets',
+    'rhs_table' => 'forecast_worksheets',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastworksheets_created_by' => 
+  array (
+    'name' => 'forecastworksheets_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastWorksheets',
+    'rhs_table' => 'forecast_worksheets',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastworksheet_activities' => 
+  array (
+    'name' => 'forecastworksheet_activities',
+    'lhs_module' => 'ForecastWorksheets',
+    'lhs_table' => 'forecast_worksheets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ForecastWorksheets',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'forecastworksheets_accounts' => 
+  array (
+    'name' => 'forecastworksheets_accounts',
+    'lhs_module' => 'Accounts',
+    'lhs_table' => 'accounts',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastWorksheets',
+    'rhs_table' => 'forecast_worksheets',
+    'rhs_key' => 'account_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastworksheets_opportunities' => 
+  array (
+    'name' => 'forecastworksheets_opportunities',
+    'lhs_module' => 'Opportunities',
+    'lhs_table' => 'opportunities',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastWorksheets',
+    'rhs_table' => 'forecast_worksheets',
+    'rhs_key' => 'opportunity_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastworksheets_campaigns' => 
+  array (
+    'name' => 'forecastworksheets_campaigns',
+    'lhs_module' => 'Campaigns',
+    'lhs_table' => 'campaigns',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastWorksheets',
+    'rhs_table' => 'forecast_worksheets',
+    'rhs_key' => 'campaign_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastworksheets_templates' => 
+  array (
+    'name' => 'forecastworksheets_templates',
+    'lhs_module' => 'ProductTemplates',
+    'lhs_table' => 'product_templates',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastWorksheets',
+    'rhs_table' => 'forecast_worksheets',
+    'rhs_key' => 'product_template_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastworksheets_categories' => 
+  array (
+    'name' => 'forecastworksheets_categories',
+    'lhs_module' => 'ProductCategories',
+    'lhs_table' => 'product_categories',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastWorksheets',
+    'rhs_table' => 'forecast_worksheets',
+    'rhs_key' => 'category_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastworksheets_following' => 
+  array (
+    'name' => 'forecastworksheets_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastWorksheets',
+    'rhs_table' => 'forecast_worksheets',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ForecastWorksheets',
+    'user_field' => 'created_by',
+  ),
+  'forecastworksheets_favorite' => 
+  array (
+    'name' => 'forecastworksheets_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastWorksheets',
+    'rhs_table' => 'forecast_worksheets',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ForecastWorksheets',
+    'user_field' => 'created_by',
+  ),
+  'forecastworksheets_locked_fields' => 
+  array (
+    'name' => 'forecastworksheets_locked_fields',
+    'lhs_module' => 'ForecastWorksheets',
+    'lhs_table' => 'forecast_worksheets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'ForecastWorksheets',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'forecastworksheets_assigned_user' => 
+  array (
+    'name' => 'forecastworksheets_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastWorksheets',
+    'rhs_table' => 'forecast_worksheets',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastworksheets_team_count_relationship' => 
+  array (
+    'name' => 'forecastworksheets_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastWorksheets',
+    'rhs_table' => 'forecast_worksheets',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastworksheets_teams' => 
+  array (
+    'name' => 'forecastworksheets_teams',
+    'lhs_module' => 'ForecastWorksheets',
+    'lhs_table' => 'forecast_worksheets',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'forecastworksheets_team' => 
+  array (
+    'name' => 'forecastworksheets_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastWorksheets',
+    'rhs_table' => 'forecast_worksheets',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastworksheets_currencies' => 
+  array (
+    'name' => 'forecastworksheets_currencies',
+    'lhs_module' => 'Currencies',
+    'lhs_table' => 'currencies',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastWorksheets',
+    'rhs_table' => 'forecast_worksheets',
+    'rhs_key' => 'currency_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'hintenrichfieldconfigs_modified_user' => 
+  array (
+    'name' => 'hintenrichfieldconfigs_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintEnrichFieldConfigs',
+    'rhs_table' => 'hint_enrich_field_config',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'hintenrichfieldconfigs_created_by' => 
+  array (
+    'name' => 'hintenrichfieldconfigs_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintEnrichFieldConfigs',
+    'rhs_table' => 'hint_enrich_field_config',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'hintenrichfieldconfig_activities' => 
+  array (
+    'name' => 'hintenrichfieldconfig_activities',
+    'lhs_module' => 'HintEnrichFieldConfigs',
+    'lhs_table' => 'hint_enrich_field_config',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'HintEnrichFieldConfigs',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintenrichfieldconfigs_following' => 
+  array (
+    'name' => 'hintenrichfieldconfigs_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintEnrichFieldConfigs',
+    'rhs_table' => 'hint_enrich_field_config',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'HintEnrichFieldConfigs',
+    'user_field' => 'created_by',
+  ),
+  'hintenrichfieldconfigs_favorite' => 
+  array (
+    'name' => 'hintenrichfieldconfigs_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintEnrichFieldConfigs',
+    'rhs_table' => 'hint_enrich_field_config',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'HintEnrichFieldConfigs',
+    'user_field' => 'created_by',
+  ),
+  'hintenrichfieldconfigs_tags' => 
+  array (
+    'name' => 'hintenrichfieldconfigs_tags',
+    'lhs_module' => 'HintEnrichFieldConfigs',
+    'lhs_table' => 'hint_enrich_field_config',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'HintEnrichFieldConfigs',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintenrichfieldconfigs_commentlog' => 
+  array (
+    'name' => 'hintenrichfieldconfigs_commentlog',
+    'lhs_module' => 'HintEnrichFieldConfigs',
+    'lhs_table' => 'hint_enrich_field_config',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'HintEnrichFieldConfigs',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintenrichfieldconfigs_locked_fields' => 
+  array (
+    'name' => 'hintenrichfieldconfigs_locked_fields',
+    'lhs_module' => 'HintEnrichFieldConfigs',
+    'lhs_table' => 'hint_enrich_field_config',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'HintEnrichFieldConfigs',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintenrichfieldconfigs_assigned_user' => 
+  array (
+    'name' => 'hintenrichfieldconfigs_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintEnrichFieldConfigs',
+    'rhs_table' => 'hint_enrich_field_config',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'kbarticles_modified_user' => 
+  array (
+    'name' => 'kbarticles_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBArticles',
+    'rhs_table' => 'kbarticles',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'kbarticles_created_by' => 
+  array (
+    'name' => 'kbarticles_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBArticles',
+    'rhs_table' => 'kbarticles',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'kbarticle_activities' => 
+  array (
+    'name' => 'kbarticle_activities',
+    'lhs_module' => 'KBArticles',
+    'lhs_table' => 'kbarticles',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'KBArticles',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'kbdocuments_kbarticles' => 
+  array (
+    'name' => 'kbdocuments_kbarticles',
+    'lhs_module' => 'KBDocuments',
+    'lhs_table' => 'kbdocuments',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBArticles',
+    'rhs_table' => 'kbarticles',
+    'rhs_key' => 'kbdocument_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'kbarticles_following' => 
+  array (
+    'name' => 'kbarticles_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBArticles',
+    'rhs_table' => 'kbarticles',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'KBArticles',
+    'user_field' => 'created_by',
+  ),
+  'kbarticles_favorite' => 
+  array (
+    'name' => 'kbarticles_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBArticles',
+    'rhs_table' => 'kbarticles',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'KBArticles',
+    'user_field' => 'created_by',
+  ),
+  'kbarticles_locked_fields' => 
+  array (
+    'name' => 'kbarticles_locked_fields',
+    'lhs_module' => 'KBArticles',
+    'lhs_table' => 'kbarticles',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'KBArticles',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'kbarticles_team_count_relationship' => 
+  array (
+    'name' => 'kbarticles_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBArticles',
+    'rhs_table' => 'kbarticles',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'kbarticles_teams' => 
+  array (
+    'name' => 'kbarticles_teams',
+    'lhs_module' => 'KBArticles',
+    'lhs_table' => 'kbarticles',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'kbarticles_team' => 
+  array (
+    'name' => 'kbarticles_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBArticles',
+    'rhs_table' => 'kbarticles',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'kbarticles_assigned_user' => 
+  array (
+    'name' => 'kbarticles_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBArticles',
+    'rhs_table' => 'kbarticles',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'changetimers_modified_user' => 
+  array (
+    'name' => 'changetimers_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ChangeTimers',
+    'rhs_table' => 'changetimers',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'changetimers_created_by' => 
+  array (
+    'name' => 'changetimers_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ChangeTimers',
+    'rhs_table' => 'changetimers',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'changetimer_activities' => 
+  array (
+    'name' => 'changetimer_activities',
+    'lhs_module' => 'ChangeTimers',
+    'lhs_table' => 'changetimers',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ChangeTimers',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'changetimers_following' => 
+  array (
+    'name' => 'changetimers_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ChangeTimers',
+    'rhs_table' => 'changetimers',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ChangeTimers',
+    'user_field' => 'created_by',
+  ),
+  'changetimers_favorite' => 
+  array (
+    'name' => 'changetimers_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ChangeTimers',
+    'rhs_table' => 'changetimers',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ChangeTimers',
+    'user_field' => 'created_by',
+  ),
+  'forecastmanagerworksheets_modified_user' => 
+  array (
+    'name' => 'forecastmanagerworksheets_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastManagerWorksheets',
+    'rhs_table' => 'forecast_manager_worksheets',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastmanagerworksheets_created_by' => 
+  array (
+    'name' => 'forecastmanagerworksheets_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastManagerWorksheets',
+    'rhs_table' => 'forecast_manager_worksheets',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastmanagerworksheet_activities' => 
+  array (
+    'name' => 'forecastmanagerworksheet_activities',
+    'lhs_module' => 'ForecastManagerWorksheets',
+    'lhs_table' => 'forecast_manager_worksheets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ForecastManagerWorksheets',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'forecastmanagerworksheets_following' => 
+  array (
+    'name' => 'forecastmanagerworksheets_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastManagerWorksheets',
+    'rhs_table' => 'forecast_manager_worksheets',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ForecastManagerWorksheets',
+    'user_field' => 'created_by',
+  ),
+  'forecastmanagerworksheets_favorite' => 
+  array (
+    'name' => 'forecastmanagerworksheets_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastManagerWorksheets',
+    'rhs_table' => 'forecast_manager_worksheets',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ForecastManagerWorksheets',
+    'user_field' => 'created_by',
+  ),
+  'forecastmanagerworksheets_locked_fields' => 
+  array (
+    'name' => 'forecastmanagerworksheets_locked_fields',
+    'lhs_module' => 'ForecastManagerWorksheets',
+    'lhs_table' => 'forecast_manager_worksheets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'ForecastManagerWorksheets',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'forecastmanagerworksheets_assigned_user' => 
+  array (
+    'name' => 'forecastmanagerworksheets_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastManagerWorksheets',
+    'rhs_table' => 'forecast_manager_worksheets',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastmanagerworksheets_team_count_relationship' => 
+  array (
+    'name' => 'forecastmanagerworksheets_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastManagerWorksheets',
+    'rhs_table' => 'forecast_manager_worksheets',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastmanagerworksheets_teams' => 
+  array (
+    'name' => 'forecastmanagerworksheets_teams',
+    'lhs_module' => 'ForecastManagerWorksheets',
+    'lhs_table' => 'forecast_manager_worksheets',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'forecastmanagerworksheets_team' => 
+  array (
+    'name' => 'forecastmanagerworksheets_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastManagerWorksheets',
+    'rhs_table' => 'forecast_manager_worksheets',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'forecastmanagerworksheets_currencies' => 
+  array (
+    'name' => 'forecastmanagerworksheets_currencies',
+    'lhs_module' => 'Currencies',
+    'lhs_table' => 'currencies',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ForecastManagerWorksheets',
+    'rhs_table' => 'forecast_manager_worksheets',
+    'rhs_key' => 'currency_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'sugarlive_modified_user' => 
+  array (
+    'name' => 'sugarlive_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'SugarLive',
+    'rhs_table' => 'sugar_live',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'sugarlive_created_by' => 
+  array (
+    'name' => 'sugarlive_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'SugarLive',
+    'rhs_table' => 'sugar_live',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'sugarlive_activities' => 
+  array (
+    'name' => 'sugarlive_activities',
+    'lhs_module' => 'SugarLive',
+    'lhs_table' => 'sugar_live',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'SugarLive',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'sugarlive_following' => 
+  array (
+    'name' => 'sugarlive_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'SugarLive',
+    'rhs_table' => 'sugar_live',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'SugarLive',
+    'user_field' => 'created_by',
+  ),
+  'sugarlive_favorite' => 
+  array (
+    'name' => 'sugarlive_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'SugarLive',
+    'rhs_table' => 'sugar_live',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'SugarLive',
+    'user_field' => 'created_by',
+  ),
+  'sugarlive_tags' => 
+  array (
+    'name' => 'sugarlive_tags',
+    'lhs_module' => 'SugarLive',
+    'lhs_table' => 'sugar_live',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'SugarLive',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'sugarlive_commentlog' => 
+  array (
+    'name' => 'sugarlive_commentlog',
+    'lhs_module' => 'SugarLive',
+    'lhs_table' => 'sugar_live',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'SugarLive',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'sugarlive_locked_fields' => 
+  array (
+    'name' => 'sugarlive_locked_fields',
+    'lhs_module' => 'SugarLive',
+    'lhs_table' => 'sugar_live',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'SugarLive',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'commentlog_modified_user' => 
+  array (
+    'name' => 'commentlog_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'commentlog_created_by' => 
+  array (
+    'name' => 'commentlog_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'commentlog_activities' => 
+  array (
+    'name' => 'commentlog_activities',
+    'lhs_module' => 'CommentLog',
+    'lhs_table' => 'commentlog',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'CommentLog',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'commentlog_following' => 
+  array (
+    'name' => 'commentlog_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'CommentLog',
+    'user_field' => 'created_by',
+  ),
+  'commentlog_favorite' => 
+  array (
+    'name' => 'commentlog_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'CommentLog',
+    'user_field' => 'created_by',
+  ),
+  'commentlog_tags' => 
+  array (
+    'name' => 'commentlog_tags',
+    'lhs_module' => 'CommentLog',
+    'lhs_table' => 'commentlog',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'CommentLog',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'commentlog_locked_fields' => 
+  array (
+    'name' => 'commentlog_locked_fields',
+    'lhs_module' => 'CommentLog',
+    'lhs_table' => 'commentlog',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'CommentLog',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'shiftexceptions_modified_user' => 
+  array (
+    'name' => 'shiftexceptions_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ShiftExceptions',
+    'rhs_table' => 'shift_exceptions',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'shiftexceptions_created_by' => 
+  array (
+    'name' => 'shiftexceptions_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ShiftExceptions',
+    'rhs_table' => 'shift_exceptions',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'shiftexception_activities' => 
+  array (
+    'name' => 'shiftexception_activities',
+    'lhs_module' => 'ShiftExceptions',
+    'lhs_table' => 'shift_exceptions',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ShiftExceptions',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'shiftexceptions_following' => 
+  array (
+    'name' => 'shiftexceptions_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ShiftExceptions',
+    'rhs_table' => 'shift_exceptions',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ShiftExceptions',
+    'user_field' => 'created_by',
+  ),
+  'shiftexceptions_favorite' => 
+  array (
+    'name' => 'shiftexceptions_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ShiftExceptions',
+    'rhs_table' => 'shift_exceptions',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ShiftExceptions',
+    'user_field' => 'created_by',
+  ),
+  'shiftexceptions_tags' => 
+  array (
+    'name' => 'shiftexceptions_tags',
+    'lhs_module' => 'ShiftExceptions',
+    'lhs_table' => 'shift_exceptions',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'ShiftExceptions',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'shiftexceptions_commentlog' => 
+  array (
+    'name' => 'shiftexceptions_commentlog',
+    'lhs_module' => 'ShiftExceptions',
+    'lhs_table' => 'shift_exceptions',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ShiftExceptions',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'shiftexceptions_locked_fields' => 
+  array (
+    'name' => 'shiftexceptions_locked_fields',
+    'lhs_module' => 'ShiftExceptions',
+    'lhs_table' => 'shift_exceptions',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'ShiftExceptions',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'shiftexceptions_assigned_user' => 
+  array (
+    'name' => 'shiftexceptions_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ShiftExceptions',
+    'rhs_table' => 'shift_exceptions',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'shiftexceptions_team_count_relationship' => 
+  array (
+    'name' => 'shiftexceptions_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ShiftExceptions',
+    'rhs_table' => 'shift_exceptions',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'shiftexceptions_teams' => 
+  array (
+    'name' => 'shiftexceptions_teams',
+    'lhs_module' => 'ShiftExceptions',
+    'lhs_table' => 'shift_exceptions',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'shiftexceptions_team' => 
+  array (
+    'name' => 'shiftexceptions_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ShiftExceptions',
+    'rhs_table' => 'shift_exceptions',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'consoleconfiguration_modified_user' => 
+  array (
+    'name' => 'consoleconfiguration_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ConsoleConfiguration',
+    'rhs_table' => 'console_configuration',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'consoleconfiguration_created_by' => 
+  array (
+    'name' => 'consoleconfiguration_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ConsoleConfiguration',
+    'rhs_table' => 'console_configuration',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'consoleconfiguration_activities' => 
+  array (
+    'name' => 'consoleconfiguration_activities',
+    'lhs_module' => 'ConsoleConfiguration',
+    'lhs_table' => 'console_configuration',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ConsoleConfiguration',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'consoleconfiguration_following' => 
+  array (
+    'name' => 'consoleconfiguration_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ConsoleConfiguration',
+    'rhs_table' => 'console_configuration',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ConsoleConfiguration',
+    'user_field' => 'created_by',
+  ),
+  'consoleconfiguration_favorite' => 
+  array (
+    'name' => 'consoleconfiguration_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ConsoleConfiguration',
+    'rhs_table' => 'console_configuration',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ConsoleConfiguration',
+    'user_field' => 'created_by',
+  ),
+  'consoleconfiguration_tags' => 
+  array (
+    'name' => 'consoleconfiguration_tags',
+    'lhs_module' => 'ConsoleConfiguration',
+    'lhs_table' => 'console_configuration',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'ConsoleConfiguration',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'consoleconfiguration_commentlog' => 
+  array (
+    'name' => 'consoleconfiguration_commentlog',
+    'lhs_module' => 'ConsoleConfiguration',
+    'lhs_table' => 'console_configuration',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ConsoleConfiguration',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'consoleconfiguration_locked_fields' => 
+  array (
+    'name' => 'consoleconfiguration_locked_fields',
+    'lhs_module' => 'ConsoleConfiguration',
+    'lhs_table' => 'console_configuration',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'ConsoleConfiguration',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'related_timeperiods' => 
+  array (
+    'name' => 'related_timeperiods',
+    'lhs_module' => 'TimePeriods',
+    'lhs_table' => 'timeperiods',
+    'lhs_key' => 'id',
+    'rhs_module' => 'TimePeriods',
+    'rhs_table' => 'timeperiods',
+    'rhs_key' => 'parent_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'hintnewsnotifications_modified_user' => 
+  array (
+    'name' => 'hintnewsnotifications_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintNewsNotifications',
+    'rhs_table' => 'hint_news_notifications',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'hintnewsnotifications_created_by' => 
+  array (
+    'name' => 'hintnewsnotifications_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintNewsNotifications',
+    'rhs_table' => 'hint_news_notifications',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'hintnewsnotification_activities' => 
+  array (
+    'name' => 'hintnewsnotification_activities',
+    'lhs_module' => 'HintNewsNotifications',
+    'lhs_table' => 'hint_news_notifications',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'HintNewsNotifications',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintnewsnotifications_following' => 
+  array (
+    'name' => 'hintnewsnotifications_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintNewsNotifications',
+    'rhs_table' => 'hint_news_notifications',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'HintNewsNotifications',
+    'user_field' => 'created_by',
+  ),
+  'hintnewsnotifications_favorite' => 
+  array (
+    'name' => 'hintnewsnotifications_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintNewsNotifications',
+    'rhs_table' => 'hint_news_notifications',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'HintNewsNotifications',
+    'user_field' => 'created_by',
+  ),
+  'hintnewsnotifications_tags' => 
+  array (
+    'name' => 'hintnewsnotifications_tags',
+    'lhs_module' => 'HintNewsNotifications',
+    'lhs_table' => 'hint_news_notifications',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'HintNewsNotifications',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'tag_id' => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintnewsnotifications_commentlog' => 
+  array (
+    'name' => 'hintnewsnotifications_commentlog',
+    'lhs_module' => 'HintNewsNotifications',
+    'lhs_table' => 'hint_news_notifications',
+    'lhs_key' => 'id',
+    'rhs_module' => 'CommentLog',
+    'rhs_table' => 'commentlog',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'commentlog_rel',
+    'join_key_lhs' => 'record_id',
+    'join_key_rhs' => 'commentlog_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'HintNewsNotifications',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'record_id' => 
+      array (
+        'name' => 'record_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'commentlog_id' => 
+      array (
+        'name' => 'commentlog_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'module' => 
+      array (
+        'name' => 'module',
+        'type' => 'varchar',
+        'len' => 100,
+        'required' => false,
+        'readonly' => true,
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintnewsnotifications_locked_fields' => 
+  array (
+    'name' => 'hintnewsnotifications_locked_fields',
+    'lhs_module' => 'HintNewsNotifications',
+    'lhs_table' => 'hint_news_notifications',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'HintNewsNotifications',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'hintnewsnotifications_assigned_user' => 
+  array (
+    'name' => 'hintnewsnotifications_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'HintNewsNotifications',
+    'rhs_table' => 'hint_news_notifications',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'holidays_modified_user' => 
+  array (
+    'name' => 'holidays_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Holidays',
+    'rhs_table' => 'holidays',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'holidays_created_by' => 
+  array (
+    'name' => 'holidays_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Holidays',
+    'rhs_table' => 'holidays',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'pushnotifications_modified_user' => 
+  array (
+    'name' => 'pushnotifications_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'PushNotifications',
+    'rhs_table' => 'push_notifications',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'pushnotifications_created_by' => 
+  array (
+    'name' => 'pushnotifications_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'PushNotifications',
+    'rhs_table' => 'push_notifications',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'pushnotification_activities' => 
+  array (
+    'name' => 'pushnotification_activities',
+    'lhs_module' => 'PushNotifications',
+    'lhs_table' => 'push_notifications',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'PushNotifications',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'pushnotifications_following' => 
+  array (
+    'name' => 'pushnotifications_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'PushNotifications',
+    'rhs_table' => 'push_notifications',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'PushNotifications',
+    'user_field' => 'created_by',
+  ),
+  'pushnotifications_favorite' => 
+  array (
+    'name' => 'pushnotifications_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'PushNotifications',
+    'rhs_table' => 'push_notifications',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'PushNotifications',
+    'user_field' => 'created_by',
+  ),
+  'pushnotifications_locked_fields' => 
+  array (
+    'name' => 'pushnotifications_locked_fields',
+    'lhs_module' => 'PushNotifications',
+    'lhs_table' => 'push_notifications',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'PushNotifications',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'pushnotifications_assigned_user' => 
+  array (
+    'name' => 'pushnotifications_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'PushNotifications',
+    'rhs_table' => 'push_notifications',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'reportschedules_modified_user' => 
+  array (
+    'name' => 'reportschedules_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ReportSchedules',
+    'rhs_table' => 'report_schedules',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'reportschedules_created_by' => 
+  array (
+    'name' => 'reportschedules_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ReportSchedules',
+    'rhs_table' => 'report_schedules',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'reportschedule_activities' => 
+  array (
+    'name' => 'reportschedule_activities',
+    'lhs_module' => 'ReportSchedules',
+    'lhs_table' => 'report_schedules',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ReportSchedules',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'report_reportschedules' => 
+  array (
+    'name' => 'report_reportschedules',
+    'lhs_module' => 'Reports',
+    'lhs_table' => 'saved_reports',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ReportSchedules',
+    'rhs_table' => 'report_schedules',
+    'rhs_key' => 'report_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'reportschedules_following' => 
+  array (
+    'name' => 'reportschedules_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ReportSchedules',
+    'rhs_table' => 'report_schedules',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ReportSchedules',
+    'user_field' => 'created_by',
+  ),
+  'reportschedules_favorite' => 
+  array (
+    'name' => 'reportschedules_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ReportSchedules',
+    'rhs_table' => 'report_schedules',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ReportSchedules',
+    'user_field' => 'created_by',
+  ),
+  'reportschedules_locked_fields' => 
+  array (
+    'name' => 'reportschedules_locked_fields',
+    'lhs_module' => 'ReportSchedules',
+    'lhs_table' => 'report_schedules',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'ReportSchedules',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'reportschedules_assigned_user' => 
+  array (
+    'name' => 'reportschedules_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ReportSchedules',
+    'rhs_table' => 'report_schedules',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'reportschedules_team_count_relationship' => 
+  array (
+    'name' => 'reportschedules_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ReportSchedules',
+    'rhs_table' => 'report_schedules',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'reportschedules_teams' => 
+  array (
+    'name' => 'reportschedules_teams',
+    'lhs_module' => 'ReportSchedules',
+    'lhs_table' => 'report_schedules',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'reportschedules_team' => 
+  array (
+    'name' => 'reportschedules_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ReportSchedules',
+    'rhs_table' => 'report_schedules',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'reportmaker_team_count_relationship' => 
+  array (
+    'name' => 'reportmaker_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ReportMaker',
+    'rhs_table' => 'report_maker',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'reportmaker_teams' => 
+  array (
+    'name' => 'reportmaker_teams',
+    'lhs_module' => 'ReportMaker',
+    'lhs_table' => 'report_maker',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'reportmaker_team' => 
+  array (
+    'name' => 'reportmaker_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ReportMaker',
+    'rhs_table' => 'report_maker',
+    'rhs_key' => 'team_id',
     'relationship_type' => 'one-to-many',
   ),
   'styleguide_modified_user' => 
@@ -27194,1104 +36672,6 @@
     'rhs_key' => 'assigned_user_id',
     'relationship_type' => 'one-to-many',
   ),
-  'inbound_email_created_by' => 
-  array (
-    'name' => 'inbound_email_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'InboundEmail',
-    'rhs_table' => 'inbound_email',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-one',
-  ),
-  'inbound_email_modified_user_id' => 
-  array (
-    'name' => 'inbound_email_modified_user_id',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'InboundEmail',
-    'rhs_table' => 'inbound_email',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-one',
-  ),
-  'inbound_email_emails' => 
-  array (
-    'name' => 'inbound_email_emails',
-    'lhs_module' => 'InboundEmail',
-    'lhs_table' => 'inbound_email',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Emails',
-    'rhs_table' => 'emails',
-    'rhs_key' => 'mailbox_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'inboundemail_team_count_relationship' => 
-  array (
-    'name' => 'inboundemail_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'InboundEmail',
-    'rhs_table' => 'inbound_email',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'inboundemail_teams' => 
-  array (
-    'name' => 'inboundemail_teams',
-    'lhs_module' => 'InboundEmail',
-    'lhs_table' => 'inbound_email',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'inboundemail_team' => 
-  array (
-    'name' => 'inboundemail_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'InboundEmail',
-    'rhs_table' => 'inbound_email',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'saved_search_assigned_user' => 
-  array (
-    'name' => 'saved_search_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'SavedSearch',
-    'rhs_table' => 'saved_search',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'savedsearch_team_count_relationship' => 
-  array (
-    'name' => 'savedsearch_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'SavedSearch',
-    'rhs_table' => 'saved_search',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'savedsearch_teams' => 
-  array (
-    'name' => 'savedsearch_teams',
-    'lhs_module' => 'SavedSearch',
-    'lhs_table' => 'saved_search',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'savedsearch_team' => 
-  array (
-    'name' => 'savedsearch_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'SavedSearch',
-    'rhs_table' => 'saved_search',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'employees_created_by' => 
-  array (
-    'name' => 'employees_created_by',
-    'lhs_module' => 'Employees',
-    'lhs_table' => 'users',
-    'lhs_key' => 'created_by',
-    'rhs_module' => 'Users',
-    'rhs_table' => 'users',
-    'rhs_key' => 'id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'team_memberships' => 
-  array (
-    'name' => 'team_memberships',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Users',
-    'rhs_table' => 'users',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_memberships',
-    'join_key_lhs' => 'team_id',
-    'join_key_rhs' => 'user_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-      ),
-      'user_id' => 
-      array (
-        'name' => 'user_id',
-        'type' => 'id',
-      ),
-      'explicit_assign' => 
-      array (
-        'name' => 'explicit_assign',
-        'type' => 'bool',
-        'len' => 1,
-        'default' => 0,
-        'required' => true,
-      ),
-      'implicit_assign' => 
-      array (
-        'name' => 'implicit_assign',
-        'type' => 'bool',
-        'len' => 1,
-        'default' => 0,
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => 1,
-        'default' => 0,
-      ),
-    ),
-  ),
-  'product_bundle_taxrate' => 
-  array (
-    'name' => 'product_bundle_taxrate',
-    'rhs_module' => 'ProductBundles',
-    'rhs_table' => 'product_bundles',
-    'rhs_key' => 'taxrate_id',
-    'lhs_module' => 'TaxRates',
-    'lhs_table' => 'taxrates',
-    'lhs_key' => 'id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'productbundles_team_count_relationship' => 
-  array (
-    'name' => 'productbundles_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProductBundles',
-    'rhs_table' => 'product_bundles',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'productbundles_teams' => 
-  array (
-    'name' => 'productbundles_teams',
-    'lhs_module' => 'ProductBundles',
-    'lhs_table' => 'product_bundles',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'productbundles_team' => 
-  array (
-    'name' => 'productbundles_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProductBundles',
-    'rhs_table' => 'product_bundles',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'productbundles_currencies' => 
-  array (
-    'name' => 'productbundles_currencies',
-    'lhs_module' => 'Currencies',
-    'lhs_table' => 'currencies',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProductBundles',
-    'rhs_table' => 'product_bundles',
-    'rhs_key' => 'currency_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'producttypes_modified_user' => 
-  array (
-    'name' => 'producttypes_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProductTypes',
-    'rhs_table' => 'product_types',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'producttypes_created_by' => 
-  array (
-    'name' => 'producttypes_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProductTypes',
-    'rhs_table' => 'product_types',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'producttype_activities' => 
-  array (
-    'name' => 'producttype_activities',
-    'lhs_module' => 'ProductTypes',
-    'lhs_table' => 'product_types',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ProductTypes',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'producttypes_following' => 
-  array (
-    'name' => 'producttypes_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProductTypes',
-    'rhs_table' => 'product_types',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ProductTypes',
-    'user_field' => 'created_by',
-  ),
-  'producttypes_favorite' => 
-  array (
-    'name' => 'producttypes_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProductTypes',
-    'rhs_table' => 'product_types',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ProductTypes',
-    'user_field' => 'created_by',
-  ),
-  'producttypes_tags' => 
-  array (
-    'name' => 'producttypes_tags',
-    'lhs_module' => 'ProductTypes',
-    'lhs_table' => 'product_types',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ProductTypes',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'producttypes_commentlog' => 
-  array (
-    'name' => 'producttypes_commentlog',
-    'lhs_module' => 'ProductTypes',
-    'lhs_table' => 'product_types',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ProductTypes',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'producttypes_locked_fields' => 
-  array (
-    'name' => 'producttypes_locked_fields',
-    'lhs_module' => 'ProductTypes',
-    'lhs_table' => 'product_types',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ProductTypes',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'productcategories_modified_user' => 
-  array (
-    'name' => 'productcategories_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProductCategories',
-    'rhs_table' => 'product_categories',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'productcategories_created_by' => 
-  array (
-    'name' => 'productcategories_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProductCategories',
-    'rhs_table' => 'product_categories',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'productcategory_activities' => 
-  array (
-    'name' => 'productcategory_activities',
-    'lhs_module' => 'ProductCategories',
-    'lhs_table' => 'product_categories',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ProductCategories',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'member_categories' => 
-  array (
-    'name' => 'member_categories',
-    'lhs_module' => 'ProductCategories',
-    'lhs_table' => 'product_categories',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProductCategories',
-    'rhs_table' => 'product_categories',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'productcategories_following' => 
-  array (
-    'name' => 'productcategories_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProductCategories',
-    'rhs_table' => 'product_categories',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ProductCategories',
-    'user_field' => 'created_by',
-  ),
-  'productcategories_favorite' => 
-  array (
-    'name' => 'productcategories_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProductCategories',
-    'rhs_table' => 'product_categories',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ProductCategories',
-    'user_field' => 'created_by',
-  ),
-  'productcategories_locked_fields' => 
-  array (
-    'name' => 'productcategories_locked_fields',
-    'lhs_module' => 'ProductCategories',
-    'lhs_table' => 'product_categories',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ProductCategories',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'productcategories_assigned_user' => 
-  array (
-    'name' => 'productcategories_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProductCategories',
-    'rhs_table' => 'product_categories',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'manufacturers_modified_user' => 
-  array (
-    'name' => 'manufacturers_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Manufacturers',
-    'rhs_table' => 'manufacturers',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'manufacturers_created_by' => 
-  array (
-    'name' => 'manufacturers_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Manufacturers',
-    'rhs_table' => 'manufacturers',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'manufacturer_activities' => 
-  array (
-    'name' => 'manufacturer_activities',
-    'lhs_module' => 'Manufacturers',
-    'lhs_table' => 'manufacturers',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Manufacturers',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'manufacturers_following' => 
-  array (
-    'name' => 'manufacturers_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Manufacturers',
-    'rhs_table' => 'manufacturers',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Manufacturers',
-    'user_field' => 'created_by',
-  ),
-  'manufacturers_favorite' => 
-  array (
-    'name' => 'manufacturers_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Manufacturers',
-    'rhs_table' => 'manufacturers',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'Manufacturers',
-    'user_field' => 'created_by',
-  ),
-  'manufacturers_tags' => 
-  array (
-    'name' => 'manufacturers_tags',
-    'lhs_module' => 'Manufacturers',
-    'lhs_table' => 'manufacturers',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Manufacturers',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'manufacturers_commentlog' => 
-  array (
-    'name' => 'manufacturers_commentlog',
-    'lhs_module' => 'Manufacturers',
-    'lhs_table' => 'manufacturers',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'Manufacturers',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'manufacturers_locked_fields' => 
-  array (
-    'name' => 'manufacturers_locked_fields',
-    'lhs_module' => 'Manufacturers',
-    'lhs_table' => 'manufacturers',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Manufacturers',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
   'shippers_modified_user' => 
   array (
     'name' => 'shippers_modified_user',
@@ -28581,33 +36961,33 @@
       ),
     ),
   ),
-  'taxrates_modified_user' => 
+  'categories_modified_user' => 
   array (
-    'name' => 'taxrates_modified_user',
+    'name' => 'categories_modified_user',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'TaxRates',
-    'rhs_table' => 'taxrates',
+    'rhs_module' => 'Categories',
+    'rhs_table' => 'categories',
     'rhs_key' => 'modified_user_id',
     'relationship_type' => 'one-to-many',
   ),
-  'taxrates_created_by' => 
+  'categories_created_by' => 
   array (
-    'name' => 'taxrates_created_by',
+    'name' => 'categories_created_by',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'TaxRates',
-    'rhs_table' => 'taxrates',
+    'rhs_module' => 'Categories',
+    'rhs_table' => 'categories',
     'rhs_key' => 'created_by',
     'relationship_type' => 'one-to-many',
   ),
-  'taxrate_activities' => 
+  'category_activities' => 
   array (
-    'name' => 'taxrate_activities',
-    'lhs_module' => 'TaxRates',
-    'lhs_table' => 'taxrates',
+    'name' => 'category_activities',
+    'lhs_module' => 'Categories',
+    'lhs_table' => 'categories',
     'lhs_key' => 'id',
     'rhs_module' => 'Activities',
     'rhs_table' => 'activities',
@@ -28618,7 +36998,7 @@
     'join_key_lhs' => 'parent_id',
     'join_key_rhs' => 'activity_id',
     'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'TaxRates',
+    'relationship_role_column_value' => 'Categories',
     'fields' => 
     array (
       'id' => 
@@ -28665,56 +37045,642 @@
       ),
     ),
   ),
-  'taxrate_quotes' => 
+  'categories_following' => 
   array (
-    'name' => 'taxrate_quotes',
-    'lhs_module' => 'TaxRates',
-    'lhs_table' => 'taxrates',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Quotes',
-    'rhs_table' => 'quotes',
-    'rhs_key' => 'taxrate_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'taxrates_following' => 
-  array (
-    'name' => 'taxrates_following',
+    'name' => 'categories_following',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'TaxRates',
-    'rhs_table' => 'taxrates',
+    'rhs_module' => 'Categories',
+    'rhs_table' => 'categories',
     'rhs_key' => 'id',
     'relationship_type' => 'user-based',
     'join_table' => 'subscriptions',
     'join_key_lhs' => 'created_by',
     'join_key_rhs' => 'parent_id',
     'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'TaxRates',
+    'relationship_role_column_value' => 'Categories',
     'user_field' => 'created_by',
   ),
-  'taxrates_favorite' => 
+  'categories_favorite' => 
   array (
-    'name' => 'taxrates_favorite',
+    'name' => 'categories_favorite',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'TaxRates',
-    'rhs_table' => 'taxrates',
+    'rhs_module' => 'Categories',
+    'rhs_table' => 'categories',
     'rhs_key' => 'id',
     'relationship_type' => 'user-based',
     'join_table' => 'sugarfavorites',
     'join_key_lhs' => 'modified_user_id',
     'join_key_rhs' => 'record_id',
     'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'TaxRates',
+    'relationship_role_column_value' => 'Categories',
     'user_field' => 'created_by',
   ),
-  'taxrates_tags' => 
+  'categories_locked_fields' => 
   array (
-    'name' => 'taxrates_tags',
-    'lhs_module' => 'TaxRates',
-    'lhs_table' => 'taxrates',
+    'name' => 'categories_locked_fields',
+    'lhs_module' => 'Categories',
+    'lhs_table' => 'categories',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Categories',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'kbdocuments_modified_user' => 
+  array (
+    'name' => 'kbdocuments_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBDocuments',
+    'rhs_table' => 'kbdocuments',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'kbdocuments_created_by' => 
+  array (
+    'name' => 'kbdocuments_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBDocuments',
+    'rhs_table' => 'kbdocuments',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'kbdocument_activities' => 
+  array (
+    'name' => 'kbdocument_activities',
+    'lhs_module' => 'KBDocuments',
+    'lhs_table' => 'kbdocuments',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'KBDocuments',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'kbdocuments_following' => 
+  array (
+    'name' => 'kbdocuments_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBDocuments',
+    'rhs_table' => 'kbdocuments',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'KBDocuments',
+    'user_field' => 'created_by',
+  ),
+  'kbdocuments_favorite' => 
+  array (
+    'name' => 'kbdocuments_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBDocuments',
+    'rhs_table' => 'kbdocuments',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'KBDocuments',
+    'user_field' => 'created_by',
+  ),
+  'kbdocuments_locked_fields' => 
+  array (
+    'name' => 'kbdocuments_locked_fields',
+    'lhs_module' => 'KBDocuments',
+    'lhs_table' => 'kbdocuments',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'KBDocuments',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'kbdocuments_team_count_relationship' => 
+  array (
+    'name' => 'kbdocuments_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBDocuments',
+    'rhs_table' => 'kbdocuments',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'kbdocuments_teams' => 
+  array (
+    'name' => 'kbdocuments_teams',
+    'lhs_module' => 'KBDocuments',
+    'lhs_table' => 'kbdocuments',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_set_id' => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'team_id' => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'kbdocuments_team' => 
+  array (
+    'name' => 'kbdocuments_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBDocuments',
+    'rhs_table' => 'kbdocuments',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'kbdocuments_assigned_user' => 
+  array (
+    'name' => 'kbdocuments_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'KBDocuments',
+    'rhs_table' => 'kbdocuments',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'weblogichooks_modified_user' => 
+  array (
+    'name' => 'weblogichooks_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'WebLogicHooks',
+    'rhs_table' => 'weblogichooks',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'weblogichooks_created_by' => 
+  array (
+    'name' => 'weblogichooks_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'WebLogicHooks',
+    'rhs_table' => 'weblogichooks',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'weblogichook_activities' => 
+  array (
+    'name' => 'weblogichook_activities',
+    'lhs_module' => 'WebLogicHooks',
+    'lhs_table' => 'weblogichooks',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'WebLogicHooks',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'weblogichooks_following' => 
+  array (
+    'name' => 'weblogichooks_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'WebLogicHooks',
+    'rhs_table' => 'weblogichooks',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'WebLogicHooks',
+    'user_field' => 'created_by',
+  ),
+  'weblogichooks_favorite' => 
+  array (
+    'name' => 'weblogichooks_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'WebLogicHooks',
+    'rhs_table' => 'weblogichooks',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'WebLogicHooks',
+    'user_field' => 'created_by',
+  ),
+  'weblogichooks_locked_fields' => 
+  array (
+    'name' => 'weblogichooks_locked_fields',
+    'lhs_module' => 'WebLogicHooks',
+    'lhs_table' => 'weblogichooks',
+    'lhs_key' => 'id',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'locked_field_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'pd_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'WebLogicHooks',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'pd_id' => 
+      array (
+        'name' => 'pd_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_id' => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'bean_module' => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'aclrolesets_modified_user' => 
+  array (
+    'name' => 'aclrolesets_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ACLRoleSets',
+    'rhs_table' => 'acl_role_sets',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'aclrolesets_created_by' => 
+  array (
+    'name' => 'aclrolesets_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ACLRoleSets',
+    'rhs_table' => 'acl_role_sets',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'aclroleset_activities' => 
+  array (
+    'name' => 'aclroleset_activities',
+    'lhs_module' => 'ACLRoleSets',
+    'lhs_table' => 'acl_role_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ACLRoleSets',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'aclrolesets_following' => 
+  array (
+    'name' => 'aclrolesets_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ACLRoleSets',
+    'rhs_table' => 'acl_role_sets',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'ACLRoleSets',
+    'user_field' => 'created_by',
+  ),
+  'aclrolesets_favorite' => 
+  array (
+    'name' => 'aclrolesets_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ACLRoleSets',
+    'rhs_table' => 'acl_role_sets',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'ACLRoleSets',
+    'user_field' => 'created_by',
+  ),
+  'aclrolesets_tags' => 
+  array (
+    'name' => 'aclrolesets_tags',
+    'lhs_module' => 'ACLRoleSets',
+    'lhs_table' => 'acl_role_sets',
     'lhs_key' => 'id',
     'rhs_module' => 'Tags',
     'rhs_table' => 'tags',
@@ -28724,7 +37690,7 @@
     'join_key_lhs' => 'bean_id',
     'join_key_rhs' => 'tag_id',
     'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'TaxRates',
+    'relationship_role_column_value' => 'ACLRoleSets',
     'dynamic_subpanel' => true,
     'fields' => 
     array (
@@ -28765,11 +37731,11 @@
       ),
     ),
   ),
-  'taxrates_commentlog' => 
+  'aclrolesets_commentlog' => 
   array (
-    'name' => 'taxrates_commentlog',
-    'lhs_module' => 'TaxRates',
-    'lhs_table' => 'taxrates',
+    'name' => 'aclrolesets_commentlog',
+    'lhs_module' => 'ACLRoleSets',
+    'lhs_table' => 'acl_role_sets',
     'lhs_key' => 'id',
     'rhs_module' => 'CommentLog',
     'rhs_table' => 'commentlog',
@@ -28779,7 +37745,7 @@
     'join_key_lhs' => 'record_id',
     'join_key_rhs' => 'commentlog_id',
     'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'TaxRates',
+    'relationship_role_column_value' => 'ACLRoleSets',
     'fields' => 
     array (
       'id' => 
@@ -28816,11 +37782,11 @@
       ),
     ),
   ),
-  'taxrates_locked_fields' => 
+  'aclrolesets_locked_fields' => 
   array (
-    'name' => 'taxrates_locked_fields',
-    'lhs_module' => 'TaxRates',
-    'lhs_table' => 'taxrates',
+    'name' => 'aclrolesets_locked_fields',
+    'lhs_module' => 'ACLRoleSets',
+    'lhs_table' => 'acl_role_sets',
     'lhs_key' => 'id',
     'rhs_module' => 'pmse_BpmProcessDefinition',
     'rhs_table' => 'pmse_bpm_process_definition',
@@ -28830,7 +37796,7 @@
     'join_key_lhs' => 'bean_id',
     'join_key_rhs' => 'pd_id',
     'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'TaxRates',
+    'relationship_role_column_value' => 'ACLRoleSets',
     'fields' => 
     array (
       'id' => 
@@ -28870,114 +37836,33 @@
       ),
     ),
   ),
-  'teamnotices_team_count_relationship' => 
+  'pmse_bpmprocessdefinition_modified_user' => 
   array (
-    'name' => 'teamnotices_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'TeamNotices',
-    'rhs_table' => 'team_notices',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'teamnotices_teams' => 
-  array (
-    'name' => 'teamnotices_teams',
-    'lhs_module' => 'TeamNotices',
-    'lhs_table' => 'team_notices',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'teamnotices_team' => 
-  array (
-    'name' => 'teamnotices_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'TeamNotices',
-    'rhs_table' => 'team_notices',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'related_timeperiods' => 
-  array (
-    'name' => 'related_timeperiods',
-    'lhs_module' => 'TimePeriods',
-    'lhs_table' => 'timeperiods',
-    'lhs_key' => 'id',
-    'rhs_module' => 'TimePeriods',
-    'rhs_table' => 'timeperiods',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'forecastworksheets_modified_user' => 
-  array (
-    'name' => 'forecastworksheets_modified_user',
+    'name' => 'pmse_bpmprocessdefinition_modified_user',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'ForecastWorksheets',
-    'rhs_table' => 'forecast_worksheets',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
     'rhs_key' => 'modified_user_id',
     'relationship_type' => 'one-to-many',
   ),
-  'forecastworksheets_created_by' => 
+  'pmse_bpmprocessdefinition_created_by' => 
   array (
-    'name' => 'forecastworksheets_created_by',
+    'name' => 'pmse_bpmprocessdefinition_created_by',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'ForecastWorksheets',
-    'rhs_table' => 'forecast_worksheets',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
     'rhs_key' => 'created_by',
     'relationship_type' => 'one-to-many',
   ),
-  'forecastworksheet_activities' => 
+  'pmse_bpmprocessdefinition_activities' => 
   array (
-    'name' => 'forecastworksheet_activities',
-    'lhs_module' => 'ForecastWorksheets',
-    'lhs_table' => 'forecast_worksheets',
+    'name' => 'pmse_bpmprocessdefinition_activities',
+    'lhs_module' => 'pmse_BpmProcessDefinition',
+    'lhs_table' => 'pmse_bpm_process_definition',
     'lhs_key' => 'id',
     'rhs_module' => 'Activities',
     'rhs_table' => 'activities',
@@ -28988,7 +37873,7 @@
     'join_key_lhs' => 'parent_id',
     'join_key_rhs' => 'activity_id',
     'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ForecastWorksheets',
+    'relationship_role_column_value' => 'pmse_BpmProcessDefinition',
     'fields' => 
     array (
       'id' => 
@@ -29035,196 +37920,80 @@
       ),
     ),
   ),
-  'forecastworksheets_accounts' => 
+  'pmse_bpmprocessdefinition_following' => 
   array (
-    'name' => 'forecastworksheets_accounts',
-    'lhs_module' => 'Accounts',
-    'lhs_table' => 'accounts',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastWorksheets',
-    'rhs_table' => 'forecast_worksheets',
-    'rhs_key' => 'account_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'forecastworksheets_opportunities' => 
-  array (
-    'name' => 'forecastworksheets_opportunities',
-    'lhs_module' => 'Opportunities',
-    'lhs_table' => 'opportunities',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastWorksheets',
-    'rhs_table' => 'forecast_worksheets',
-    'rhs_key' => 'opportunity_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'forecastworksheets_campaigns' => 
-  array (
-    'name' => 'forecastworksheets_campaigns',
-    'lhs_module' => 'Campaigns',
-    'lhs_table' => 'campaigns',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastWorksheets',
-    'rhs_table' => 'forecast_worksheets',
-    'rhs_key' => 'campaign_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'forecastworksheets_templates' => 
-  array (
-    'name' => 'forecastworksheets_templates',
-    'lhs_module' => 'ProductTemplates',
-    'lhs_table' => 'product_templates',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastWorksheets',
-    'rhs_table' => 'forecast_worksheets',
-    'rhs_key' => 'product_template_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'forecastworksheets_categories' => 
-  array (
-    'name' => 'forecastworksheets_categories',
-    'lhs_module' => 'ProductCategories',
-    'lhs_table' => 'product_categories',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastWorksheets',
-    'rhs_table' => 'forecast_worksheets',
-    'rhs_key' => 'category_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'forecastworksheets_following' => 
-  array (
-    'name' => 'forecastworksheets_following',
+    'name' => 'pmse_bpmprocessdefinition_following',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'ForecastWorksheets',
-    'rhs_table' => 'forecast_worksheets',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
     'rhs_key' => 'id',
     'relationship_type' => 'user-based',
     'join_table' => 'subscriptions',
     'join_key_lhs' => 'created_by',
     'join_key_rhs' => 'parent_id',
     'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ForecastWorksheets',
+    'relationship_role_column_value' => 'pmse_BpmProcessDefinition',
     'user_field' => 'created_by',
   ),
-  'forecastworksheets_favorite' => 
+  'pmse_bpmprocessdefinition_favorite' => 
   array (
-    'name' => 'forecastworksheets_favorite',
+    'name' => 'pmse_bpmprocessdefinition_favorite',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'ForecastWorksheets',
-    'rhs_table' => 'forecast_worksheets',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
     'rhs_key' => 'id',
     'relationship_type' => 'user-based',
     'join_table' => 'sugarfavorites',
     'join_key_lhs' => 'modified_user_id',
     'join_key_rhs' => 'record_id',
     'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ForecastWorksheets',
+    'relationship_role_column_value' => 'pmse_BpmProcessDefinition',
     'user_field' => 'created_by',
   ),
-  'forecastworksheets_locked_fields' => 
+  'pmse_bpmprocessdefinition_assigned_user' => 
   array (
-    'name' => 'forecastworksheets_locked_fields',
-    'lhs_module' => 'ForecastWorksheets',
-    'lhs_table' => 'forecast_worksheets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ForecastWorksheets',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'forecastworksheets_assigned_user' => 
-  array (
-    'name' => 'forecastworksheets_assigned_user',
+    'name' => 'pmse_bpmprocessdefinition_assigned_user',
     'lhs_module' => 'Users',
     'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'ForecastWorksheets',
-    'rhs_table' => 'forecast_worksheets',
+    'rhs_module' => 'pmse_BpmProcessDefinition',
+    'rhs_table' => 'pmse_bpm_process_definition',
     'rhs_key' => 'assigned_user_id',
     'relationship_type' => 'one-to-many',
   ),
-  'forecastworksheets_team_count_relationship' => 
+  'tracker_user_id' => 
   array (
-    'name' => 'forecastworksheets_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
+    'name' => 'tracker_user_id',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
     'lhs_key' => 'id',
-    'rhs_module' => 'ForecastWorksheets',
-    'rhs_table' => 'forecast_worksheets',
-    'rhs_key' => 'team_set_id',
+    'rhs_module' => 'TrackerSessions',
+    'rhs_table' => 'tracker',
+    'rhs_key' => 'user_id',
     'relationship_type' => 'one-to-many',
   ),
-  'forecastworksheets_teams' => 
+  'team_memberships' => 
   array (
-    'name' => 'forecastworksheets_teams',
-    'lhs_module' => 'ForecastWorksheets',
-    'lhs_table' => 'forecast_worksheets',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
+    'name' => 'team_memberships',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Users',
+    'rhs_table' => 'users',
     'rhs_key' => 'id',
     'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
+    'join_table' => 'team_memberships',
+    'join_key_lhs' => 'team_id',
+    'join_key_rhs' => 'user_id',
     'fields' => 
     array (
       'id' => 
       array (
         'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
         'type' => 'id',
         'required' => true,
       ),
@@ -29232,6 +38001,26 @@
       array (
         'name' => 'team_id',
         'type' => 'id',
+      ),
+      'user_id' => 
+      array (
+        'name' => 'user_id',
+        'type' => 'id',
+      ),
+      'explicit_assign' => 
+      array (
+        'name' => 'explicit_assign',
+        'type' => 'bool',
+        'len' => 1,
+        'default' => 0,
+        'required' => true,
+      ),
+      'implicit_assign' => 
+      array (
+        'name' => 'implicit_assign',
+        'type' => 'bool',
+        'len' => 1,
+        'default' => 0,
         'required' => true,
       ),
       'date_modified' => 
@@ -29243,1234 +38032,10 @@
       array (
         'name' => 'deleted',
         'type' => 'bool',
-        'len' => '',
-        'default' => '0',
+        'len' => 1,
+        'default' => 0,
       ),
     ),
-  ),
-  'forecastworksheets_team' => 
-  array (
-    'name' => 'forecastworksheets_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastWorksheets',
-    'rhs_table' => 'forecast_worksheets',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'forecastworksheets_currencies' => 
-  array (
-    'name' => 'forecastworksheets_currencies',
-    'lhs_module' => 'Currencies',
-    'lhs_table' => 'currencies',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastWorksheets',
-    'rhs_table' => 'forecast_worksheets',
-    'rhs_key' => 'currency_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'forecastmanagerworksheets_modified_user' => 
-  array (
-    'name' => 'forecastmanagerworksheets_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastManagerWorksheets',
-    'rhs_table' => 'forecast_manager_worksheets',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'forecastmanagerworksheets_created_by' => 
-  array (
-    'name' => 'forecastmanagerworksheets_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastManagerWorksheets',
-    'rhs_table' => 'forecast_manager_worksheets',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'forecastmanagerworksheet_activities' => 
-  array (
-    'name' => 'forecastmanagerworksheet_activities',
-    'lhs_module' => 'ForecastManagerWorksheets',
-    'lhs_table' => 'forecast_manager_worksheets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ForecastManagerWorksheets',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'forecastmanagerworksheets_following' => 
-  array (
-    'name' => 'forecastmanagerworksheets_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastManagerWorksheets',
-    'rhs_table' => 'forecast_manager_worksheets',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ForecastManagerWorksheets',
-    'user_field' => 'created_by',
-  ),
-  'forecastmanagerworksheets_favorite' => 
-  array (
-    'name' => 'forecastmanagerworksheets_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastManagerWorksheets',
-    'rhs_table' => 'forecast_manager_worksheets',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ForecastManagerWorksheets',
-    'user_field' => 'created_by',
-  ),
-  'forecastmanagerworksheets_locked_fields' => 
-  array (
-    'name' => 'forecastmanagerworksheets_locked_fields',
-    'lhs_module' => 'ForecastManagerWorksheets',
-    'lhs_table' => 'forecast_manager_worksheets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ForecastManagerWorksheets',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'forecastmanagerworksheets_assigned_user' => 
-  array (
-    'name' => 'forecastmanagerworksheets_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastManagerWorksheets',
-    'rhs_table' => 'forecast_manager_worksheets',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'forecastmanagerworksheets_team_count_relationship' => 
-  array (
-    'name' => 'forecastmanagerworksheets_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastManagerWorksheets',
-    'rhs_table' => 'forecast_manager_worksheets',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'forecastmanagerworksheets_teams' => 
-  array (
-    'name' => 'forecastmanagerworksheets_teams',
-    'lhs_module' => 'ForecastManagerWorksheets',
-    'lhs_table' => 'forecast_manager_worksheets',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'forecastmanagerworksheets_team' => 
-  array (
-    'name' => 'forecastmanagerworksheets_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastManagerWorksheets',
-    'rhs_table' => 'forecast_manager_worksheets',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'forecastmanagerworksheets_currencies' => 
-  array (
-    'name' => 'forecastmanagerworksheets_currencies',
-    'lhs_module' => 'Currencies',
-    'lhs_table' => 'currencies',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ForecastManagerWorksheets',
-    'rhs_table' => 'forecast_manager_worksheets',
-    'rhs_key' => 'currency_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'quotas_modified_user' => 
-  array (
-    'name' => 'quotas_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Quotas',
-    'rhs_table' => 'quotas',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'quotas_created_by' => 
-  array (
-    'name' => 'quotas_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Quotas',
-    'rhs_table' => 'quotas',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'quota_activities' => 
-  array (
-    'name' => 'quota_activities',
-    'lhs_module' => 'Quotas',
-    'lhs_table' => 'quotas',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Quotas',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'quotas_following' => 
-  array (
-    'name' => 'quotas_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Quotas',
-    'rhs_table' => 'quotas',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Quotas',
-    'user_field' => 'created_by',
-  ),
-  'quotas_favorite' => 
-  array (
-    'name' => 'quotas_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Quotas',
-    'rhs_table' => 'quotas',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'Quotas',
-    'user_field' => 'created_by',
-  ),
-  'quotas_commentlog' => 
-  array (
-    'name' => 'quotas_commentlog',
-    'lhs_module' => 'Quotas',
-    'lhs_table' => 'quotas',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'Quotas',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'quotas_locked_fields' => 
-  array (
-    'name' => 'quotas_locked_fields',
-    'lhs_module' => 'Quotas',
-    'lhs_table' => 'quotas',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Quotas',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'quotas_assigned_user' => 
-  array (
-    'name' => 'quotas_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Quotas',
-    'rhs_table' => 'quotas',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'quotas_currencies' => 
-  array (
-    'name' => 'quotas_currencies',
-    'lhs_module' => 'Currencies',
-    'lhs_table' => 'currencies',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Quotas',
-    'rhs_table' => 'quotas',
-    'rhs_key' => 'currency_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'workflow_triggers' => 
-  array (
-    'name' => 'workflow_triggers',
-    'lhs_module' => 'WorkFlow',
-    'lhs_table' => 'workflow',
-    'lhs_key' => 'id',
-    'rhs_module' => 'WorkFlowTriggerShells',
-    'rhs_table' => 'workflow_triggershells',
-    'rhs_key' => 'parent_id',
-    'relationship_role_column' => 'frame_type',
-    'relationship_role_column_value' => 'Primary',
-    'relationship_type' => 'one-to-many',
-  ),
-  'workflow_trigger_filters' => 
-  array (
-    'name' => 'workflow_trigger_filters',
-    'lhs_module' => 'WorkFlow',
-    'lhs_table' => 'workflow',
-    'lhs_key' => 'id',
-    'rhs_module' => 'WorkFlowTriggerShells',
-    'rhs_table' => 'workflow_triggershells',
-    'rhs_key' => 'parent_id',
-    'relationship_role_column' => 'frame_type',
-    'relationship_role_column_value' => 'Secondary',
-    'relationship_type' => 'one-to-many',
-  ),
-  'workflow_alerts' => 
-  array (
-    'name' => 'workflow_alerts',
-    'lhs_module' => 'WorkFlow',
-    'lhs_table' => 'workflow',
-    'lhs_key' => 'id',
-    'rhs_module' => 'WorkFlowAlertShells',
-    'rhs_table' => 'workflow_alertshells',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'workflow_actions' => 
-  array (
-    'name' => 'workflow_actions',
-    'lhs_module' => 'WorkFlow',
-    'lhs_table' => 'workflow',
-    'lhs_key' => 'id',
-    'rhs_module' => 'WorkFlowActionShells',
-    'rhs_table' => 'workflow_actionshells',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'past_triggers' => 
-  array (
-    'name' => 'past_triggers',
-    'lhs_module' => 'WorkFlowTriggerShells',
-    'lhs_table' => 'workflow_triggershells',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Expressions',
-    'rhs_table' => 'expressions',
-    'rhs_key' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'past_trigger',
-    'relationship_type' => 'one-to-many',
-  ),
-  'future_triggers' => 
-  array (
-    'name' => 'future_triggers',
-    'lhs_module' => 'WorkFlowTriggerShells',
-    'lhs_table' => 'workflow_triggershells',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Expressions',
-    'rhs_table' => 'expressions',
-    'rhs_key' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'future_trigger',
-    'relationship_type' => 'one-to-many',
-  ),
-  'trigger_expressions' => 
-  array (
-    'name' => 'trigger_expressions',
-    'lhs_module' => 'WorkFlowTriggerShells',
-    'lhs_table' => 'workflow_triggershells',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Expressions',
-    'rhs_table' => 'expressions',
-    'rhs_key' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'expression',
-    'relationship_type' => 'one-to-many',
-  ),
-  'alert_components' => 
-  array (
-    'name' => 'alert_components',
-    'lhs_module' => 'WorkFlowAlertShells',
-    'lhs_table' => 'workflow_alertshells',
-    'lhs_key' => 'id',
-    'rhs_module' => 'WorkFlowAlerts',
-    'rhs_table' => 'workflow_alerts',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'expressions' => 
-  array (
-    'name' => 'expressions',
-    'lhs_module' => 'WorkFlowAlerts',
-    'lhs_table' => 'workflow_alerts',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Expressions',
-    'rhs_table' => 'expressions',
-    'rhs_key' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'filter',
-    'relationship_type' => 'one-to-many',
-  ),
-  'rel1_alert_fil' => 
-  array (
-    'name' => 'rel1_alert_fil',
-    'lhs_module' => 'WorkFlowAlerts',
-    'lhs_table' => 'workflow_alerts',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Expressions',
-    'rhs_table' => 'expressions',
-    'rhs_key' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'rel1_alert_fil',
-    'relationship_type' => 'one-to-many',
-  ),
-  'rel2_alert_fil' => 
-  array (
-    'name' => 'rel2_alert_fil',
-    'lhs_module' => 'WorkFlowAlerts',
-    'lhs_table' => 'workflow_alerts',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Expressions',
-    'rhs_table' => 'expressions',
-    'rhs_key' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'rel2_alert_fil',
-    'relationship_type' => 'one-to-many',
-  ),
-  'actions' => 
-  array (
-    'name' => 'actions',
-    'lhs_module' => 'WorkFlowActionShells',
-    'lhs_table' => 'workflow_actionshells',
-    'lhs_key' => 'id',
-    'rhs_module' => 'WorkFlowActions',
-    'rhs_table' => 'workflow_actions',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'action_bridge' => 
-  array (
-    'name' => 'action_bridge',
-    'lhs_module' => 'WorkFlowActionShells',
-    'lhs_table' => 'workflow_actionshells',
-    'lhs_key' => 'id',
-    'rhs_module' => 'WorkFlow',
-    'rhs_table' => 'workflow',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'rel1_action_fil' => 
-  array (
-    'name' => 'rel1_action_fil',
-    'lhs_module' => 'WorkFlowActionShells',
-    'lhs_table' => 'workflow_actionshells',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Expressions',
-    'rhs_table' => 'expressions',
-    'rhs_key' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'rel1_action_fil',
-    'relationship_type' => 'one-to-many',
-  ),
-  'member_expressions' => 
-  array (
-    'name' => 'member_expressions',
-    'lhs_module' => 'Expressions',
-    'lhs_table' => 'expressions',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Expressions',
-    'rhs_table' => 'expressions',
-    'rhs_key' => 'parent_exp_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'contracttypes_modified_user' => 
-  array (
-    'name' => 'contracttypes_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ContractTypes',
-    'rhs_table' => 'contract_types',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'contracttypes_created_by' => 
-  array (
-    'name' => 'contracttypes_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ContractTypes',
-    'rhs_table' => 'contract_types',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'contracttype_activities' => 
-  array (
-    'name' => 'contracttype_activities',
-    'lhs_module' => 'ContractTypes',
-    'lhs_table' => 'contract_types',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ContractTypes',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'contracttypes_following' => 
-  array (
-    'name' => 'contracttypes_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ContractTypes',
-    'rhs_table' => 'contract_types',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ContractTypes',
-    'user_field' => 'created_by',
-  ),
-  'contracttypes_favorite' => 
-  array (
-    'name' => 'contracttypes_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ContractTypes',
-    'rhs_table' => 'contract_types',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ContractTypes',
-    'user_field' => 'created_by',
-  ),
-  'contracttypes_tags' => 
-  array (
-    'name' => 'contracttypes_tags',
-    'lhs_module' => 'ContractTypes',
-    'lhs_table' => 'contract_types',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ContractTypes',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'contracttypes_commentlog' => 
-  array (
-    'name' => 'contracttypes_commentlog',
-    'lhs_module' => 'ContractTypes',
-    'lhs_table' => 'contract_types',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ContractTypes',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'contracttypes_locked_fields' => 
-  array (
-    'name' => 'contracttypes_locked_fields',
-    'lhs_module' => 'ContractTypes',
-    'lhs_table' => 'contract_types',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ContractTypes',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'holidays_modified_user' => 
-  array (
-    'name' => 'holidays_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Holidays',
-    'rhs_table' => 'holidays',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'holidays_created_by' => 
-  array (
-    'name' => 'holidays_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Holidays',
-    'rhs_table' => 'holidays',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'customqueries_team_count_relationship' => 
-  array (
-    'name' => 'customqueries_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CustomQueries',
-    'rhs_table' => 'custom_queries',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'customqueries_teams' => 
-  array (
-    'name' => 'customqueries_teams',
-    'lhs_module' => 'CustomQueries',
-    'lhs_table' => 'custom_queries',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'customqueries_team' => 
-  array (
-    'name' => 'customqueries_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CustomQueries',
-    'rhs_table' => 'custom_queries',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'datasets_team_count_relationship' => 
-  array (
-    'name' => 'datasets_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'DataSets',
-    'rhs_table' => 'data_sets',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'datasets_teams' => 
-  array (
-    'name' => 'datasets_teams',
-    'lhs_module' => 'DataSets',
-    'lhs_table' => 'data_sets',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'datasets_team' => 
-  array (
-    'name' => 'datasets_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'DataSets',
-    'rhs_table' => 'data_sets',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'reportmaker_team_count_relationship' => 
-  array (
-    'name' => 'reportmaker_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ReportMaker',
-    'rhs_table' => 'report_maker',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'reportmaker_teams' => 
-  array (
-    'name' => 'reportmaker_teams',
-    'lhs_module' => 'ReportMaker',
-    'lhs_table' => 'report_maker',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'reportmaker_team' => 
-  array (
-    'name' => 'reportmaker_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ReportMaker',
-    'rhs_table' => 'report_maker',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
   ),
   'pmse_bpmnactivity_modified_user' => 
   array (
@@ -33697,2339 +41262,6 @@
     'rhs_key' => 'assigned_user_id',
     'relationship_type' => 'one-to-many',
   ),
-  'pmse_bpmprocessdefinition_modified_user' => 
-  array (
-    'name' => 'pmse_bpmprocessdefinition_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'pmse_bpmprocessdefinition_created_by' => 
-  array (
-    'name' => 'pmse_bpmprocessdefinition_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'pmse_bpmprocessdefinition_activities' => 
-  array (
-    'name' => 'pmse_bpmprocessdefinition_activities',
-    'lhs_module' => 'pmse_BpmProcessDefinition',
-    'lhs_table' => 'pmse_bpm_process_definition',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'pmse_BpmProcessDefinition',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'pmse_bpmprocessdefinition_following' => 
-  array (
-    'name' => 'pmse_bpmprocessdefinition_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'pmse_BpmProcessDefinition',
-    'user_field' => 'created_by',
-  ),
-  'pmse_bpmprocessdefinition_favorite' => 
-  array (
-    'name' => 'pmse_bpmprocessdefinition_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'pmse_BpmProcessDefinition',
-    'user_field' => 'created_by',
-  ),
-  'pmse_bpmprocessdefinition_assigned_user' => 
-  array (
-    'name' => 'pmse_bpmprocessdefinition_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'shiftexceptions_modified_user' => 
-  array (
-    'name' => 'shiftexceptions_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ShiftExceptions',
-    'rhs_table' => 'shift_exceptions',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'shiftexceptions_created_by' => 
-  array (
-    'name' => 'shiftexceptions_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ShiftExceptions',
-    'rhs_table' => 'shift_exceptions',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'shiftexception_activities' => 
-  array (
-    'name' => 'shiftexception_activities',
-    'lhs_module' => 'ShiftExceptions',
-    'lhs_table' => 'shift_exceptions',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ShiftExceptions',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'shiftexceptions_following' => 
-  array (
-    'name' => 'shiftexceptions_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ShiftExceptions',
-    'rhs_table' => 'shift_exceptions',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ShiftExceptions',
-    'user_field' => 'created_by',
-  ),
-  'shiftexceptions_favorite' => 
-  array (
-    'name' => 'shiftexceptions_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ShiftExceptions',
-    'rhs_table' => 'shift_exceptions',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ShiftExceptions',
-    'user_field' => 'created_by',
-  ),
-  'shiftexceptions_tags' => 
-  array (
-    'name' => 'shiftexceptions_tags',
-    'lhs_module' => 'ShiftExceptions',
-    'lhs_table' => 'shift_exceptions',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ShiftExceptions',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'shiftexceptions_commentlog' => 
-  array (
-    'name' => 'shiftexceptions_commentlog',
-    'lhs_module' => 'ShiftExceptions',
-    'lhs_table' => 'shift_exceptions',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ShiftExceptions',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'shiftexceptions_locked_fields' => 
-  array (
-    'name' => 'shiftexceptions_locked_fields',
-    'lhs_module' => 'ShiftExceptions',
-    'lhs_table' => 'shift_exceptions',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ShiftExceptions',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'shiftexceptions_assigned_user' => 
-  array (
-    'name' => 'shiftexceptions_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ShiftExceptions',
-    'rhs_table' => 'shift_exceptions',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'shiftexceptions_team_count_relationship' => 
-  array (
-    'name' => 'shiftexceptions_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ShiftExceptions',
-    'rhs_table' => 'shift_exceptions',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'shiftexceptions_teams' => 
-  array (
-    'name' => 'shiftexceptions_teams',
-    'lhs_module' => 'ShiftExceptions',
-    'lhs_table' => 'shift_exceptions',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'shiftexceptions_team' => 
-  array (
-    'name' => 'shiftexceptions_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ShiftExceptions',
-    'rhs_table' => 'shift_exceptions',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'pushnotifications_modified_user' => 
-  array (
-    'name' => 'pushnotifications_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'PushNotifications',
-    'rhs_table' => 'push_notifications',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'pushnotifications_created_by' => 
-  array (
-    'name' => 'pushnotifications_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'PushNotifications',
-    'rhs_table' => 'push_notifications',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'pushnotification_activities' => 
-  array (
-    'name' => 'pushnotification_activities',
-    'lhs_module' => 'PushNotifications',
-    'lhs_table' => 'push_notifications',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'PushNotifications',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'pushnotifications_following' => 
-  array (
-    'name' => 'pushnotifications_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'PushNotifications',
-    'rhs_table' => 'push_notifications',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'PushNotifications',
-    'user_field' => 'created_by',
-  ),
-  'pushnotifications_favorite' => 
-  array (
-    'name' => 'pushnotifications_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'PushNotifications',
-    'rhs_table' => 'push_notifications',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'PushNotifications',
-    'user_field' => 'created_by',
-  ),
-  'pushnotifications_locked_fields' => 
-  array (
-    'name' => 'pushnotifications_locked_fields',
-    'lhs_module' => 'PushNotifications',
-    'lhs_table' => 'push_notifications',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'PushNotifications',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'pushnotifications_assigned_user' => 
-  array (
-    'name' => 'pushnotifications_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'PushNotifications',
-    'rhs_table' => 'push_notifications',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'dashboards_modified_user' => 
-  array (
-    'name' => 'dashboards_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Dashboards',
-    'rhs_table' => 'dashboards',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'dashboards_created_by' => 
-  array (
-    'name' => 'dashboards_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Dashboards',
-    'rhs_table' => 'dashboards',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'dashboard_activities' => 
-  array (
-    'name' => 'dashboard_activities',
-    'lhs_module' => 'Dashboards',
-    'lhs_table' => 'dashboards',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Dashboards',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'dashboards_team_count_relationship' => 
-  array (
-    'name' => 'dashboards_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Dashboards',
-    'rhs_table' => 'dashboards',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'dashboards_teams' => 
-  array (
-    'name' => 'dashboards_teams',
-    'lhs_module' => 'Dashboards',
-    'lhs_table' => 'dashboards',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'dashboards_team' => 
-  array (
-    'name' => 'dashboards_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Dashboards',
-    'rhs_table' => 'dashboards',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'dashboards_following' => 
-  array (
-    'name' => 'dashboards_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Dashboards',
-    'rhs_table' => 'dashboards',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Dashboards',
-    'user_field' => 'created_by',
-  ),
-  'dashboards_favorite' => 
-  array (
-    'name' => 'dashboards_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Dashboards',
-    'rhs_table' => 'dashboards',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'Dashboards',
-    'user_field' => 'created_by',
-  ),
-  'dashboards_locked_fields' => 
-  array (
-    'name' => 'dashboards_locked_fields',
-    'lhs_module' => 'Dashboards',
-    'lhs_table' => 'dashboards',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Dashboards',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'dashboards_assigned_user' => 
-  array (
-    'name' => 'dashboards_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Dashboards',
-    'rhs_table' => 'dashboards',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbdocuments_modified_user' => 
-  array (
-    'name' => 'kbdocuments_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBDocuments',
-    'rhs_table' => 'kbdocuments',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbdocuments_created_by' => 
-  array (
-    'name' => 'kbdocuments_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBDocuments',
-    'rhs_table' => 'kbdocuments',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbdocument_activities' => 
-  array (
-    'name' => 'kbdocument_activities',
-    'lhs_module' => 'KBDocuments',
-    'lhs_table' => 'kbdocuments',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'KBDocuments',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'kbdocuments_following' => 
-  array (
-    'name' => 'kbdocuments_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBDocuments',
-    'rhs_table' => 'kbdocuments',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'KBDocuments',
-    'user_field' => 'created_by',
-  ),
-  'kbdocuments_favorite' => 
-  array (
-    'name' => 'kbdocuments_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBDocuments',
-    'rhs_table' => 'kbdocuments',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'KBDocuments',
-    'user_field' => 'created_by',
-  ),
-  'kbdocuments_locked_fields' => 
-  array (
-    'name' => 'kbdocuments_locked_fields',
-    'lhs_module' => 'KBDocuments',
-    'lhs_table' => 'kbdocuments',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'KBDocuments',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'kbdocuments_team_count_relationship' => 
-  array (
-    'name' => 'kbdocuments_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBDocuments',
-    'rhs_table' => 'kbdocuments',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbdocuments_teams' => 
-  array (
-    'name' => 'kbdocuments_teams',
-    'lhs_module' => 'KBDocuments',
-    'lhs_table' => 'kbdocuments',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'kbdocuments_team' => 
-  array (
-    'name' => 'kbdocuments_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBDocuments',
-    'rhs_table' => 'kbdocuments',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbdocuments_assigned_user' => 
-  array (
-    'name' => 'kbdocuments_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBDocuments',
-    'rhs_table' => 'kbdocuments',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'hintenrichfieldconfigs_modified_user' => 
-  array (
-    'name' => 'hintenrichfieldconfigs_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintEnrichFieldConfigs',
-    'rhs_table' => 'hint_enrich_field_config',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'hintenrichfieldconfigs_created_by' => 
-  array (
-    'name' => 'hintenrichfieldconfigs_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintEnrichFieldConfigs',
-    'rhs_table' => 'hint_enrich_field_config',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'hintenrichfieldconfig_activities' => 
-  array (
-    'name' => 'hintenrichfieldconfig_activities',
-    'lhs_module' => 'HintEnrichFieldConfigs',
-    'lhs_table' => 'hint_enrich_field_config',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'HintEnrichFieldConfigs',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintenrichfieldconfigs_following' => 
-  array (
-    'name' => 'hintenrichfieldconfigs_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintEnrichFieldConfigs',
-    'rhs_table' => 'hint_enrich_field_config',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'HintEnrichFieldConfigs',
-    'user_field' => 'created_by',
-  ),
-  'hintenrichfieldconfigs_favorite' => 
-  array (
-    'name' => 'hintenrichfieldconfigs_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintEnrichFieldConfigs',
-    'rhs_table' => 'hint_enrich_field_config',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'HintEnrichFieldConfigs',
-    'user_field' => 'created_by',
-  ),
-  'hintenrichfieldconfigs_tags' => 
-  array (
-    'name' => 'hintenrichfieldconfigs_tags',
-    'lhs_module' => 'HintEnrichFieldConfigs',
-    'lhs_table' => 'hint_enrich_field_config',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'HintEnrichFieldConfigs',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintenrichfieldconfigs_commentlog' => 
-  array (
-    'name' => 'hintenrichfieldconfigs_commentlog',
-    'lhs_module' => 'HintEnrichFieldConfigs',
-    'lhs_table' => 'hint_enrich_field_config',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'HintEnrichFieldConfigs',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintenrichfieldconfigs_locked_fields' => 
-  array (
-    'name' => 'hintenrichfieldconfigs_locked_fields',
-    'lhs_module' => 'HintEnrichFieldConfigs',
-    'lhs_table' => 'hint_enrich_field_config',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'HintEnrichFieldConfigs',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintenrichfieldconfigs_assigned_user' => 
-  array (
-    'name' => 'hintenrichfieldconfigs_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintEnrichFieldConfigs',
-    'rhs_table' => 'hint_enrich_field_config',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'hintaccountsets_modified_user' => 
-  array (
-    'name' => 'hintaccountsets_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintAccountsets',
-    'rhs_table' => 'hint_accountsets',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'hintaccountsets_created_by' => 
-  array (
-    'name' => 'hintaccountsets_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintAccountsets',
-    'rhs_table' => 'hint_accountsets',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'hintaccountset_activities' => 
-  array (
-    'name' => 'hintaccountset_activities',
-    'lhs_module' => 'HintAccountsets',
-    'lhs_table' => 'hint_accountsets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'HintAccountsets',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintaccountsets_following' => 
-  array (
-    'name' => 'hintaccountsets_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintAccountsets',
-    'rhs_table' => 'hint_accountsets',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'HintAccountsets',
-    'user_field' => 'created_by',
-  ),
-  'hintaccountsets_favorite' => 
-  array (
-    'name' => 'hintaccountsets_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintAccountsets',
-    'rhs_table' => 'hint_accountsets',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'HintAccountsets',
-    'user_field' => 'created_by',
-  ),
-  'hintaccountsets_tags' => 
-  array (
-    'name' => 'hintaccountsets_tags',
-    'lhs_module' => 'HintAccountsets',
-    'lhs_table' => 'hint_accountsets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'HintAccountsets',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintaccountsets_commentlog' => 
-  array (
-    'name' => 'hintaccountsets_commentlog',
-    'lhs_module' => 'HintAccountsets',
-    'lhs_table' => 'hint_accountsets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'HintAccountsets',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintaccountsets_locked_fields' => 
-  array (
-    'name' => 'hintaccountsets_locked_fields',
-    'lhs_module' => 'HintAccountsets',
-    'lhs_table' => 'hint_accountsets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'HintAccountsets',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintaccountsets_assigned_user' => 
-  array (
-    'name' => 'hintaccountsets_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintAccountsets',
-    'rhs_table' => 'hint_accountsets',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'hintnewsnotifications_modified_user' => 
-  array (
-    'name' => 'hintnewsnotifications_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintNewsNotifications',
-    'rhs_table' => 'hint_news_notifications',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'hintnewsnotifications_created_by' => 
-  array (
-    'name' => 'hintnewsnotifications_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintNewsNotifications',
-    'rhs_table' => 'hint_news_notifications',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'hintnewsnotification_activities' => 
-  array (
-    'name' => 'hintnewsnotification_activities',
-    'lhs_module' => 'HintNewsNotifications',
-    'lhs_table' => 'hint_news_notifications',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'HintNewsNotifications',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintnewsnotifications_following' => 
-  array (
-    'name' => 'hintnewsnotifications_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintNewsNotifications',
-    'rhs_table' => 'hint_news_notifications',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'HintNewsNotifications',
-    'user_field' => 'created_by',
-  ),
-  'hintnewsnotifications_favorite' => 
-  array (
-    'name' => 'hintnewsnotifications_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintNewsNotifications',
-    'rhs_table' => 'hint_news_notifications',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'HintNewsNotifications',
-    'user_field' => 'created_by',
-  ),
-  'hintnewsnotifications_tags' => 
-  array (
-    'name' => 'hintnewsnotifications_tags',
-    'lhs_module' => 'HintNewsNotifications',
-    'lhs_table' => 'hint_news_notifications',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'HintNewsNotifications',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintnewsnotifications_commentlog' => 
-  array (
-    'name' => 'hintnewsnotifications_commentlog',
-    'lhs_module' => 'HintNewsNotifications',
-    'lhs_table' => 'hint_news_notifications',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'HintNewsNotifications',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintnewsnotifications_locked_fields' => 
-  array (
-    'name' => 'hintnewsnotifications_locked_fields',
-    'lhs_module' => 'HintNewsNotifications',
-    'lhs_table' => 'hint_news_notifications',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'HintNewsNotifications',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintnewsnotifications_assigned_user' => 
-  array (
-    'name' => 'hintnewsnotifications_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintNewsNotifications',
-    'rhs_table' => 'hint_news_notifications',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'hintnotificationtargets_modified_user' => 
-  array (
-    'name' => 'hintnotificationtargets_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintNotificationTargets',
-    'rhs_table' => 'hint_notification_targets',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'hintnotificationtargets_created_by' => 
-  array (
-    'name' => 'hintnotificationtargets_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintNotificationTargets',
-    'rhs_table' => 'hint_notification_targets',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'hintnotificationtarget_activities' => 
-  array (
-    'name' => 'hintnotificationtarget_activities',
-    'lhs_module' => 'HintNotificationTargets',
-    'lhs_table' => 'hint_notification_targets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'HintNotificationTargets',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintnotificationtargets_following' => 
-  array (
-    'name' => 'hintnotificationtargets_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintNotificationTargets',
-    'rhs_table' => 'hint_notification_targets',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'HintNotificationTargets',
-    'user_field' => 'created_by',
-  ),
-  'hintnotificationtargets_favorite' => 
-  array (
-    'name' => 'hintnotificationtargets_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintNotificationTargets',
-    'rhs_table' => 'hint_notification_targets',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'HintNotificationTargets',
-    'user_field' => 'created_by',
-  ),
-  'hintnotificationtargets_tags' => 
-  array (
-    'name' => 'hintnotificationtargets_tags',
-    'lhs_module' => 'HintNotificationTargets',
-    'lhs_table' => 'hint_notification_targets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'HintNotificationTargets',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintnotificationtargets_commentlog' => 
-  array (
-    'name' => 'hintnotificationtargets_commentlog',
-    'lhs_module' => 'HintNotificationTargets',
-    'lhs_table' => 'hint_notification_targets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'HintNotificationTargets',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintnotificationtargets_locked_fields' => 
-  array (
-    'name' => 'hintnotificationtargets_locked_fields',
-    'lhs_module' => 'HintNotificationTargets',
-    'lhs_table' => 'hint_notification_targets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'HintNotificationTargets',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'hintnotificationtargets_assigned_user' => 
-  array (
-    'name' => 'hintnotificationtargets_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'HintNotificationTargets',
-    'rhs_table' => 'hint_notification_targets',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
   'pmse_bpmconfig_modified_user' => 
   array (
     'name' => 'pmse_bpmconfig_modified_user',
@@ -36535,1844 +41767,6 @@
     'relationship_role_column_value' => 'pmse_EmailMessage',
     'user_field' => 'created_by',
   ),
-  'changetimers_modified_user' => 
-  array (
-    'name' => 'changetimers_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ChangeTimers',
-    'rhs_table' => 'changetimers',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'changetimers_created_by' => 
-  array (
-    'name' => 'changetimers_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ChangeTimers',
-    'rhs_table' => 'changetimers',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'changetimer_activities' => 
-  array (
-    'name' => 'changetimer_activities',
-    'lhs_module' => 'ChangeTimers',
-    'lhs_table' => 'changetimers',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ChangeTimers',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'changetimers_following' => 
-  array (
-    'name' => 'changetimers_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ChangeTimers',
-    'rhs_table' => 'changetimers',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ChangeTimers',
-    'user_field' => 'created_by',
-  ),
-  'changetimers_favorite' => 
-  array (
-    'name' => 'changetimers_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ChangeTimers',
-    'rhs_table' => 'changetimers',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ChangeTimers',
-    'user_field' => 'created_by',
-  ),
-  'mobiledevices_modified_user' => 
-  array (
-    'name' => 'mobiledevices_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'MobileDevices',
-    'rhs_table' => 'mobile_devices',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'mobiledevices_created_by' => 
-  array (
-    'name' => 'mobiledevices_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'MobileDevices',
-    'rhs_table' => 'mobile_devices',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'mobiledevice_activities' => 
-  array (
-    'name' => 'mobiledevice_activities',
-    'lhs_module' => 'MobileDevices',
-    'lhs_table' => 'mobile_devices',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'MobileDevices',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'mobiledevices_following' => 
-  array (
-    'name' => 'mobiledevices_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'MobileDevices',
-    'rhs_table' => 'mobile_devices',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'MobileDevices',
-    'user_field' => 'created_by',
-  ),
-  'mobiledevices_favorite' => 
-  array (
-    'name' => 'mobiledevices_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'MobileDevices',
-    'rhs_table' => 'mobile_devices',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'MobileDevices',
-    'user_field' => 'created_by',
-  ),
-  'mobiledevices_locked_fields' => 
-  array (
-    'name' => 'mobiledevices_locked_fields',
-    'lhs_module' => 'MobileDevices',
-    'lhs_table' => 'mobile_devices',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'MobileDevices',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'mobiledevices_assigned_user' => 
-  array (
-    'name' => 'mobiledevices_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'MobileDevices',
-    'rhs_table' => 'mobile_devices',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'reportschedules_modified_user' => 
-  array (
-    'name' => 'reportschedules_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ReportSchedules',
-    'rhs_table' => 'report_schedules',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'reportschedules_created_by' => 
-  array (
-    'name' => 'reportschedules_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ReportSchedules',
-    'rhs_table' => 'report_schedules',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'reportschedule_activities' => 
-  array (
-    'name' => 'reportschedule_activities',
-    'lhs_module' => 'ReportSchedules',
-    'lhs_table' => 'report_schedules',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ReportSchedules',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'report_reportschedules' => 
-  array (
-    'name' => 'report_reportschedules',
-    'lhs_module' => 'Reports',
-    'lhs_table' => 'saved_reports',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ReportSchedules',
-    'rhs_table' => 'report_schedules',
-    'rhs_key' => 'report_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'reportschedules_following' => 
-  array (
-    'name' => 'reportschedules_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ReportSchedules',
-    'rhs_table' => 'report_schedules',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ReportSchedules',
-    'user_field' => 'created_by',
-  ),
-  'reportschedules_favorite' => 
-  array (
-    'name' => 'reportschedules_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ReportSchedules',
-    'rhs_table' => 'report_schedules',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ReportSchedules',
-    'user_field' => 'created_by',
-  ),
-  'reportschedules_locked_fields' => 
-  array (
-    'name' => 'reportschedules_locked_fields',
-    'lhs_module' => 'ReportSchedules',
-    'lhs_table' => 'report_schedules',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ReportSchedules',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'reportschedules_assigned_user' => 
-  array (
-    'name' => 'reportschedules_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ReportSchedules',
-    'rhs_table' => 'report_schedules',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'reportschedules_team_count_relationship' => 
-  array (
-    'name' => 'reportschedules_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ReportSchedules',
-    'rhs_table' => 'report_schedules',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'reportschedules_teams' => 
-  array (
-    'name' => 'reportschedules_teams',
-    'lhs_module' => 'ReportSchedules',
-    'lhs_table' => 'report_schedules',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'reportschedules_team' => 
-  array (
-    'name' => 'reportschedules_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ReportSchedules',
-    'rhs_table' => 'report_schedules',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'notifications_modified_user' => 
-  array (
-    'name' => 'notifications_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Notifications',
-    'rhs_table' => 'notifications',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'notifications_created_by' => 
-  array (
-    'name' => 'notifications_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Notifications',
-    'rhs_table' => 'notifications',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'notifications_activities' => 
-  array (
-    'name' => 'notifications_activities',
-    'lhs_module' => 'Notifications',
-    'lhs_table' => 'notifications',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Notifications',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'notifications_following' => 
-  array (
-    'name' => 'notifications_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Notifications',
-    'rhs_table' => 'notifications',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Notifications',
-    'user_field' => 'created_by',
-  ),
-  'notifications_favorite' => 
-  array (
-    'name' => 'notifications_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Notifications',
-    'rhs_table' => 'notifications',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'Notifications',
-    'user_field' => 'created_by',
-  ),
-  'notifications_locked_fields' => 
-  array (
-    'name' => 'notifications_locked_fields',
-    'lhs_module' => 'Notifications',
-    'lhs_table' => 'notifications',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Notifications',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'notifications_assigned_user' => 
-  array (
-    'name' => 'notifications_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Notifications',
-    'rhs_table' => 'notifications',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'eapm_modified_user' => 
-  array (
-    'name' => 'eapm_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EAPM',
-    'rhs_table' => 'eapm',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'eapm_created_by' => 
-  array (
-    'name' => 'eapm_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EAPM',
-    'rhs_table' => 'eapm',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'eapm_activities' => 
-  array (
-    'name' => 'eapm_activities',
-    'lhs_module' => 'EAPM',
-    'lhs_table' => 'eapm',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'EAPM',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'eapm_following' => 
-  array (
-    'name' => 'eapm_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EAPM',
-    'rhs_table' => 'eapm',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'EAPM',
-    'user_field' => 'created_by',
-  ),
-  'eapm_favorite' => 
-  array (
-    'name' => 'eapm_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EAPM',
-    'rhs_table' => 'eapm',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'EAPM',
-    'user_field' => 'created_by',
-  ),
-  'eapm_commentlog' => 
-  array (
-    'name' => 'eapm_commentlog',
-    'lhs_module' => 'EAPM',
-    'lhs_table' => 'eapm',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'EAPM',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'eapm_locked_fields' => 
-  array (
-    'name' => 'eapm_locked_fields',
-    'lhs_module' => 'EAPM',
-    'lhs_table' => 'eapm',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'EAPM',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'eapm_assigned_user' => 
-  array (
-    'name' => 'eapm_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EAPM',
-    'rhs_table' => 'eapm',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'oauthkeys_modified_user' => 
-  array (
-    'name' => 'oauthkeys_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'OAuthKeys',
-    'rhs_table' => 'oauth_consumer',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'oauthkeys_created_by' => 
-  array (
-    'name' => 'oauthkeys_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'OAuthKeys',
-    'rhs_table' => 'oauth_consumer',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'oauthkey_activities' => 
-  array (
-    'name' => 'oauthkey_activities',
-    'lhs_module' => 'OAuthKeys',
-    'lhs_table' => 'oauth_consumer',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'OAuthKeys',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'oauthkeys_following' => 
-  array (
-    'name' => 'oauthkeys_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'OAuthKeys',
-    'rhs_table' => 'oauth_consumer',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'OAuthKeys',
-    'user_field' => 'created_by',
-  ),
-  'oauthkeys_favorite' => 
-  array (
-    'name' => 'oauthkeys_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'OAuthKeys',
-    'rhs_table' => 'oauth_consumer',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'OAuthKeys',
-    'user_field' => 'created_by',
-  ),
-  'oauthkeys_commentlog' => 
-  array (
-    'name' => 'oauthkeys_commentlog',
-    'lhs_module' => 'OAuthKeys',
-    'lhs_table' => 'oauth_consumer',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'OAuthKeys',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'oauthkeys_locked_fields' => 
-  array (
-    'name' => 'oauthkeys_locked_fields',
-    'lhs_module' => 'OAuthKeys',
-    'lhs_table' => 'oauth_consumer',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'OAuthKeys',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'oauthkeys_assigned_user' => 
-  array (
-    'name' => 'oauthkeys_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'OAuthKeys',
-    'rhs_table' => 'oauth_consumer',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'consumer_tokens' => 
-  array (
-    'name' => 'consumer_tokens',
-    'lhs_module' => 'OAuthKeys',
-    'lhs_table' => 'oauth_consumer',
-    'lhs_key' => 'id',
-    'rhs_module' => 'OAuthTokens',
-    'rhs_table' => 'oauth_tokens',
-    'rhs_key' => 'consumer',
-    'relationship_type' => 'one-to-many',
-  ),
-  'oauthtokens_assigned_user' => 
-  array (
-    'name' => 'oauthtokens_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'OAuthTokens',
-    'rhs_table' => 'oauth_tokens',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'contacts_oauthtokens' => 
-  array (
-    'name' => 'contacts_oauthtokens',
-    'lhs_module' => 'Contacts',
-    'lhs_table' => 'contacts',
-    'lhs_key' => 'id',
-    'rhs_module' => 'OAuthTokens',
-    'rhs_table' => 'oauth_tokens',
-    'rhs_key' => 'contact_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'sugarfavorites_modified_user' => 
-  array (
-    'name' => 'sugarfavorites_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'SugarFavorites',
-    'rhs_table' => 'sugarfavorites',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'sugarfavorites_created_by' => 
-  array (
-    'name' => 'sugarfavorites_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'SugarFavorites',
-    'rhs_table' => 'sugarfavorites',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'sugarfavorites_activities' => 
-  array (
-    'name' => 'sugarfavorites_activities',
-    'lhs_module' => 'SugarFavorites',
-    'lhs_table' => 'sugarfavorites',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'SugarFavorites',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'sugarfavorites_following' => 
-  array (
-    'name' => 'sugarfavorites_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'SugarFavorites',
-    'rhs_table' => 'sugarfavorites',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'SugarFavorites',
-    'user_field' => 'created_by',
-  ),
-  'sugarfavorites_favorite' => 
-  array (
-    'name' => 'sugarfavorites_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'SugarFavorites',
-    'rhs_table' => 'sugarfavorites',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'SugarFavorites',
-    'user_field' => 'created_by',
-  ),
-  'sugarfavorites_commentlog' => 
-  array (
-    'name' => 'sugarfavorites_commentlog',
-    'lhs_module' => 'SugarFavorites',
-    'lhs_table' => 'sugarfavorites',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'SugarFavorites',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'sugarfavorites_locked_fields' => 
-  array (
-    'name' => 'sugarfavorites_locked_fields',
-    'lhs_module' => 'SugarFavorites',
-    'lhs_table' => 'sugarfavorites',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'SugarFavorites',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'sugarfavorites_assigned_user' => 
-  array (
-    'name' => 'sugarfavorites_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'SugarFavorites',
-    'rhs_table' => 'sugarfavorites',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'weblogichooks_modified_user' => 
-  array (
-    'name' => 'weblogichooks_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'WebLogicHooks',
-    'rhs_table' => 'weblogichooks',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'weblogichooks_created_by' => 
-  array (
-    'name' => 'weblogichooks_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'WebLogicHooks',
-    'rhs_table' => 'weblogichooks',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'weblogichook_activities' => 
-  array (
-    'name' => 'weblogichook_activities',
-    'lhs_module' => 'WebLogicHooks',
-    'lhs_table' => 'weblogichooks',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'WebLogicHooks',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'weblogichooks_following' => 
-  array (
-    'name' => 'weblogichooks_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'WebLogicHooks',
-    'rhs_table' => 'weblogichooks',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'WebLogicHooks',
-    'user_field' => 'created_by',
-  ),
-  'weblogichooks_favorite' => 
-  array (
-    'name' => 'weblogichooks_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'WebLogicHooks',
-    'rhs_table' => 'weblogichooks',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'WebLogicHooks',
-    'user_field' => 'created_by',
-  ),
-  'weblogichooks_locked_fields' => 
-  array (
-    'name' => 'weblogichooks_locked_fields',
-    'lhs_module' => 'WebLogicHooks',
-    'lhs_table' => 'weblogichooks',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'WebLogicHooks',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'activities_modified_user' => 
-  array (
-    'name' => 'activities_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'activities_created_by' => 
-  array (
-    'name' => 'activities_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'activity_activities' => 
-  array (
-    'name' => 'activity_activities',
-    'lhs_module' => 'Activities',
-    'lhs_table' => 'activities',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Activities',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'comments' => 
-  array (
-    'name' => 'comments',
-    'lhs_module' => 'Activities',
-    'lhs_table' => 'activities',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Comments',
-    'rhs_table' => 'comments',
-    'rhs_key' => 'parent_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'activities_following' => 
-  array (
-    'name' => 'activities_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Activities',
-    'user_field' => 'created_by',
-  ),
-  'activities_favorite' => 
-  array (
-    'name' => 'activities_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'Activities',
-    'user_field' => 'created_by',
-  ),
-  'activities_locked_fields' => 
-  array (
-    'name' => 'activities_locked_fields',
-    'lhs_module' => 'Activities',
-    'lhs_table' => 'activities',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Activities',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
   'comments_modified_user' => 
   array (
     'name' => 'comments_modified_user',
@@ -38716,3399 +42110,5 @@
         'default' => '0',
       ),
     ),
-  ),
-  'filters_modified_user' => 
-  array (
-    'name' => 'filters_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Filters',
-    'rhs_table' => 'filters',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'filters_created_by' => 
-  array (
-    'name' => 'filters_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Filters',
-    'rhs_table' => 'filters',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'filters_activities' => 
-  array (
-    'name' => 'filters_activities',
-    'lhs_module' => 'Filters',
-    'lhs_table' => 'filters',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Filters',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'filters_following' => 
-  array (
-    'name' => 'filters_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Filters',
-    'rhs_table' => 'filters',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Filters',
-    'user_field' => 'created_by',
-  ),
-  'filters_favorite' => 
-  array (
-    'name' => 'filters_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Filters',
-    'rhs_table' => 'filters',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'Filters',
-    'user_field' => 'created_by',
-  ),
-  'filters_locked_fields' => 
-  array (
-    'name' => 'filters_locked_fields',
-    'lhs_module' => 'Filters',
-    'lhs_table' => 'filters',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Filters',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'filters_team_count_relationship' => 
-  array (
-    'name' => 'filters_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Filters',
-    'rhs_table' => 'filters',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'filters_teams' => 
-  array (
-    'name' => 'filters_teams',
-    'lhs_module' => 'Filters',
-    'lhs_table' => 'filters',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'filters_team' => 
-  array (
-    'name' => 'filters_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Filters',
-    'rhs_table' => 'filters',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'filters_assigned_user' => 
-  array (
-    'name' => 'filters_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Filters',
-    'rhs_table' => 'filters',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'categories_modified_user' => 
-  array (
-    'name' => 'categories_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Categories',
-    'rhs_table' => 'categories',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'categories_created_by' => 
-  array (
-    'name' => 'categories_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Categories',
-    'rhs_table' => 'categories',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'category_activities' => 
-  array (
-    'name' => 'category_activities',
-    'lhs_module' => 'Categories',
-    'lhs_table' => 'categories',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Categories',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'categories_following' => 
-  array (
-    'name' => 'categories_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Categories',
-    'rhs_table' => 'categories',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'Categories',
-    'user_field' => 'created_by',
-  ),
-  'categories_favorite' => 
-  array (
-    'name' => 'categories_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Categories',
-    'rhs_table' => 'categories',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'Categories',
-    'user_field' => 'created_by',
-  ),
-  'categories_locked_fields' => 
-  array (
-    'name' => 'categories_locked_fields',
-    'lhs_module' => 'Categories',
-    'lhs_table' => 'categories',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Categories',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'pdfmanager_modified_user' => 
-  array (
-    'name' => 'pdfmanager_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'PdfManager',
-    'rhs_table' => 'pdfmanager',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'pdfmanager_created_by' => 
-  array (
-    'name' => 'pdfmanager_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'PdfManager',
-    'rhs_table' => 'pdfmanager',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'pdfmanager_activities' => 
-  array (
-    'name' => 'pdfmanager_activities',
-    'lhs_module' => 'PdfManager',
-    'lhs_table' => 'pdfmanager',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'PdfManager',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'pdfmanager_following' => 
-  array (
-    'name' => 'pdfmanager_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'PdfManager',
-    'rhs_table' => 'pdfmanager',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'PdfManager',
-    'user_field' => 'created_by',
-  ),
-  'pdfmanager_favorite' => 
-  array (
-    'name' => 'pdfmanager_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'PdfManager',
-    'rhs_table' => 'pdfmanager',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'PdfManager',
-    'user_field' => 'created_by',
-  ),
-  'pdfmanager_commentlog' => 
-  array (
-    'name' => 'pdfmanager_commentlog',
-    'lhs_module' => 'PdfManager',
-    'lhs_table' => 'pdfmanager',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'PdfManager',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'pdfmanager_locked_fields' => 
-  array (
-    'name' => 'pdfmanager_locked_fields',
-    'lhs_module' => 'PdfManager',
-    'lhs_table' => 'pdfmanager',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'PdfManager',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'pdfmanager_team_count_relationship' => 
-  array (
-    'name' => 'pdfmanager_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'PdfManager',
-    'rhs_table' => 'pdfmanager',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'pdfmanager_teams' => 
-  array (
-    'name' => 'pdfmanager_teams',
-    'lhs_module' => 'PdfManager',
-    'lhs_table' => 'pdfmanager',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'pdfmanager_team' => 
-  array (
-    'name' => 'pdfmanager_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'PdfManager',
-    'rhs_table' => 'pdfmanager',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'pdfmanager_assigned_user' => 
-  array (
-    'name' => 'pdfmanager_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'PdfManager',
-    'rhs_table' => 'pdfmanager',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbarticles_modified_user' => 
-  array (
-    'name' => 'kbarticles_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBArticles',
-    'rhs_table' => 'kbarticles',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbarticles_created_by' => 
-  array (
-    'name' => 'kbarticles_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBArticles',
-    'rhs_table' => 'kbarticles',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbarticle_activities' => 
-  array (
-    'name' => 'kbarticle_activities',
-    'lhs_module' => 'KBArticles',
-    'lhs_table' => 'kbarticles',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'KBArticles',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'kbdocuments_kbarticles' => 
-  array (
-    'name' => 'kbdocuments_kbarticles',
-    'lhs_module' => 'KBDocuments',
-    'lhs_table' => 'kbdocuments',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBArticles',
-    'rhs_table' => 'kbarticles',
-    'rhs_key' => 'kbdocument_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbarticles_following' => 
-  array (
-    'name' => 'kbarticles_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBArticles',
-    'rhs_table' => 'kbarticles',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'KBArticles',
-    'user_field' => 'created_by',
-  ),
-  'kbarticles_favorite' => 
-  array (
-    'name' => 'kbarticles_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBArticles',
-    'rhs_table' => 'kbarticles',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'KBArticles',
-    'user_field' => 'created_by',
-  ),
-  'kbarticles_locked_fields' => 
-  array (
-    'name' => 'kbarticles_locked_fields',
-    'lhs_module' => 'KBArticles',
-    'lhs_table' => 'kbarticles',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'KBArticles',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'kbarticles_team_count_relationship' => 
-  array (
-    'name' => 'kbarticles_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBArticles',
-    'rhs_table' => 'kbarticles',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbarticles_teams' => 
-  array (
-    'name' => 'kbarticles_teams',
-    'lhs_module' => 'KBArticles',
-    'lhs_table' => 'kbarticles',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'kbarticles_team' => 
-  array (
-    'name' => 'kbarticles_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBArticles',
-    'rhs_table' => 'kbarticles',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbarticles_assigned_user' => 
-  array (
-    'name' => 'kbarticles_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBArticles',
-    'rhs_table' => 'kbarticles',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbcontenttemplates_modified_user' => 
-  array (
-    'name' => 'kbcontenttemplates_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBContentTemplates',
-    'rhs_table' => 'kbcontent_templates',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbcontenttemplates_created_by' => 
-  array (
-    'name' => 'kbcontenttemplates_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBContentTemplates',
-    'rhs_table' => 'kbcontent_templates',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbcontenttemplate_activities' => 
-  array (
-    'name' => 'kbcontenttemplate_activities',
-    'lhs_module' => 'KBContentTemplates',
-    'lhs_table' => 'kbcontent_templates',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'KBContentTemplates',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'kbcontenttemplates_following' => 
-  array (
-    'name' => 'kbcontenttemplates_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBContentTemplates',
-    'rhs_table' => 'kbcontent_templates',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'KBContentTemplates',
-    'user_field' => 'created_by',
-  ),
-  'kbcontenttemplates_favorite' => 
-  array (
-    'name' => 'kbcontenttemplates_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBContentTemplates',
-    'rhs_table' => 'kbcontent_templates',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'KBContentTemplates',
-    'user_field' => 'created_by',
-  ),
-  'kbcontenttemplates_locked_fields' => 
-  array (
-    'name' => 'kbcontenttemplates_locked_fields',
-    'lhs_module' => 'KBContentTemplates',
-    'lhs_table' => 'kbcontent_templates',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'KBContentTemplates',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'kbcontenttemplates_team_count_relationship' => 
-  array (
-    'name' => 'kbcontenttemplates_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBContentTemplates',
-    'rhs_table' => 'kbcontent_templates',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'kbcontenttemplates_teams' => 
-  array (
-    'name' => 'kbcontenttemplates_teams',
-    'lhs_module' => 'KBContentTemplates',
-    'lhs_table' => 'kbcontent_templates',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'kbcontenttemplates_team' => 
-  array (
-    'name' => 'kbcontenttemplates_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'KBContentTemplates',
-    'rhs_table' => 'kbcontent_templates',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'embeddedfiles_modified_user' => 
-  array (
-    'name' => 'embeddedfiles_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EmbeddedFiles',
-    'rhs_table' => 'embedded_files',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'embeddedfiles_created_by' => 
-  array (
-    'name' => 'embeddedfiles_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EmbeddedFiles',
-    'rhs_table' => 'embedded_files',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'embeddedfile_activities' => 
-  array (
-    'name' => 'embeddedfile_activities',
-    'lhs_module' => 'EmbeddedFiles',
-    'lhs_table' => 'embedded_files',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'EmbeddedFiles',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'embeddedfiles_following' => 
-  array (
-    'name' => 'embeddedfiles_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EmbeddedFiles',
-    'rhs_table' => 'embedded_files',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'EmbeddedFiles',
-    'user_field' => 'created_by',
-  ),
-  'embeddedfiles_favorite' => 
-  array (
-    'name' => 'embeddedfiles_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'EmbeddedFiles',
-    'rhs_table' => 'embedded_files',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'EmbeddedFiles',
-    'user_field' => 'created_by',
-  ),
-  'embeddedfiles_locked_fields' => 
-  array (
-    'name' => 'embeddedfiles_locked_fields',
-    'lhs_module' => 'EmbeddedFiles',
-    'lhs_table' => 'embedded_files',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'EmbeddedFiles',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'visualpipeline_modified_user' => 
-  array (
-    'name' => 'visualpipeline_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'VisualPipeline',
-    'rhs_table' => 'visual_pipeline',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'visualpipeline_created_by' => 
-  array (
-    'name' => 'visualpipeline_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'VisualPipeline',
-    'rhs_table' => 'visual_pipeline',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'visualpipeline_activities' => 
-  array (
-    'name' => 'visualpipeline_activities',
-    'lhs_module' => 'VisualPipeline',
-    'lhs_table' => 'visual_pipeline',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'VisualPipeline',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'visualpipeline_following' => 
-  array (
-    'name' => 'visualpipeline_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'VisualPipeline',
-    'rhs_table' => 'visual_pipeline',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'VisualPipeline',
-    'user_field' => 'created_by',
-  ),
-  'visualpipeline_favorite' => 
-  array (
-    'name' => 'visualpipeline_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'VisualPipeline',
-    'rhs_table' => 'visual_pipeline',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'VisualPipeline',
-    'user_field' => 'created_by',
-  ),
-  'visualpipeline_tags' => 
-  array (
-    'name' => 'visualpipeline_tags',
-    'lhs_module' => 'VisualPipeline',
-    'lhs_table' => 'visual_pipeline',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'VisualPipeline',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'visualpipeline_commentlog' => 
-  array (
-    'name' => 'visualpipeline_commentlog',
-    'lhs_module' => 'VisualPipeline',
-    'lhs_table' => 'visual_pipeline',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'VisualPipeline',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'visualpipeline_locked_fields' => 
-  array (
-    'name' => 'visualpipeline_locked_fields',
-    'lhs_module' => 'VisualPipeline',
-    'lhs_table' => 'visual_pipeline',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'VisualPipeline',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'consoleconfiguration_modified_user' => 
-  array (
-    'name' => 'consoleconfiguration_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ConsoleConfiguration',
-    'rhs_table' => 'console_configuration',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'consoleconfiguration_created_by' => 
-  array (
-    'name' => 'consoleconfiguration_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ConsoleConfiguration',
-    'rhs_table' => 'console_configuration',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'consoleconfiguration_activities' => 
-  array (
-    'name' => 'consoleconfiguration_activities',
-    'lhs_module' => 'ConsoleConfiguration',
-    'lhs_table' => 'console_configuration',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ConsoleConfiguration',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'consoleconfiguration_following' => 
-  array (
-    'name' => 'consoleconfiguration_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ConsoleConfiguration',
-    'rhs_table' => 'console_configuration',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ConsoleConfiguration',
-    'user_field' => 'created_by',
-  ),
-  'consoleconfiguration_favorite' => 
-  array (
-    'name' => 'consoleconfiguration_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ConsoleConfiguration',
-    'rhs_table' => 'console_configuration',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ConsoleConfiguration',
-    'user_field' => 'created_by',
-  ),
-  'consoleconfiguration_tags' => 
-  array (
-    'name' => 'consoleconfiguration_tags',
-    'lhs_module' => 'ConsoleConfiguration',
-    'lhs_table' => 'console_configuration',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ConsoleConfiguration',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'consoleconfiguration_commentlog' => 
-  array (
-    'name' => 'consoleconfiguration_commentlog',
-    'lhs_module' => 'ConsoleConfiguration',
-    'lhs_table' => 'console_configuration',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ConsoleConfiguration',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'consoleconfiguration_locked_fields' => 
-  array (
-    'name' => 'consoleconfiguration_locked_fields',
-    'lhs_module' => 'ConsoleConfiguration',
-    'lhs_table' => 'console_configuration',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ConsoleConfiguration',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'sugarlive_modified_user' => 
-  array (
-    'name' => 'sugarlive_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'SugarLive',
-    'rhs_table' => 'sugar_live',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'sugarlive_created_by' => 
-  array (
-    'name' => 'sugarlive_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'SugarLive',
-    'rhs_table' => 'sugar_live',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'sugarlive_activities' => 
-  array (
-    'name' => 'sugarlive_activities',
-    'lhs_module' => 'SugarLive',
-    'lhs_table' => 'sugar_live',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'SugarLive',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'sugarlive_following' => 
-  array (
-    'name' => 'sugarlive_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'SugarLive',
-    'rhs_table' => 'sugar_live',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'SugarLive',
-    'user_field' => 'created_by',
-  ),
-  'sugarlive_favorite' => 
-  array (
-    'name' => 'sugarlive_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'SugarLive',
-    'rhs_table' => 'sugar_live',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'SugarLive',
-    'user_field' => 'created_by',
-  ),
-  'sugarlive_tags' => 
-  array (
-    'name' => 'sugarlive_tags',
-    'lhs_module' => 'SugarLive',
-    'lhs_table' => 'sugar_live',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'SugarLive',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'sugarlive_commentlog' => 
-  array (
-    'name' => 'sugarlive_commentlog',
-    'lhs_module' => 'SugarLive',
-    'lhs_table' => 'sugar_live',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'SugarLive',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'sugarlive_locked_fields' => 
-  array (
-    'name' => 'sugarlive_locked_fields',
-    'lhs_module' => 'SugarLive',
-    'lhs_table' => 'sugar_live',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'SugarLive',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'commentlog_modified_user' => 
-  array (
-    'name' => 'commentlog_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'commentlog_created_by' => 
-  array (
-    'name' => 'commentlog_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'commentlog_activities' => 
-  array (
-    'name' => 'commentlog_activities',
-    'lhs_module' => 'CommentLog',
-    'lhs_table' => 'commentlog',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'CommentLog',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'commentlog_following' => 
-  array (
-    'name' => 'commentlog_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'CommentLog',
-    'user_field' => 'created_by',
-  ),
-  'commentlog_favorite' => 
-  array (
-    'name' => 'commentlog_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'CommentLog',
-    'user_field' => 'created_by',
-  ),
-  'commentlog_tags' => 
-  array (
-    'name' => 'commentlog_tags',
-    'lhs_module' => 'CommentLog',
-    'lhs_table' => 'commentlog',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'CommentLog',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'commentlog_locked_fields' => 
-  array (
-    'name' => 'commentlog_locked_fields',
-    'lhs_module' => 'CommentLog',
-    'lhs_table' => 'commentlog',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'CommentLog',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'dataarchiver_modified_user' => 
-  array (
-    'name' => 'dataarchiver_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'DataArchiver',
-    'rhs_table' => 'data_archivers',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'dataarchiver_created_by' => 
-  array (
-    'name' => 'dataarchiver_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'DataArchiver',
-    'rhs_table' => 'data_archivers',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'dataarchiver_activities' => 
-  array (
-    'name' => 'dataarchiver_activities',
-    'lhs_module' => 'DataArchiver',
-    'lhs_table' => 'data_archivers',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'DataArchiver',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'archiver_runs' => 
-  array (
-    'name' => 'archiver_runs',
-    'lhs_module' => 'DataArchiver',
-    'lhs_table' => 'data_archivers',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ArchiveRuns',
-    'rhs_table' => 'archive_runs',
-    'rhs_key' => 'archiver_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'dataarchiver_following' => 
-  array (
-    'name' => 'dataarchiver_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'DataArchiver',
-    'rhs_table' => 'data_archivers',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'DataArchiver',
-    'user_field' => 'created_by',
-  ),
-  'dataarchiver_favorite' => 
-  array (
-    'name' => 'dataarchiver_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'DataArchiver',
-    'rhs_table' => 'data_archivers',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'DataArchiver',
-    'user_field' => 'created_by',
-  ),
-  'dataarchiver_tags' => 
-  array (
-    'name' => 'dataarchiver_tags',
-    'lhs_module' => 'DataArchiver',
-    'lhs_table' => 'data_archivers',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'DataArchiver',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'dataarchiver_commentlog' => 
-  array (
-    'name' => 'dataarchiver_commentlog',
-    'lhs_module' => 'DataArchiver',
-    'lhs_table' => 'data_archivers',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'DataArchiver',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'dataarchiver_locked_fields' => 
-  array (
-    'name' => 'dataarchiver_locked_fields',
-    'lhs_module' => 'DataArchiver',
-    'lhs_table' => 'data_archivers',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'DataArchiver',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'archiveruns_modified_user' => 
-  array (
-    'name' => 'archiveruns_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ArchiveRuns',
-    'rhs_table' => 'archive_runs',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'archiveruns_created_by' => 
-  array (
-    'name' => 'archiveruns_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ArchiveRuns',
-    'rhs_table' => 'archive_runs',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'archiveruns_activities' => 
-  array (
-    'name' => 'archiveruns_activities',
-    'lhs_module' => 'ArchiveRuns',
-    'lhs_table' => 'archive_runs',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ArchiveRuns',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'archiveruns_following' => 
-  array (
-    'name' => 'archiveruns_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ArchiveRuns',
-    'rhs_table' => 'archive_runs',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'ArchiveRuns',
-    'user_field' => 'created_by',
-  ),
-  'archiveruns_favorite' => 
-  array (
-    'name' => 'archiveruns_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ArchiveRuns',
-    'rhs_table' => 'archive_runs',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ArchiveRuns',
-    'user_field' => 'created_by',
-  ),
-  'archiveruns_tags' => 
-  array (
-    'name' => 'archiveruns_tags',
-    'lhs_module' => 'ArchiveRuns',
-    'lhs_table' => 'archive_runs',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ArchiveRuns',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'archiveruns_commentlog' => 
-  array (
-    'name' => 'archiveruns_commentlog',
-    'lhs_module' => 'ArchiveRuns',
-    'lhs_table' => 'archive_runs',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'ArchiveRuns',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'archiveruns_locked_fields' => 
-  array (
-    'name' => 'archiveruns_locked_fields',
-    'lhs_module' => 'ArchiveRuns',
-    'lhs_table' => 'archive_runs',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ArchiveRuns',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'documentmerges_modified_user' => 
-  array (
-    'name' => 'documentmerges_modified_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'DocumentMerges',
-    'rhs_table' => 'document_merges',
-    'rhs_key' => 'modified_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'documentmerges_created_by' => 
-  array (
-    'name' => 'documentmerges_created_by',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'DocumentMerges',
-    'rhs_table' => 'document_merges',
-    'rhs_key' => 'created_by',
-    'relationship_type' => 'one-to-many',
-  ),
-  'documentmerge_activities' => 
-  array (
-    'name' => 'documentmerge_activities',
-    'lhs_module' => 'DocumentMerges',
-    'lhs_table' => 'document_merges',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Activities',
-    'rhs_table' => 'activities',
-    'rhs_key' => 'id',
-    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'activities_users',
-    'join_key_lhs' => 'parent_id',
-    'join_key_rhs' => 'activity_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'DocumentMerges',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'activity_id' => 
-      array (
-        'name' => 'activity_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'parent_type' => 
-      array (
-        'name' => 'parent_type',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'parent_id' => 
-      array (
-        'name' => 'parent_id',
-        'type' => 'id',
-      ),
-      'fields' => 
-      array (
-        'name' => 'fields',
-        'type' => 'json',
-        'dbType' => 'longtext',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'vname' => 'LBL_DELETED',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'documentmerges_following' => 
-  array (
-    'name' => 'documentmerges_following',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'DocumentMerges',
-    'rhs_table' => 'document_merges',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'subscriptions',
-    'join_key_lhs' => 'created_by',
-    'join_key_rhs' => 'parent_id',
-    'relationship_role_column' => 'parent_type',
-    'relationship_role_column_value' => 'DocumentMerges',
-    'user_field' => 'created_by',
-  ),
-  'documentmerges_favorite' => 
-  array (
-    'name' => 'documentmerges_favorite',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'DocumentMerges',
-    'rhs_table' => 'document_merges',
-    'rhs_key' => 'id',
-    'relationship_type' => 'user-based',
-    'join_table' => 'sugarfavorites',
-    'join_key_lhs' => 'modified_user_id',
-    'join_key_rhs' => 'record_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'DocumentMerges',
-    'user_field' => 'created_by',
-  ),
-  'documentmerges_tags' => 
-  array (
-    'name' => 'documentmerges_tags',
-    'lhs_module' => 'DocumentMerges',
-    'lhs_table' => 'document_merges',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tags',
-    'rhs_table' => 'tags',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'tag_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'tag_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'DocumentMerges',
-    'dynamic_subpanel' => true,
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'tag_id' => 
-      array (
-        'name' => 'tag_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'documentmerges_commentlog' => 
-  array (
-    'name' => 'documentmerges_commentlog',
-    'lhs_module' => 'DocumentMerges',
-    'lhs_table' => 'document_merges',
-    'lhs_key' => 'id',
-    'rhs_module' => 'CommentLog',
-    'rhs_table' => 'commentlog',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'commentlog_rel',
-    'join_key_lhs' => 'record_id',
-    'join_key_rhs' => 'commentlog_id',
-    'relationship_role_column' => 'module',
-    'relationship_role_column_value' => 'DocumentMerges',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'record_id' => 
-      array (
-        'name' => 'record_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'commentlog_id' => 
-      array (
-        'name' => 'commentlog_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'module' => 
-      array (
-        'name' => 'module',
-        'type' => 'varchar',
-        'len' => 100,
-        'required' => false,
-        'readonly' => true,
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'documentmerges_locked_fields' => 
-  array (
-    'name' => 'documentmerges_locked_fields',
-    'lhs_module' => 'DocumentMerges',
-    'lhs_table' => 'document_merges',
-    'lhs_key' => 'id',
-    'rhs_module' => 'pmse_BpmProcessDefinition',
-    'rhs_table' => 'pmse_bpm_process_definition',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'locked_field_bean_rel',
-    'join_key_lhs' => 'bean_id',
-    'join_key_rhs' => 'pd_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'DocumentMerges',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'pd_id' => 
-      array (
-        'name' => 'pd_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_id' => 
-      array (
-        'name' => 'bean_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'bean_module' => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => 100,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'documentmerges_assigned_user' => 
-  array (
-    'name' => 'documentmerges_assigned_user',
-    'lhs_module' => 'Users',
-    'lhs_table' => 'users',
-    'lhs_key' => 'id',
-    'rhs_module' => 'DocumentMerges',
-    'rhs_table' => 'document_merges',
-    'rhs_key' => 'assigned_user_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'documentmerges_team_count_relationship' => 
-  array (
-    'name' => 'documentmerges_team_count_relationship',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'team_sets',
-    'lhs_key' => 'id',
-    'rhs_module' => 'DocumentMerges',
-    'rhs_table' => 'document_merges',
-    'rhs_key' => 'team_set_id',
-    'relationship_type' => 'one-to-many',
-  ),
-  'documentmerges_teams' => 
-  array (
-    'name' => 'documentmerges_teams',
-    'lhs_module' => 'DocumentMerges',
-    'lhs_table' => 'document_merges',
-    'lhs_key' => 'team_set_id',
-    'rhs_module' => 'Teams',
-    'rhs_table' => 'teams',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_sets_teams',
-    'join_key_lhs' => 'team_set_id',
-    'join_key_rhs' => 'team_id',
-    'fields' => 
-    array (
-      'id' => 
-      array (
-        'name' => 'id',
-        'vname' => 'LBL_ID',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_set_id' => 
-      array (
-        'name' => 'team_set_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'team_id' => 
-      array (
-        'name' => 'team_id',
-        'type' => 'id',
-        'required' => true,
-      ),
-      'date_modified' => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      'deleted' => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '',
-        'default' => '0',
-      ),
-    ),
-  ),
-  'documentmerges_team' => 
-  array (
-    'name' => 'documentmerges_team',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'DocumentMerges',
-    'rhs_table' => 'document_merges',
-    'rhs_key' => 'team_id',
-    'relationship_type' => 'one-to-many',
   ),
 );

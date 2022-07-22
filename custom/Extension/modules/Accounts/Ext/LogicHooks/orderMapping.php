@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-20 14:43:08
+// created: 2022-07-22 19:20:41
 $extensionOrderMap = array (
   'modules/Accounts/Ext/LogicHooks/hint_hook.php' => 
   array (
@@ -23,6 +23,12 @@ $extensionOrderMap = array (
   array (
     'md5' => 'fec67ccbfe263c6c56732c1ff550748a',
     'mtime' => 1658310188,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Accounts/Ext/LogicHooks/vehicle_number_hook.php' => 
+  array (
+    'md5' => 'bbee1c21bb81e465ff5b07f53c08246c',
+    'mtime' => 1658499641,
     'is_override' => false,
   ),
 );

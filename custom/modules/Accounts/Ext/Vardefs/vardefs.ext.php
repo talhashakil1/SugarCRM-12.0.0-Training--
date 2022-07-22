@@ -6,3 +6,10 @@
 
 $dictionary['Account']['fields']['revenuelineitems']['workflow'] = true;
 ?>
+<?php
+// Merged from custom/Extension/modules/Accounts/Ext/Vardefs/sugarfield_vehicle_number_c.php
+
+ // created: 2022-07-22 19:20:41
+
+ 
+?>
