@@ -13,3 +13,11 @@ $dictionary['Account']['fields']['revenuelineitems']['workflow'] = true;
 
  
 ?>
+<?php
+// Merged from custom/Extension/modules/Accounts/Ext/Vardefs/sugarfield_print_pdf_c.php
+
+ // created: 2022-07-25 10:54:27
+$dictionary['Account']['fields']['print_pdf_c']['labelValue']='print pdf';
+
+ 
+?>

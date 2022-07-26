@@ -1,0 +1,45 @@
+<style>
+	div.view1
+	{
+		padding-top: 5%;
+		width: 50%;
+		height: 50%;
+	}
+</style>
+
+<br><br>
+
+<div id="myButtons">
+	{{!-- <button class="btn success" class="alertBtn" name="alert">Alert</button>
+	<button class="btn danger" class="cancelBtn" name="cancel">Cancel</button> --}}
+	{{!-- {{log meta}} --}}
+	{{#each meta.buttons}}
+		{{field ../this}}
+
+    {{/each}}
+
+
+	<h1>Welcome To Custom View In Drawer</h1>
+
+	<br><br><br><br>
+
+	<table>
+	<tr>
+		<th>Name</th>
+		<th>Age</th>
+		<th>Company</th>
+	</tr>
+	<tr>
+		<td>Talha Shakil</td>
+		<td>23</td>
+		<td>Rolustech</td>
+	</tr>
+	<tr>
+		<td>Ahmad Kashif</td>
+		<td>30</td>
+		<td>Netsol</td>
+	</tr>
+	</table>
+
+
+</div>

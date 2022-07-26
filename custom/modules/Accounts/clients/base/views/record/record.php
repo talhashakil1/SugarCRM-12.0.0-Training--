@@ -10,14 +10,6 @@ array (
         'buttons' => array(
           array(
             'type' => 'button',
-            'name' => 'short_preview_button',
-            'label' => 'LBL_SHORT_PREVIEW_BUTTON_LABEL',
-            //'css' => 'btn btn-primary',
-            'event' => 'button:short_preview_button:click',
-            'acl_action' => 'view',
-          ),
-          array(
-            'type' => 'button',
             'name' => 'cancel_button',
             'label' => 'LBL_CANCEL_BUTTON_LABEL',
             'css_class' => 'btn-invisible btn-link',
@@ -399,3 +391,6 @@ array (
     ),
   ),
 );
+
+
+

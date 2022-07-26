@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-22 19:20:43
+// created: 2022-07-26 17:23:45
 $mod_strings = array (
   'LBL_IS_ESCALATED' => 'Escalated',
   'LBL_ANY_EMAIL' => 'Email:',
@@ -215,6 +215,6 @@ To create an {{module_name}}:
  - Click "Show More" to expose additional fields if necessary.
 2. Click "Save" to finalize the new record and return to the previous page.',
   'LBL_FILTER_ACCOUNTS_REPORTS' => 'Accounts\' reports',
-  'LBL_SHORT_PREVIEW_BUTTON_LABEL' => 'Short Preview',
   'LBL_VEHICLE_NUMBER' => 'Vehicle Number',
+  'LBL_PRINT_PDF' => 'print pdf',
 );

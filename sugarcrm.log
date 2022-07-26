@@ -1,305 +1,453 @@
-Fri Jul 22 17:12:01 2022 [65971][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:13:01 2022 [66221][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:13:47 2022 [5038][1][FATAL] died with message: This package does not contain a manifest
-Fri Jul 22 17:14:01 2022 [66446][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:15:01 2022 [66657][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:16:01 2022 [66848][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:17:01 2022 [67039][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:18:07 2022 [67277][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:19:02 2022 [67442][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:20:01 2022 [67624][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:21:07 2022 [67836][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:22:07 2022 [68031][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:23:02 2022 [68231][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:24:07 2022 [68427][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:25:01 2022 [68591][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:26:02 2022 [68781][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:27:01 2022 [69032][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:28:07 2022 [69236][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:29:07 2022 [69469][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:30:02 2022 [69679][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:31:01 2022 [69884][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:32:02 2022 [70065][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:33:01 2022 [70256][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:34:01 2022 [70496][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:34:06 2022 [5075][1][FATAL] died with message: This package does not contain a manifest
-Fri Jul 22 17:35:07 2022 [70725][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:36:02 2022 [71042][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:37:01 2022 [71445][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:38:01 2022 [71676][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:39:01 2022 [71896][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:40:02 2022 [72093][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:41:07 2022 [72300][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:42:02 2022 [4959][1][FATAL] hook
-Fri Jul 22 17:42:02 2022 [39960][1][FATAL] hook
-Fri Jul 22 17:42:02 2022 [63627][1][FATAL] hook
-Fri Jul 22 17:42:02 2022 [4959][1][FATAL] hook
-Fri Jul 22 17:42:02 2022 [63627][1][FATAL] hook
-Fri Jul 22 17:42:02 2022 [65935][1][FATAL] hook
-Fri Jul 22 17:42:07 2022 [72487][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:42:09 2022 [5038][1][FATAL] hook
-Fri Jul 22 17:42:09 2022 [5038][1][FATAL] hook
-Fri Jul 22 17:42:10 2022 [5038][1][FATAL] hook
-Fri Jul 22 17:42:10 2022 [39960][1][FATAL] hook
-Fri Jul 22 17:42:16 2022 [39960][1][FATAL] hook
-Fri Jul 22 17:42:16 2022 [39960][1][FATAL] hook
-Fri Jul 22 17:42:16 2022 [5038][1][FATAL] hook
-Fri Jul 22 17:42:17 2022 [39960][1][FATAL] hook
-Fri Jul 22 17:42:17 2022 [5068][1][FATAL] hook
-Fri Jul 22 17:42:17 2022 [11838][1][FATAL] hook
-Fri Jul 22 17:42:21 2022 [39960][1][FATAL] hook
-Fri Jul 22 17:42:21 2022 [39960][1][FATAL] hook
-Fri Jul 22 17:42:21 2022 [39960][1][FATAL] hook
-Fri Jul 22 17:42:21 2022 [5038][1][FATAL] hook
-Fri Jul 22 17:43:07 2022 [72688][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:44:01 2022 [72869][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:45:01 2022 [73109][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:46:07 2022 [73325][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:47:01 2022 [73505][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:48:02 2022 [73695][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:48:55 2022 [5038][1][FATAL] died with message: This package does not contain a manifest
-Fri Jul 22 17:49:04 2022 [73909][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:50:01 2022 [74102][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:50:44 2022 [4963][1][FATAL] died with message: This package does not contain a manifest
-Fri Jul 22 17:51:01 2022 [74297][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:51:35 2022 [65935][1][FATAL] died with message: The uploaded file is not compatible with this version of Sugar: 
-Fri Jul 22 17:52:01 2022 [74540][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:53:07 2022 [74753][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:53:17 2022 [5038][1][FATAL] died with message: Please click Browse to select a file from your system to upload.
-Fri Jul 22 17:53:34 2022 [11838][1][FATAL] Package Install process was not finished successfully, uninstalling
-Fri Jul 22 17:53:34 2022 [11838][1][FATAL] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /var/www/html/SugarEnt-Full-12.0.0/custom/modules/Accounts/Ext/Language/en_us.lang.ext.php:9
-Stack trace:
-#0 /var/www/html/SugarEnt-Full-12.0.0/include/SugarObjects/LanguageManager.php(43): LanguageManager::refreshLanguage('Accounts', 'en_us', Array)
-#1 /var/www/html/SugarEnt-Full-12.0.0/include/SugarObjects/VardefManager.php(132): LanguageManager::createLanguageFile('Accounts', Array)
-#2 /var/www/html/SugarEnt-Full-12.0.0/modules/Accounts/vardefs.php(758): VardefManager::createVardef('Accounts', 'Account')
-#3 /var/www/html/SugarEnt-Full-12.0.0/include/SugarObjects/VardefManager.php(690): require('/var/www/html/S...')
-#4 /var/www/html/SugarEnt-Full-12.0.0/include/SugarObjects/VardefManager.php(634): VardefManager::refreshVardefs('Accounts', 'Account')
-#5 /var/www/html/SugarEnt-Full-12.0.0/include/SugarObjects/VardefManager.php(601): VardefManager::_clearCache('Accounts', 'Account')
-#6 /var/www/html/SugarEnt-Full-12.0.0/ModuleInstall/ModuleInstaller.php(2097): VardefManager::clearVardef()
-#7 /var/www/html/SugarEnt-Full-12.0.0/ModuleInstall/ModuleInstaller.php(984): ModuleInstaller->rebuild_vardefs(Array)
-#8 /var/www/html/SugarEnt-Full-12.0.0/ModuleInstall/ModuleInstaller.php(953): ModuleInstaller->rebuild_extensions()
-#9 /var/www/html/SugarEnt-Full-12.0.0/ModuleInstall/ModuleInstaller.php(222): ModuleInstaller->install_extensions()
-#10 /var/www/html/SugarEnt-Full-12.0.0/src/PackageManager/PackageManager.php(581): ModuleInstaller->install('/var/www/html/S...')
-#11 /var/www/html/SugarEnt-Full-12.0.0/modules/Administration/UpgradeWizard_commit.php(64): Sugarcrm\Sugarcrm\PackageManager\PackageManager->installPackage(Object(UpgradeHistory))
-#12 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/View/SugarView.php(617): require_once('/var/www/html/S...')
-#13 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/View/views/view.classic.php(43): SugarView->includeClassicFile('modules/Adminis...')
-#14 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/View/SugarView.php(154): ViewClassic->display()
-#15 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/Controller/SugarController.php(360): SugarView->process(Array)
-#16 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/Controller/SugarController.php(308): SugarController->processView()
-#17 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/SugarApplication.php(205): SugarController->execute()
-#18 /var/www/html/SugarEnt-Full-12.0.0/index.php(26): SugarApplication->execute()
-#19 {main}
-Fri Jul 22 17:53:34 2022 [11838][1][FATAL] Executing emergency package uninstall: HooksPackage
-Fri Jul 22 17:54:02 2022 [75415][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:55:02 2022 [75605][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:56:01 2022 [75851][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:57:01 2022 [76081][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:58:02 2022 [76301][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 17:59:01 2022 [76551][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:00:01 2022 [76806][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:00:06 2022 [4959][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 18:00:06 2022 [4959][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 18:00:07 2022 [4959][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 18:00:07 2022 [4959][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 18:00:38 2022 [39960][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 18:00:38 2022 [39960][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 18:00:40 2022 [39960][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 18:00:40 2022 [39960][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 18:01:01 2022 [77158][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:02:02 2022 [77344][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:03:07 2022 [77544][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:04:01 2022 [77713][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:05:01 2022 [77904][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:06:01 2022 [78102][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:07:01 2022 [78283][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:08:02 2022 [78497][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:09:01 2022 [78683][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:10:01 2022 [78913][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:11:07 2022 [79130][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:12:00 2022 [4963][1][FATAL] hook
-Fri Jul 22 18:12:01 2022 [4963][1][FATAL] hook
-Fri Jul 22 18:12:01 2022 [5075][1][FATAL] hook
-Fri Jul 22 18:12:01 2022 [4963][1][FATAL] hook
-Fri Jul 22 18:12:01 2022 [79384][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:12:01 2022 [5068][1][FATAL] hook
-Fri Jul 22 18:12:02 2022 [4963][1][FATAL] hook
-Fri Jul 22 18:12:07 2022 [5075][1][FATAL] hook
-Fri Jul 22 18:12:07 2022 [4963][1][FATAL] hook
-Fri Jul 22 18:12:07 2022 [5075][1][FATAL] hook
-Fri Jul 22 18:12:07 2022 [4963][1][FATAL] hook
-Fri Jul 22 18:12:07 2022 [63627][1][FATAL] hook
-Fri Jul 22 18:12:08 2022 [5072][1][FATAL] hook
-Fri Jul 22 18:12:14 2022 [4963][1][FATAL] hook
-Fri Jul 22 18:12:14 2022 [4963][1][FATAL] hook
-Fri Jul 22 18:12:14 2022 [5075][1][FATAL] hook
-Fri Jul 22 18:12:14 2022 [4963][1][FATAL] hook
-Fri Jul 22 18:12:14 2022 [79397][1][FATAL] hook
-Fri Jul 22 18:12:14 2022 [4963][1][FATAL] hook
-Fri Jul 22 18:13:08 2022 [79637][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:13:30 2022 [4959][1][FATAL] hook
-Fri Jul 22 18:13:30 2022 [65935][1][FATAL] hook
-Fri Jul 22 18:13:30 2022 [4959][1][FATAL] hook
-Fri Jul 22 18:13:30 2022 [65935][1][FATAL] hook
-Fri Jul 22 18:13:31 2022 [5072][1][FATAL] hook
-Fri Jul 22 18:13:31 2022 [4963][1][FATAL] hook
-Fri Jul 22 18:14:06 2022 [5068][1][FATAL] hook
-Fri Jul 22 18:14:07 2022 [79820][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:14:09 2022 [5068][1][FATAL] hook
-Fri Jul 22 18:14:09 2022 [5068][1][FATAL] hook
-Fri Jul 22 18:14:09 2022 [4959][1][FATAL] hook
-Fri Jul 22 18:14:09 2022 [5068][1][FATAL] hook
-Fri Jul 22 18:14:09 2022 [39960][1][FATAL] hook
-Fri Jul 22 18:14:09 2022 [63627][1][FATAL] hook
-Fri Jul 22 18:15:01 2022 [80008][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:16:04 2022 [4959][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 18:16:04 2022 [4959][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 18:16:05 2022 [5038][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 18:16:05 2022 [5038][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 18:16:08 2022 [80312][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:16:09 2022 [5068][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 18:16:09 2022 [5068][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 18:17:01 2022 [80509][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:18:01 2022 [80726][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:19:01 2022 [80963][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:20:07 2022 [81166][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:20:30 2022 [65935][1][FATAL] hook
-Fri Jul 22 18:20:30 2022 [5038][1][FATAL] hook
-Fri Jul 22 18:20:30 2022 [79397][1][FATAL] hook
-Fri Jul 22 18:20:31 2022 [5038][1][FATAL] hook
-Fri Jul 22 18:20:31 2022 [65935][1][FATAL] hook
-Fri Jul 22 18:20:31 2022 [39960][1][FATAL] hook
-Fri Jul 22 18:21:01 2022 [81347][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:22:06 2022 [81548][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:23:02 2022 [81715][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:24:01 2022 [81896][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:25:07 2022 [82100][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:26:01 2022 [82283][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:27:07 2022 [82520][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:28:02 2022 [82690][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:29:07 2022 [82926][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:30:13 2022 [83171][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:31:01 2022 [83337][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:32:07 2022 [83541][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:32:17 2022 [4959][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 18:32:17 2022 [4959][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 18:32:18 2022 [4959][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 18:32:18 2022 [4959][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 18:32:22 2022 [63627][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 18:32:22 2022 [63627][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 18:32:23 2022 [63627][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 18:32:23 2022 [63627][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 18:33:02 2022 [83802][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:33:49 2022 [4963][1][FATAL] Package Install process was not finished successfully, uninstalling
-Fri Jul 22 18:33:49 2022 [4963][1][FATAL] ModuleInstallerException: Failed to copy /var/www/html/SugarEnt-Full-12.0.0/cache/mlp_temp/nc8MJu/Files/custom/Extension/modules/Schedulers/Ext/Language/change_description_job.php custom/Extension/modules/Schedulers/Ext/Language/change_description_job.php in /var/www/html/SugarEnt-Full-12.0.0/ModuleInstall/ModuleInstaller.php:1363
-Stack trace:
-#0 /var/www/html/SugarEnt-Full-12.0.0/ModuleInstall/ModuleInstaller.php(406): ModuleInstaller->copy_path('/var/www/html/S...', 'custom/Extensio...', 'upgrades/module...')
-#1 /var/www/html/SugarEnt-Full-12.0.0/ModuleInstall/ModuleInstaller.php(222): ModuleInstaller->install_copy()
-#2 /var/www/html/SugarEnt-Full-12.0.0/src/PackageManager/PackageManager.php(581): ModuleInstaller->install('/var/www/html/S...')
-#3 /var/www/html/SugarEnt-Full-12.0.0/modules/Administration/UpgradeWizard_commit.php(64): Sugarcrm\Sugarcrm\PackageManager\PackageManager->installPackage(Object(UpgradeHistory))
-#4 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/View/SugarView.php(617): require_once('/var/www/html/S...')
-#5 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/View/views/view.classic.php(43): SugarView->includeClassicFile('modules/Adminis...')
-#6 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/View/SugarView.php(154): ViewClassic->display()
-#7 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/Controller/SugarController.php(360): SugarView->process(Array)
-#8 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/Controller/SugarController.php(308): SugarController->processView()
-#9 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/SugarApplication.php(205): SugarController->execute()
-#10 /var/www/html/SugarEnt-Full-12.0.0/index.php(26): SugarApplication->execute()
-#11 {main}
-Fri Jul 22 18:33:49 2022 [4963][1][FATAL] Executing emergency package uninstall: HooksPackage
-Fri Jul 22 18:33:52 2022 [4963][1][FATAL] died with message: Package is not installed.
-Fri Jul 22 18:34:07 2022 [84063][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:35:01 2022 [84248][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:36:01 2022 [84458][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:37:01 2022 [84642][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:38:01 2022 [84827][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:39:02 2022 [85014][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:40:01 2022 [85242][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:40:27 2022 [63627][1][FATAL] Package Install process was not finished successfully, uninstalling
-Fri Jul 22 18:40:27 2022 [63627][1][FATAL] ModuleInstallerException: Failed to copy /var/www/html/SugarEnt-Full-12.0.0/cache/mlp_temp/0xS2Bn/Files/custom/Extension/modules/Schedulers/Ext/Language/change_description_job.php custom/Extension/modules/Schedulers/Ext/Language/change_description_job.php in /var/www/html/SugarEnt-Full-12.0.0/ModuleInstall/ModuleInstaller.php:1363
-Stack trace:
-#0 /var/www/html/SugarEnt-Full-12.0.0/ModuleInstall/ModuleInstaller.php(406): ModuleInstaller->copy_path('/var/www/html/S...', 'custom/Extensio...', 'upgrades/module...')
-#1 /var/www/html/SugarEnt-Full-12.0.0/ModuleInstall/ModuleInstaller.php(222): ModuleInstaller->install_copy()
-#2 /var/www/html/SugarEnt-Full-12.0.0/src/PackageManager/PackageManager.php(581): ModuleInstaller->install('/var/www/html/S...')
-#3 /var/www/html/SugarEnt-Full-12.0.0/modules/Administration/UpgradeWizard_commit.php(64): Sugarcrm\Sugarcrm\PackageManager\PackageManager->installPackage(Object(UpgradeHistory))
-#4 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/View/SugarView.php(617): require_once('/var/www/html/S...')
-#5 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/View/views/view.classic.php(43): SugarView->includeClassicFile('modules/Adminis...')
-#6 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/View/SugarView.php(154): ViewClassic->display()
-#7 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/Controller/SugarController.php(360): SugarView->process(Array)
-#8 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/Controller/SugarController.php(308): SugarController->processView()
-#9 /var/www/html/SugarEnt-Full-12.0.0/include/MVC/SugarApplication.php(205): SugarController->execute()
-#10 /var/www/html/SugarEnt-Full-12.0.0/index.php(26): SugarApplication->execute()
-#11 {main}
-Fri Jul 22 18:40:27 2022 [63627][1][FATAL] Executing emergency package uninstall: HooksPackage
-Fri Jul 22 18:40:30 2022 [63627][1][FATAL] died with message: Package is not installed.
-Fri Jul 22 18:41:01 2022 [85547][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:42:13 2022 [85919][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:43:01 2022 [86066][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:44:01 2022 [86251][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:45:02 2022 [86447][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:46:01 2022 [86637][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:47:01 2022 [86822][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:48:07 2022 [87019][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:49:01 2022 [87184][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:50:01 2022 [87368][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:51:07 2022 [87569][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:52:01 2022 [87733][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:53:01 2022 [87916][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:54:01 2022 [88098][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:55:01 2022 [88277][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:56:01 2022 [88472][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:57:01 2022 [88658][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:58:07 2022 [88856][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 18:59:01 2022 [89026][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:00:07 2022 [89236][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:01:07 2022 [89423][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:02:01 2022 [89581][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:03:01 2022 [89769][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:04:01 2022 [89953][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:05:01 2022 [90184][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:06:02 2022 [90372][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:07:01 2022 [90555][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:07:43 2022 [5038][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 19:07:43 2022 [5038][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 19:07:44 2022 [5038][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 19:07:44 2022 [5038][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 19:08:07 2022 [90862][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:09:01 2022 [91267][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:10:01 2022 [91486][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:10:54 2022 [86959][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 19:10:54 2022 [86959][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 19:10:55 2022 [4963][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 19:10:55 2022 [4963][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 19:11:00 2022 [4963][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 19:11:00 2022 [4963][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 19:11:04 2022 [91777][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:12:01 2022 [91990][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:13:01 2022 [92171][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:14:01 2022 [92357][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:15:07 2022 [92605][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:16:01 2022 [92788][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:17:07 2022 [93002][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:17:30 2022 [4963][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 19:17:30 2022 [4963][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 19:17:31 2022 [4963][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 19:17:31 2022 [4963][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 19:18:01 2022 [93258][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:19:01 2022 [93486][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:20:02 2022 [93690][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:20:26 2022 [5072][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 19:20:26 2022 [5072][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 19:20:27 2022 [5072][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 19:20:27 2022 [5072][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 19:20:31 2022 [4963][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 19:20:31 2022 [4963][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 19:20:32 2022 [4963][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 19:20:32 2022 [4963][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 19:20:48 2022 [4959][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 19:20:48 2022 [4959][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 19:20:49 2022 [4959][1][FATAL] failed to find link for cases_contacts_1
-Fri Jul 22 19:20:49 2022 [4959][1][FATAL] failed to find link for cases_contacts_2
-Fri Jul 22 19:21:04 2022 [93979][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:22:11 2022 [94266][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:23:01 2022 [94419][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:24:02 2022 [94645][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:25:01 2022 [94865][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:26:01 2022 [95067][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
-Fri Jul 22 19:27:07 2022 [95320][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:34:02 2022 [64007][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:35:01 2022 [64245][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:36:07 2022 [64563][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:37:02 2022 [64821][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:38:13 2022 [65074][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:39:02 2022 [65266][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:40:01 2022 [65482][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:41:01 2022 [65683][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:42:01 2022 [65881][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:43:07 2022 [66098][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:43:46 2022 [60531][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 14:43:46 2022 [60531][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 14:43:47 2022 [60531][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 14:43:47 2022 [60531][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 14:44:00 2022 [60531][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 14:44:00 2022 [60531][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 14:44:01 2022 [66345][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:44:01 2022 [60531][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 14:44:01 2022 [60531][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 14:45:10 2022 [66656][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:46:02 2022 [66891][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:47:07 2022 [67136][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:48:01 2022 [67361][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:49:01 2022 [67574][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:50:19 2022 [67849][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:50:28 2022 [53456][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 14:50:28 2022 [53456][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 14:50:29 2022 [53456][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 14:50:29 2022 [53456][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 14:51:01 2022 [68000][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:52:01 2022 [68217][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:53:01 2022 [68405][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:54:02 2022 [68595][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:55:01 2022 [68786][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:56:07 2022 [69012][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:57:02 2022 [69184][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:58:15 2022 [69398][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 14:59:07 2022 [69558][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:00:02 2022 [69740][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:01:18 2022 [70008][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:02:01 2022 [70149][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:03:09 2022 [70359][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:04:01 2022 [70539][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:05:05 2022 [70736][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:06:01 2022 [70929][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:07:07 2022 [71187][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:08:07 2022 [71397][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:09:07 2022 [71643][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:10:01 2022 [71812][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:11:01 2022 [72021][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:12:02 2022 [72214][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:13:01 2022 [72423][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:14:07 2022 [72768][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:15:07 2022 [72965][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:16:02 2022 [73146][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:17:01 2022 [73368][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:18:01 2022 [73633][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:19:01 2022 [73841][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:20:01 2022 [74050][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:21:01 2022 [74259][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:22:01 2022 [74463][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:22:43 2022 [60315][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 15:22:43 2022 [60315][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 15:22:44 2022 [60315][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 15:22:44 2022 [60315][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 15:23:01 2022 [74699][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:24:07 2022 [74948][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:24:17 2022 [74631][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 15:24:17 2022 [74631][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 15:24:18 2022 [74631][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 15:24:18 2022 [74631][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 15:25:07 2022 [75158][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:26:07 2022 [75356][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:27:07 2022 [75572][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:27:14 2022 [53799][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 15:27:14 2022 [53799][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 15:27:15 2022 [53799][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 15:27:15 2022 [53799][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 15:28:07 2022 [75796][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:28:52 2022 [74631][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 15:28:52 2022 [74631][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 15:28:53 2022 [74631][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 15:28:53 2022 [74631][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 15:29:04 2022 [76004][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:30:07 2022 [76270][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:31:01 2022 [76455][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:32:01 2022 [76643][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:33:06 2022 [76861][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:34:01 2022 [77047][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:35:01 2022 [77230][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:37:48 2022 [77736][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:37:48 2022 [77739][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:37:48 2022 [77739][1][FATAL] Job runs too frequently, throttled to protect the system.
+Tue Jul 26 15:38:01 2022 [77792][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:38:01 2022 [77792][1][FATAL] Job runs too frequently, throttled to protect the system.
+Tue Jul 26 15:39:01 2022 [78037][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:40:07 2022 [78247][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:41:04 2022 [78450][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:42:02 2022 [78621][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:43:01 2022 [78831][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:44:01 2022 [79063][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:45:07 2022 [79325][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:46:19 2022 [79659][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:47:01 2022 [79825][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:48:07 2022 [80054][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:49:07 2022 [80284][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:50:01 2022 [80458][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:51:09 2022 [80707][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:52:01 2022 [80881][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:53:01 2022 [81078][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:54:01 2022 [81298][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:55:07 2022 [81511][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:56:01 2022 [81709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:57:01 2022 [81910][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:58:01 2022 [82123][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 15:58:50 2022 [10185][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 15:58:50 2022 [10185][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 15:58:51 2022 [10185][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 15:58:51 2022 [10185][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 15:59:01 2022 [82352][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:00:01 2022 [82569][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:01:01 2022 [82910][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:02:07 2022 [83237][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:03:01 2022 [83487][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:04:02 2022 [83681][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:05:01 2022 [83872][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:06:01 2022 [84061][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:07:07 2022 [84260][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:08:07 2022 [84462][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:09:01 2022 [84690][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:10:01 2022 [84875][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:11:04 2022 [85115][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:12:02 2022 [85298][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:13:07 2022 [85620][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:14:01 2022 [85787][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:15:01 2022 [85994][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:16:01 2022 [86238][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:16:14 2022 [82286][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:16:14 2022 [82286][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:16:15 2022 [82286][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:16:15 2022 [82286][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:16:25 2022 [53799][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:16:25 2022 [53799][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:16:26 2022 [53799][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:16:26 2022 [53799][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:16:27 2022 [75650][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:16:27 2022 [75650][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:16:28 2022 [75650][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:16:28 2022 [75650][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:16:30 2022 [75650][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:16:30 2022 [75650][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:16:31 2022 [75650][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:16:31 2022 [75650][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:16:35 2022 [86276][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:16:35 2022 [86276][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:16:36 2022 [86276][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:16:36 2022 [86276][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:17:07 2022 [86484][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:18:01 2022 [86656][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:19:01 2022 [86847][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:20:07 2022 [87222][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:21:02 2022 [87390][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:22:01 2022 [87582][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:23:01 2022 [87787][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:24:08 2022 [88075][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:25:01 2022 [88251][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:25:41 2022 [64855][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:25:41 2022 [64855][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:25:42 2022 [64855][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:25:42 2022 [64855][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:26:07 2022 [88491][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:27:01 2022 [88680][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:28:01 2022 [88883][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:29:01 2022 [89077][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:30:01 2022 [89299][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:31:01 2022 [89518][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:32:01 2022 [89746][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:32:56 2022 [56787][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:32:56 2022 [56787][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:32:57 2022 [56787][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:32:57 2022 [56787][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:33:01 2022 [89950][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:33:28 2022 [60315][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:33:28 2022 [60315][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:33:29 2022 [60315][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:33:29 2022 [60315][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:34:06 2022 [89971][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:34:06 2022 [89971][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:34:07 2022 [89971][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:34:07 2022 [89971][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:34:07 2022 [90193][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:34:51 2022 [86276][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:34:51 2022 [86276][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:34:52 2022 [86276][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:34:52 2022 [86276][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:35:01 2022 [90409][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:35:56 2022 [88351][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:35:56 2022 [88351][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:35:57 2022 [88351][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:35:57 2022 [88351][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:36:07 2022 [90645][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:37:19 2022 [90956][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:38:02 2022 [91110][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:39:01 2022 [91364][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:40:01 2022 [91572][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:41:01 2022 [91877][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:41:59 2022 [90177][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:41:59 2022 [90177][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:42:00 2022 [90177][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:42:00 2022 [90177][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:42:07 2022 [92113][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:43:01 2022 [92394][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:43:36 2022 [64855][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:43:36 2022 [64855][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:43:37 2022 [64855][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:43:37 2022 [64855][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:43:41 2022 [64855][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:43:41 2022 [64855][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:43:42 2022 [64855][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:43:42 2022 [64855][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:44:07 2022 [92645][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:44:23 2022 [90585][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:44:23 2022 [90585][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:44:24 2022 [90585][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:44:24 2022 [90585][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:45:01 2022 [92855][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:45:50 2022 [75586][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:45:50 2022 [75586][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:45:51 2022 [75586][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:45:51 2022 [75586][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:46:07 2022 [93122][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:47:01 2022 [93286][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:48:01 2022 [93493][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:49:01 2022 [82286][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:49:01 2022 [82286][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:49:01 2022 [93712][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:49:02 2022 [82286][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:49:02 2022 [82286][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:50:02 2022 [93926][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:51:01 2022 [94124][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:52:01 2022 [94358][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:53:07 2022 [94631][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:53:15 2022 [93683][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:53:15 2022 [93683][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:53:15 2022 [93683][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:53:15 2022 [93683][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:54:02 2022 [94811][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:55:01 2022 [95012][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:56:07 2022 [95248][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:57:08 2022 [95475][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:58:01 2022 [95659][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:58:07 2022 [92509][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:58:07 2022 [92509][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:58:08 2022 [92509][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:58:08 2022 [92509][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:59:07 2022 [95893][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 16:59:53 2022 [94641][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:59:53 2022 [94641][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 16:59:54 2022 [94641][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 16:59:54 2022 [94641][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:00:01 2022 [96122][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:01:01 2022 [96380][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:01:18 2022 [93683][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:01:18 2022 [93683][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:01:19 2022 [93683][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:01:19 2022 [93683][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:02:02 2022 [96588][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:03:01 2022 [96805][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:03:41 2022 [92509][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:03:41 2022 [92509][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:03:42 2022 [92509][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:03:42 2022 [92509][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:04:01 2022 [97043][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:05:08 2022 [97258][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:06:02 2022 [97430][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:07:04 2022 [97641][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:08:11 2022 [97863][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:09:07 2022 [98124][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:10:07 2022 [98317][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:11:01 2022 [98476][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:12:01 2022 [98674][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:13:01 2022 [98895][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:14:01 2022 [99096][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:14:10 2022 [96936][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:14:10 2022 [96936][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:14:11 2022 [96936][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:14:11 2022 [96936][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:14:30 2022 [98133][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:14:30 2022 [98133][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:14:31 2022 [98133][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:14:31 2022 [98133][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:15:02 2022 [99319][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:16:01 2022 [99549][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:17:01 2022 [99751][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:18:02 2022 [99974][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:19:01 2022 [100181][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:19:02 2022 [95742][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:19:02 2022 [95742][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:19:03 2022 [95742][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:19:03 2022 [95742][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:19:12 2022 [96936][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:19:12 2022 [96936][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:19:13 2022 [94713][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:19:13 2022 [94713][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:19:14 2022 [96936][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:19:14 2022 [96936][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:19:14 2022 [94713][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:19:14 2022 [94713][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:20:01 2022 [100386][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:21:07 2022 [100619][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:22:02 2022 [100784][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:23:01 2022 [100983][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:23:48 2022 [92509][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:23:48 2022 [92509][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:23:49 2022 [92509][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 17:23:49 2022 [92509][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 17:24:01 2022 [101214][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:28:43 2022 [101657][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:28:44 2022 [101660][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:28:44 2022 [101660][1][FATAL] Job runs too frequently, throttled to protect the system.
+Tue Jul 26 17:28:44 2022 [101663][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:28:44 2022 [101663][1][FATAL] Job runs too frequently, throttled to protect the system.
+Tue Jul 26 17:28:44 2022 [101666][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:28:44 2022 [101666][1][FATAL] Job runs too frequently, throttled to protect the system.
+Tue Jul 26 17:29:01 2022 [101722][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:29:01 2022 [101722][1][FATAL] Job runs too frequently, throttled to protect the system.
+Tue Jul 26 17:30:08 2022 [102012][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:31:24 2022 [102320][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:36:13 2022 [102708][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:36:19 2022 [102731][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:36:19 2022 [102731][1][FATAL] Job runs too frequently, throttled to protect the system.
+Tue Jul 26 17:36:25 2022 [102756][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:36:25 2022 [102756][1][FATAL] Job runs too frequently, throttled to protect the system.
+Tue Jul 26 17:36:25 2022 [102759][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:36:26 2022 [102759][1][FATAL] Job runs too frequently, throttled to protect the system.
+Tue Jul 26 17:36:26 2022 [102762][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:36:26 2022 [102762][1][FATAL] Job runs too frequently, throttled to protect the system.
+Tue Jul 26 17:37:07 2022 [102914][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:38:01 2022 [103109][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:39:01 2022 [103322][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:40:07 2022 [103563][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:41:07 2022 [103751][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:42:01 2022 [103932][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:43:01 2022 [104254][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:44:01 2022 [104561][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:45:01 2022 [104826][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:46:01 2022 [105030][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:47:03 2022 [105244][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:48:02 2022 [105418][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:49:01 2022 [105601][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:50:01 2022 [105788][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:51:02 2022 [105973][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:52:02 2022 [106154][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:53:01 2022 [106340][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:54:07 2022 [106536][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:55:01 2022 [106700][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:56:02 2022 [106889][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:57:01 2022 [107071][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:58:01 2022 [107259][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 17:59:01 2022 [107436][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:00:07 2022 [107649][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:01:07 2022 [107837][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:02:01 2022 [108005][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:03:03 2022 [108185][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:04:01 2022 [108358][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:05:07 2022 [108558][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:06:08 2022 [108750][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:07:07 2022 [108922][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:08:01 2022 [109087][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:09:01 2022 [109324][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:10:01 2022 [109508][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:11:11 2022 [109726][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:12:01 2022 [109900][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:13:01 2022 [110085][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:14:02 2022 [110269][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:15:01 2022 [110486][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:16:02 2022 [110711][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:17:01 2022 [110924][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:18:01 2022 [111118][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:19:13 2022 [111338][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:20:02 2022 [111494][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:21:01 2022 [111682][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:22:01 2022 [111869][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:23:02 2022 [112052][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:24:07 2022 [112261][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:25:01 2022 [112427][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:26:02 2022 [112620][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:27:10 2022 [112895][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:28:01 2022 [113056][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:29:03 2022 [113256][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:30:01 2022 [113450][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:31:01 2022 [113657][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:32:07 2022 [113852][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:33:01 2022 [114029][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:34:01 2022 [114210][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:35:01 2022 [114400][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:36:02 2022 [114589][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:37:01 2022 [114797][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:38:01 2022 [114992][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:39:01 2022 [115224][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:40:01 2022 [115402][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:41:07 2022 [115604][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:42:01 2022 [115773][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:43:01 2022 [115971][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:45:08 2022 [116993][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:46:02 2022 [117164][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:47:06 2022 [117377][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:48:01 2022 [117591][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:49:01 2022 [117887][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:49:12 2022 [99157][1][FATAL] hook
+Tue Jul 26 18:49:13 2022 [100174][1][FATAL] hook
+Tue Jul 26 18:49:22 2022 [101143][1][FATAL] hook
+Tue Jul 26 18:49:23 2022 [94713][1][FATAL] hook
+Tue Jul 26 18:49:32 2022 [97084][1][FATAL] hook
+Tue Jul 26 18:49:32 2022 [98133][1][FATAL] hook
+Tue Jul 26 18:49:37 2022 [99157][1][FATAL] hook
+Tue Jul 26 18:49:38 2022 [117750][1][FATAL] hook
+Tue Jul 26 18:49:41 2022 [100174][1][FATAL] hook
+Tue Jul 26 18:49:41 2022 [98133][1][FATAL] hook
+Tue Jul 26 18:49:44 2022 [97084][1][FATAL] hook
+Tue Jul 26 18:49:44 2022 [98133][1][FATAL] hook
+Tue Jul 26 18:50:02 2022 [118070][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:51:01 2022 [118309][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:52:01 2022 [118511][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:53:01 2022 [118730][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:54:01 2022 [118921][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:55:01 2022 [119122][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:56:01 2022 [119322][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:57:01 2022 [119519][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:58:01 2022 [119712][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:59:01 2022 [119943][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 18:59:35 2022 [97084][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 18:59:35 2022 [97084][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 18:59:36 2022 [97084][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 18:59:36 2022 [97084][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 19:00:01 2022 [120154][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 19:01:01 2022 [120390][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 19:01:25 2022 [94713][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 19:01:25 2022 [94713][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 19:01:26 2022 [94713][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 19:01:26 2022 [94713][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 19:02:07 2022 [120621][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 19:02:45 2022 [94641][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 19:02:45 2022 [94641][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 19:02:46 2022 [94641][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 19:02:46 2022 [94641][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 19:03:09 2022 [120846][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 19:04:01 2022 [121107][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 19:05:01 2022 [121367][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Jul 26 19:05:12 2022 [100174][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 19:05:12 2022 [100174][1][FATAL] failed to find link for cases_contacts_2
+Tue Jul 26 19:05:13 2022 [100174][1][FATAL] failed to find link for cases_contacts_1
+Tue Jul 26 19:05:13 2022 [100174][1][FATAL] failed to find link for cases_contacts_2

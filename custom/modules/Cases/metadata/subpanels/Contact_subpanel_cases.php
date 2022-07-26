@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-14 18:22:02
+// created: 2022-07-25 12:40:21
 $subpanel_layout['list_fields'] = array (
   'case_number' => 
   array (
@@ -33,13 +33,6 @@ $subpanel_layout['list_fields'] = array (
   'date_entered' => 
   array (
     'vname' => 'LBL_LIST_DATE_CREATED',
-    'width' => 10,
-    'default' => true,
-  ),
-  'integer_field_example' => 
-  array (
-    'type' => 'int',
-    'vname' => 'LBL_INTEGER_FIELD_EXAMPLE',
     'width' => 10,
     'default' => true,
   ),
