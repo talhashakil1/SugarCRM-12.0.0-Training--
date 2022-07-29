@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-26 17:23:49
+// created: 2022-07-29 18:17:52
 $sourceMd5Map = array (
   'sidecar/node_modules/underscore/underscore-min.js' => '426e8e61dd81d4c6f9c17f1150ad07ce',
   'include/javascript/sugar_3.js' => 'a98608f91e4d55f30c24e49a094b2c55',

@@ -17,19 +17,18 @@
 
 	cancelDrawer: function()
 	{
-		var linkName = "tasks";
-		console.log('before fetching subpanel');
-		var subPanelCollection = this.context.parent.getRelatedCollection(linkName);
+		console.log("related collection of tasks: "+this.context.attributes.model.getRelatedCollection("tasks"));
+		var subPanelCollection = this.context.attributes.model.getRelatedCollection("tasks");
 		console.log('fetched');
 		if(subPanelCollection)
 		{
-			subPanelCollection.fetch({relate: true});
-			console.log('refreshed');
-
+		  subPanelCollection.fetch({relate: true});
+		  console.log('refreshed');
+  
 		}
-		
 
-		App.drawer.close();
+
+		//App.drawer.close();
 	},
 
 })

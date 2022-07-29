@@ -155,3 +155,9 @@ $app_list_strings['moduleList']['abc_Testing'] = 'Testing';
 $app_list_strings['moduleListSingular']['abc_Testing'] = 'Testings';
 
 ?>
+<?php
+// Merged from custom/Extension/application/Ext/Language/en_us.fourFieldsAccountLink.php
+
+
+$app_strings['LNK_FOUR_FIELDS_ACCOUNT_LINK'] = 'View 4 Fields';
+?>

@@ -1,0 +1,13 @@
+<div>
+    <h1>Welcome to custom view of Accounts record</h1>
+    <h3>Four fields of account i.e name, type, date created and member of relate field are displayed here</h3>
+
+
+    {{#each meta.fields}}
+
+        <label for={{this.name}}>{{this.vname}}</label>
+        {{field ../this model=../model template = 'dashlet-header'}}
+
+    {{/each}}
+
+</div>

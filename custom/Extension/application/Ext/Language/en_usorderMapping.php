@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-25 12:21:45
+// created: 2022-07-27 15:56:40
 $extensionOrderMap = array (
   'custom/Extension/application/Ext/Language/en_us.sugar_record_type_display.php' => 
   array (
@@ -47,6 +47,12 @@ $extensionOrderMap = array (
   array (
     'md5' => '65e8584cde04099a019b2027bc5ed984',
     'mtime' => 1658410113,
+    'is_override' => false,
+  ),
+  'custom/Extension/application/Ext/Language/en_us.fourFieldsAccountLink.php' => 
+  array (
+    'md5' => 'ee9fcb69a33955ffd96174df0edcfe18',
+    'mtime' => 1658918903,
     'is_override' => false,
   ),
 );

@@ -12,10 +12,12 @@
 <div id="myButtons">
 	{{!-- <button class="btn success" class="alertBtn" name="alert">Alert</button>
 	<button class="btn danger" class="cancelBtn" name="cancel">Cancel</button> --}}
-	{{!-- {{log meta}} --}}
+	{{log meta}}
+	{{log this}}
+	{{log this.model.get}}
 	{{#each meta.buttons}}
 		{{field ../this}}
-
+		{{log ../this}}
     {{/each}}
 
 
