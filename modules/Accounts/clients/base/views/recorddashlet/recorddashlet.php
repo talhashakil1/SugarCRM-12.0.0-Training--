@@ -87,7 +87,7 @@ $viewdefs['Accounts']['base']['view']['recorddashlet'] = [
                     'dismiss_label' => true,
                     'span' => 12,
                 ],
-                'website',
+                'website', 
                 'industry',
                 'parent_name',
                 'account_type',
@@ -95,6 +95,7 @@ $viewdefs['Accounts']['base']['view']['recorddashlet'] = [
                 'service_level',
                 'assigned_user_name',
                 'phone_office',
+
                 [
                     'name' => 'tag',
                     'span' => 12,

@@ -177,7 +177,16 @@ array (
             array (
               0 => 'website',
               1 => 'industry',
-              2 => 'parent_name',
+
+              2 => array(
+                'name'=>'parent_name',
+              "initial_filter"=>"filterMemberOf",
+              "initial_filter_label"=>"LBL_MEMBER_OF_WITH_ACCOUNT_ID",
+              "filter_relate"=>array(
+                  "account_type" =>"account_type"
+                ),
+              ),
+
               3 => 'account_type',
               4 => 'business_center_name',
               5 => 

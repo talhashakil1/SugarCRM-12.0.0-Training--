@@ -47,3 +47,10 @@ $dictionary['Contact']['fields']['denorm_account_name']['denorm_from_module'] = 
 $dictionary['Contact']['fields']['denorm_account_name']['studio'] = false;
 
 ?>
+<?php
+// Merged from custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_title.php
+
+
+$dictionary['Contact']['fields']['title']['type']='Readonlytitle';
+$dictionary['Contact']['fields']['title']['dbType']='varchar';
+?>

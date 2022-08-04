@@ -166,6 +166,8 @@
             this.filters.setModuleName(searchModule);
             this.filters.setFilterOptions(this.getFilterOptions());
             this.filters.load(options);
+
+            console.log("options: ", options);
         }
     },
     /**
@@ -181,6 +183,8 @@
         } else {
             this.searchCollection = null;
         }
+
+        console.log("this.searchCollection: ", this.searchCollection);
     },
 
     /**

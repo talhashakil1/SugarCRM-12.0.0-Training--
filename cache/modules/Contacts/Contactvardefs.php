@@ -351,12 +351,13 @@
     array (
       'name' => 'title',
       'vname' => 'LBL_TITLE',
-      'type' => 'varchar',
+      'type' => 'Readonlytitle',
       'len' => '100',
       'duplicate_on_record_copy' => 'always',
       'comment' => 'The title of the contact',
       'audited' => true,
       'pii' => true,
+      'dbType' => 'varchar',
     ),
     'facebook' => 
     array (

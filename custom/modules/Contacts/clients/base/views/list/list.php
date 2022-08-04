@@ -43,15 +43,14 @@ array (
               ),
               3 => 
               array (
-                'name' => 'linkedin_profile_c',
-                'label' => 'LBL_LINKEDIN_PROFILE',
+                'name' => 'email',
                 'enabled' => true,
-                'readonly' => false,
                 'default' => true,
               ),
               4 => 
               array (
-                'name' => 'email',
+                'name' => 'phone_home',
+                'label' => 'LBL_HOME_PHONE',
                 'enabled' => true,
                 'default' => true,
               ),
@@ -77,10 +76,10 @@ array (
               ),
               8 => 
               array (
-                'name' => 'assistant_phone',
+                'name' => 'twitter',
+                'label' => 'LBL_TWITTER',
                 'enabled' => true,
                 'default' => true,
-                'selected' => false,
               ),
               9 => 
               array (

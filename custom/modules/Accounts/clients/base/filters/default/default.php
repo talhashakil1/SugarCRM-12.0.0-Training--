@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-20 11:49:59
+// created: 2022-08-02 17:08:31
 $viewdefs['Accounts']['base']['filter']['default'] = array (
   'default_filter' => 'all_records',
   'fields' => 
@@ -76,6 +76,9 @@ $viewdefs['Accounts']['base']['filter']['default'] = array (
     array (
     ),
     'ownership' => 
+    array (
+    ),
+    'parent_name' => 
     array (
     ),
     'employees' => 

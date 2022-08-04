@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-29 18:17:52
+// created: 2022-08-04 12:27:53
 $mod_strings = array (
   'LBL_IS_ESCALATED' => 'Escalated',
   'LBL_ANY_EMAIL' => 'Email:',
@@ -217,4 +217,6 @@ To create an {{module_name}}:
   'LBL_FILTER_ACCOUNTS_REPORTS' => 'Accounts\' reports',
   'LBL_VEHICLE_NUMBER' => 'Vehicle Number',
   'LBL_PRINT_PDF' => 'print pdf',
+  'LBL_FILTER_MEMBER_OF' => 'Member of Filter',
+  'LBL_MEMBER_OF_WITH_ACCOUNT_ID' => 'Member of with Account ID',
 );
