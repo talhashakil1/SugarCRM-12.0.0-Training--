@@ -1,5 +1,5 @@
 <?php
-// created: 2022-08-04 12:27:53
+// created: 2022-08-18 18:32:23
 $mod_strings = array (
   'LBL_CURRENCY' => 'Currency:',
   'LBL_CURRENCIES' => 'Currencies',
@@ -302,4 +302,6 @@ $mod_strings = array (
   'LBL_CONFIG_TITLE_MODULE_SETTINGS' => 'Quotes Configuration',
   'LBL_RENEWAL' => 'Renewal',
   'TPL_ACTIVITY_TIMELINE_DASHLET' => 'Quote Timeline',
+  'LBL_QUOTES_CONTACTS_1_FROM_QUOTES_TITLE' => 'Contacts',
+  'LBL_QUOTES_CONTACTS_1_FROM_CONTACTS_TITLE' => 'Contacts',
 );

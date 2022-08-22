@@ -1,5 +1,5 @@
 <?php
-// created: 2022-07-20 16:26:17
+// created: 2022-08-19 10:37:27
 $extensionOrderMap = array (
   'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_hiring_date_c.php' => 
   array (
@@ -101,6 +101,12 @@ $extensionOrderMap = array (
   array (
     'md5' => 'd248878d54417ce1fc112d1d4f95f040',
     'mtime' => 1658316357,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Cases/Ext/Vardefs/sugarfield_case_email_c.php' => 
+  array (
+    'md5' => 'dc609d96bc24eaaa7218da0e736753b5',
+    'mtime' => 1660887447,
     'is_override' => false,
   ),
 );

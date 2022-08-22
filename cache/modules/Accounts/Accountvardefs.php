@@ -970,7 +970,7 @@
       'module' => 'RevenueLineItems',
       'bean_name' => 'RevenueLineItem',
       'source' => 'non-db',
-      'workflow' => true,
+      'workflow' => false,
     ),
     'purchasedlineitems' => 
     array (
@@ -1818,7 +1818,6 @@
     ),
     'print_pdf_c' => 
     array (
-      'labelValue' => 'print pdf',
       'required' => false,
       'readonly' => true,
       'source' => 'non-db',

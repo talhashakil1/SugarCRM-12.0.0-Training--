@@ -184,7 +184,7 @@
             this.searchCollection = null;
         }
 
-        console.log("this.searchCollection: ", this.searchCollection);
+        //console.log("this.searchCollection: ", this.searchCollection);
     },
 
     /**

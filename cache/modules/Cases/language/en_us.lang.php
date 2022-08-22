@@ -1,5 +1,5 @@
 <?php
-// created: 2022-08-04 12:27:53
+// created: 2022-08-19 10:37:28
 $mod_strings = array (
   'LBL_IS_ESCALATED' => 'Escalated',
   'LBL_FIRST_RESPONSE_TARGET_DATETIME' => 'First Response Target Time',
@@ -198,4 +198,5 @@ To create a {{module_name}}:
   'LBL_APPLY_FOR_LICENSE' => 'Apply For License',
   'LBL_VEHICLE' => 'Vehicle',
   'LBL_VEHICLE_DETAILS' => 'Vehicle Details',
+  'LBL_CASE_EMAIL' => 'Case Email',
 );

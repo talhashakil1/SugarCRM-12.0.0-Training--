@@ -1,5 +1,5 @@
 <?php
-// created: 2022-08-04 12:27:56
+// created: 2022-08-18 18:32:31
 $mod_strings = array (
   'TPL_BROWSER_SUGAR7_RECORD_TITLE' => '{{#if name}}{{str name}} &raquo; {{/if}}{{module}} &raquo; {{appId}}',
   'TPL_BROWSER_SUGAR7_ABOUT_TITLE' => 'About &raquo; {{appId}}',

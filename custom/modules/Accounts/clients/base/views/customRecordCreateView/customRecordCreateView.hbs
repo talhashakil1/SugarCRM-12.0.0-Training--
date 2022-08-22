@@ -1,0 +1,11 @@
+<div>
+    <h1>Populating drop down options through controller</h1>
+
+    {{#each meta.fields}}
+        
+        <label for={{this.name}}>{{this.vname}}</label>
+        {{field ../this model=../model template='edit'}}
+
+        <br><br>
+    {{/each}}
+</div>

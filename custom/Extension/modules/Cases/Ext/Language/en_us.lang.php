@@ -13,3 +13,4 @@ $mod_strings['LBL_MY_BIRTH_DATE'] = 'My Birth Date';
 $mod_strings['LBL_APPLY_FOR_LICENSE'] = 'Apply For License';
 $mod_strings['LBL_VEHICLE'] = 'Vehicle';
 $mod_strings['LBL_VEHICLE_DETAILS'] = 'Vehicle Details';
+$mod_strings['LBL_CASE_EMAIL'] = 'Case Email';

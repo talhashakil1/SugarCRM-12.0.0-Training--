@@ -1,5 +1,5 @@
 <?php
-// created: 2022-08-04 12:27:53
+// created: 2022-08-18 18:31:37
 $mod_strings = array (
   'LBL_IS_ESCALATED' => 'Escalated',
   'LBL_ANY_EMAIL' => 'Email:',
@@ -216,7 +216,14 @@ To create an {{module_name}}:
 2. Click "Save" to finalize the new record and return to the previous page.',
   'LBL_FILTER_ACCOUNTS_REPORTS' => 'Accounts\' reports',
   'LBL_VEHICLE_NUMBER' => 'Vehicle Number',
-  'LBL_PRINT_PDF' => 'print pdf',
   'LBL_FILTER_MEMBER_OF' => 'Member of Filter',
   'LBL_MEMBER_OF_WITH_ACCOUNT_ID' => 'Member of with Account ID',
+  'LBL_ACCOUNTS_CALLS_1_FROM_CALLS_TITLE' => 'Calls',
+  'LBL_ACCOUNTS_CALLS_1_FROM_ACCOUNTS_TITLE' => 'Calls',
+  'LBL_PRINT_PDF' => 'print pdf',
+  'LBL_CHECK_RELATE' => 'check relate',
+  'LBL_ACCOUNTS_MESSAGES_1_FROM_MESSAGES_TITLE' => 'Messages',
+  'LBL_ACCOUNTS_MESSAGES_1_FROM_ACCOUNTS_TITLE' => 'Messages',
+  'LBL_ACCOUNTS_PROJECT_1_FROM_PROJECT_TITLE' => 'Project',
+  'LBL_ACCOUNTS_PROJECT_1_FROM_ACCOUNTS_TITLE' => 'Project',
 );

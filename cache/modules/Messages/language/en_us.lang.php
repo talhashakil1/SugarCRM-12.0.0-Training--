@@ -1,5 +1,5 @@
 <?php
-// created: 2022-08-04 12:27:53
+// created: 2022-08-18 18:32:23
 $mod_strings = array (
   'LBL_AWS_COMPREHEND_DATA' => 'AWS Comprehend Data',
   'LBL_SENTIMENT' => 'Sentiment',
@@ -64,4 +64,6 @@ $mod_strings = array (
   'LBL_ACTIVITY_FINISHED' => 'ended',
   'LBL_ACTIVITY_IN_PROGRESS' => 'in progress',
   'LBL_MESSAGES_FOCUS_DRAWER_DASHBOARD' => 'Messages Focus Drawer',
+  'LBL_ACCOUNTS_MESSAGES_1_FROM_MESSAGES_TITLE' => 'Accounts',
+  'LBL_ACCOUNTS_MESSAGES_1_FROM_ACCOUNTS_TITLE' => 'Accounts',
 );

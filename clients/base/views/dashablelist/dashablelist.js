@@ -256,7 +256,7 @@
                 this.dashModel.set('filter_id', 'assigned_to_me');
                 this.layout.trigger('dashlet:filter:reinitialize');
 
-                this._updateDisplayColumns();
+                this._updateDisplayColumns();-
                 this._hideUnselectedColumns();
                 this.updateLinkedFields(moduleName);
             }, this);

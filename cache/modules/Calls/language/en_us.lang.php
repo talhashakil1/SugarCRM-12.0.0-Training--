@@ -1,5 +1,5 @@
 <?php
-// created: 2022-08-04 12:27:53
+// created: 2022-08-18 18:32:01
 $mod_strings = array (
   'LBL_TEAM' => 'Teams',
   'LBL_TEAMS' => 'Teams',
@@ -204,4 +204,6 @@ To create a {{calls_singular_module}}:
     - Click "Select an Attendee" to add an existing user, contact, or lead to the {{calls_singular_module}}.
     - Click the plus icon to the right of "Select an Attendee" to create a {{calls_singular_module}} attendee as a new Sugar record.
 3. Click "Save" to finalize the new record and return to the previous page.',
+  'LBL_ACCOUNTS_CALLS_1_FROM_ACCOUNTS_TITLE' => 'Accounts',
+  'LBL_ACCOUNTS_CALLS_1_FROM_CALLS_TITLE' => 'Accounts',
 );

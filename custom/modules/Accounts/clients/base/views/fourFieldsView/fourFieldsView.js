@@ -2,7 +2,6 @@
     className : "fourFieldsView",
 	initialize: function (options) {
         this._super('initialize', [options]);
-       //console.log("this : initialize: ", this);
     },
 
     _render : function()

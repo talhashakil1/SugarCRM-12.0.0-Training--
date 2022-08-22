@@ -1,0 +1,25 @@
+<style>
+    #taskDashletTable, #taskDashletTH, #taskDashletTD {
+    border:1px solid black;
+    }
+</style>
+
+<table id="taskDashletTable" style="width:100%">
+    <thead>
+        <tr>
+            {{#each this.meta.fields}}
+                <th id="taskDashletTH">{{this.name}}</th>
+            {{/each}}
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+    {{#each collection.models}}
+        <tr>
+            {{#each ../this.meta.fields}}
+                <td id="taskDashletTD">{{field ../../this model=../this template='view'}}</td>
+            {{/each}}
+        </tr>
+    {{/each}}
+</table>

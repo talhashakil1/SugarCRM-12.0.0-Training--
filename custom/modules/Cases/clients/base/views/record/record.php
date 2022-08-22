@@ -224,8 +224,8 @@ array (
               6 => 
               array (
                 'readonly' => false,
-                'name' => 'apply_for_license_c',
-                'label' => 'LBL_APPLY_FOR_LICENSE',
+                'name' => 'city_c',
+                'label' => 'LBL_CITY',
               ),
               7 => 
               array (
@@ -263,34 +263,15 @@ array (
               ),
               14 => 
               array (
-                'name' => 'attachment_list',
-                'label' => 'LBL_ATTACHMENTS',
-                'type' => 'multi-attachments',
-                'link' => 'attachments',
-                'module' => 'Notes',
-                'modulefield' => 'filename',
-                'bLabel' => 'LBL_ADD_ATTACHMENT',
-                'max_num' => -1,
-                'related_fields' => 
-                array (
-                  0 => 'filename',
-                  1 => 'file_mime_type',
-                ),
-                'fields' => 
-                array (
-                  0 => 'name',
-                  1 => 'filename',
-                  2 => 'file_size',
-                  3 => 'file_source',
-                  4 => 'file_mime_type',
-                  5 => 'file_ext',
-                  6 => 'upload_id',
-                ),
+                'readonly' => false,
+                'name' => 'case_email_c',
+                'label' => 'LBL_CASE_EMAIL',
                 'span' => 12,
               ),
               15 => 
               array (
-                'name' => 'tag',
+                'name' => 'description',
+                'nl2br' => true,
                 'span' => 12,
               ),
             ),
