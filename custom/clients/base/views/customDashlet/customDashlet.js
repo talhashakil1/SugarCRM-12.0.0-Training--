@@ -18,7 +18,7 @@
         bean.setOption({
             filter: {
                 'contact_id': {
-                    '$equals': this.context.get('modelId') || this.context.parent.get('modelId'),
+                    '$equals': this.context.get('modelId'),
                 },
             }
         });

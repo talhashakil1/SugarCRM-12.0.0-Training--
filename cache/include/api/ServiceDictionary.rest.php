@@ -4430,6 +4430,31 @@ $apiDictionary['rest'] = array (
             ),
           ),
         ),
+        'Accounts' => 
+        array (
+          'SameEmailAddressAccounts' => 
+          array (
+            0 => 
+            array (
+              'reqType' => 'GET',
+              'noLoginRequired' => true,
+              'path' => 
+              array (
+                0 => 'Accounts',
+                1 => 'SameEmailAddressAccounts',
+              ),
+              'pathVars' => 
+              array (
+                0 => '',
+                1 => '',
+              ),
+              'method' => 'SameEmailAddressAccounts',
+              'file' => 'custom/clients/base/api/MyEndpointsApi.php',
+              'className' => 'MyEndpointsApi',
+              'score' => 9.25,
+            ),
+          ),
+        ),
         'PdfManager' => 
         array (
           'generate' => 

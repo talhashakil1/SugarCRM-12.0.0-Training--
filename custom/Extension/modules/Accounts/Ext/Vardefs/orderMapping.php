@@ -1,5 +1,5 @@
 <?php
-// created: 2022-08-18 18:24:46
+// created: 2022-08-22 07:37:54
 $extensionOrderMap = array (
   'custom/Extension/modules/Accounts/Ext/Vardefs/rli_link_workflow.php' => 
   array (
@@ -41,12 +41,6 @@ $extensionOrderMap = array (
   array (
     'md5' => '63a6077e8e11a94651da56f84aec48db',
     'mtime' => 1660229241,
-    'is_override' => false,
-  ),
-  'custom/Extension/modules/Accounts/Ext/Vardefs/accounts_documents_1_Accounts.php' => 
-  array (
-    'md5' => '92c63a3452599e318d7ae15bdff6068c',
-    'mtime' => 1660829075,
     'is_override' => false,
   ),
 );

@@ -5,16 +5,11 @@
 </style>
 
 <table id="taskDashletTable" style="width:100%">
-    <thead>
-        <tr>
-            {{#each this.meta.fields}}
-                <th id="taskDashletTH">{{this.name}}</th>
-            {{/each}}
-        </tr>
-    </thead>
-    <tbody>
-
-    </tbody>
+    <tr>
+        {{#each this.meta.fields}}
+            <th id="taskDashletTH">{{this.name}}</th>
+        {{/each}}
+    </tr>
     {{#each collection.models}}
         <tr>
             {{#each ../this.meta.fields}}
@@ -22,4 +17,5 @@
             {{/each}}
         </tr>
     {{/each}}
+    
 </table>

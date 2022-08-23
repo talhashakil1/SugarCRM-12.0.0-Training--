@@ -970,7 +970,7 @@
       'module' => 'RevenueLineItems',
       'bean_name' => 'RevenueLineItem',
       'source' => 'non-db',
-      'workflow' => false,
+      'workflow' => true,
     ),
     'purchasedlineitems' => 
     array (
@@ -1818,6 +1818,7 @@
     ),
     'print_pdf_c' => 
     array (
+      'labelValue' => 'print pdf',
       'required' => false,
       'readonly' => true,
       'source' => 'non-db',
@@ -1856,6 +1857,105 @@
       'options' => '{"settings":{"type":"YnV0dG9u","size":"ZGVmYXVsdA==","showFieldLabel":true,"showInRecordHeader":true,"hideOnEdit":true},"actionMenu":{"orderNumber":1,"listView":true,"recordView":false,"recordViewDashlet":false,"subpanels":true},"buttons":{"086e7665-ef1d-4ac1-ad03-33ed0624d93a":{"active":true,"buttonId":"MDg2ZTc2NjUtZWYxZC00YWMxLWFkMDMtMzNlZDA2MjRkOTNh","orderNumber":0,"properties":{"label":"UHJpbnQ=","description":"UHJpbnQgVGhlIFBERg==","showLabel":true,"showIcon":true,"colorScheme":"cHJpbWFyeQ==","icon":"c2ljb24tbm90ZQ==","isDependent":false,"stopOnError":false,"formula":""},"actions":{"d42d06d3-74e4-46de-8839-adfcf98446df":{"actionType":"dXBkYXRlLXJlY29yZA==","orderNumber":0,"properties":{"fieldsToBeUpdated":{"facebook":{"fieldName":"ZmFjZWJvb2s=","isCalculated":false,"formula":"","value":{"facebook":"QGVsb25fbXVzaw=="}}},"autoSave":false},"id":"ZDQyZDA2ZDMtNzRlNC00NmRlLTg4MzktYWRmY2Y5ODQ0NmRm"}}}}}',
       'id' => 'e9d9a50a-0bdd-11ed-a4ab-6018954cf469',
       'custom_module' => 'Accounts',
+    ),
+    'accounts_calls_1' => 
+    array (
+      'name' => 'accounts_calls_1',
+      'type' => 'link',
+      'relationship' => 'accounts_calls_1',
+      'source' => 'non-db',
+      'module' => 'Calls',
+      'bean_name' => 'Call',
+      'vname' => 'LBL_ACCOUNTS_CALLS_1_FROM_CALLS_TITLE',
+      'id_name' => 'accounts_calls_1calls_idb',
+    ),
+    'accounts_calls_1_name' => 
+    array (
+      'name' => 'accounts_calls_1_name',
+      'type' => 'relate',
+      'source' => 'non-db',
+      'vname' => 'LBL_ACCOUNTS_CALLS_1_FROM_CALLS_TITLE',
+      'save' => true,
+      'id_name' => 'accounts_calls_1calls_idb',
+      'link' => 'accounts_calls_1',
+      'table' => 'calls',
+      'module' => 'Calls',
+      'rname' => 'name',
+    ),
+    'accounts_calls_1calls_idb' => 
+    array (
+      'name' => 'accounts_calls_1calls_idb',
+      'type' => 'id',
+      'source' => 'non-db',
+      'vname' => 'LBL_ACCOUNTS_CALLS_1_FROM_CALLS_TITLE_ID',
+      'id_name' => 'accounts_calls_1calls_idb',
+      'link' => 'accounts_calls_1',
+      'table' => 'calls',
+      'module' => 'Calls',
+      'rname' => 'id',
+      'reportable' => false,
+      'side' => 'left',
+      'massupdate' => false,
+      'duplicate_merge' => 'disabled',
+      'hideacl' => true,
+    ),
+    'accounts_project_1' => 
+    array (
+      'name' => 'accounts_project_1',
+      'type' => 'link',
+      'relationship' => 'accounts_project_1',
+      'source' => 'non-db',
+      'module' => 'Project',
+      'bean_name' => 'Project',
+      'vname' => 'LBL_ACCOUNTS_PROJECT_1_FROM_PROJECT_TITLE',
+      'id_name' => 'accounts_project_1project_idb',
+    ),
+    'accounts_project_1_name' => 
+    array (
+      'name' => 'accounts_project_1_name',
+      'type' => 'relate',
+      'source' => 'non-db',
+      'vname' => 'LBL_ACCOUNTS_PROJECT_1_FROM_PROJECT_TITLE',
+      'save' => true,
+      'id_name' => 'accounts_project_1project_idb',
+      'link' => 'accounts_project_1',
+      'table' => 'project',
+      'module' => 'Project',
+      'rname' => 'name',
+    ),
+    'accounts_project_1project_idb' => 
+    array (
+      'name' => 'accounts_project_1project_idb',
+      'type' => 'id',
+      'source' => 'non-db',
+      'vname' => 'LBL_ACCOUNTS_PROJECT_1_FROM_PROJECT_TITLE_ID',
+      'id_name' => 'accounts_project_1project_idb',
+      'link' => 'accounts_project_1',
+      'table' => 'project',
+      'module' => 'Project',
+      'rname' => 'id',
+      'reportable' => false,
+      'side' => 'left',
+      'massupdate' => false,
+      'duplicate_merge' => 'disabled',
+      'hideacl' => true,
+    ),
+    'accounts_messages_1' => 
+    array (
+      'name' => 'accounts_messages_1',
+      'type' => 'link',
+      'relationship' => 'accounts_messages_1',
+      'source' => 'non-db',
+      'module' => 'Messages',
+      'bean_name' => 'Message',
+      'vname' => 'LBL_ACCOUNTS_MESSAGES_1_FROM_MESSAGES_TITLE',
+    ),
+    'controller_dropdown' => 
+    array (
+      'name' => 'controller_dropdown',
+      'labelValue' => 'Drop Down Whose Options Filled Through Controller',
+      'type' => 'enum',
+      'readonly' => 'false',
     ),
     'vehicle_number_c' => 
     array (

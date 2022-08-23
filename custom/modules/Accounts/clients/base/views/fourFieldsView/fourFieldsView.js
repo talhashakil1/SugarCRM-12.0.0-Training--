@@ -23,6 +23,23 @@
                 console.log("Error while fetching bean model");
             }, this),
         });
+
+
+
+
+        var url = app.api.buildURL('Accounts','SameEmailAddressAccounts');
+ 
+        app.api.call('GET', url, null, {
+            success: _.bind(function(response){
+                this.collection = response;
+                console.log("Response: ", response);
+
+                this.render();
+            }, this),
+            error: _.bind(function(error){
+                console.log("Error: ", error)
+            }, this)
+        });
     }
 })
 

@@ -578,7 +578,7 @@
       'relationship' => 'documents_revenuelineitems',
       'source' => 'non-db',
       'vname' => 'LBL_RLI_SUBPANEL_TITLE',
-      'workflow' => false,
+      'workflow' => true,
     ),
     'purchases' => 
     array (

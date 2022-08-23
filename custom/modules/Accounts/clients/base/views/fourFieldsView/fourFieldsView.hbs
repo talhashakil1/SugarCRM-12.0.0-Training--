@@ -1,3 +1,9 @@
+<style>
+    table, th, td {
+    border:1px solid black;
+    }
+</style>
+
 <div>
     <h1>Welcome to custom view of Accounts record</h1>
     <h3>Four fields of account i.e name, type, date created and member of relate field are displayed here</h3>
@@ -9,5 +15,27 @@
         {{field ../this model=../model template = 'dashlet-header'}}
 
     {{/each}}
+
+    {{log this}}
+
+    <br><br>
+    <h3>The accounts having the same email address and industry  is "Education". Usng API call and sugar query</h3>
+    <br><br>
+
+
+    <table id="apiRecordsTable" style="width:100%">
+        <tr>
+            <th>Account Name</th>
+            <th>Email Address</th>
+        </tr>
+        
+        {{#each this.collection}}
+            <tr>
+                <td>{{accountName}}</td>
+                <td>{{emailAddress}}</td>
+            </tr>
+        {{/each}}
+
+    </table>
 
 </div>
